@@ -4,6 +4,18 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Red Ciudadana" />
+	<meta name="description" content="¿A dónde van mis impuestos? Conocé y analiza el presupuesto general de Guatemala, un Proyecto de Red Ciudadana">
+  	<meta name="keywords" content="Presupuesto de Guatemala, Red Ciudadana, Presupuesto, Guatemala,">
+  	<meta name="viewport" content="width=device-width">
+
+	 <!--for facebook fans-->
+	 <meta property="og:title" content="DondeVanMisImpuestos.org/">
+	 <meta property="og:description" content="DondeVanMisImpuestos.org es la plataforma presupuestaria de Red Ciudadana, Conocé y analiza el presupuesto general de Guatemala. #¿AdondeVanMisImpuestos?">
+	 <meta property="og:type" content="website">
+	 <meta property="og:url" content="http://www.dondevanmisimpuestos.org/">
+	 <meta property="og:image" content="http://adondevanmisimpuestos.gt/img/Cuadro1.gif">
+	 <!--eoff-->
+
 
 	<!-- Stylesheets
 	============================================= -->
@@ -111,11 +123,14 @@
 							</li>
 						</ul>
 
-						<!-- Top Cart
+						<!-- Top Search
 						============================================= -->
-						<div id="top-cart">
-							<a href="index.html" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
-						</div><!-- #top-cart end -->
+						<div id="top-search">
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+							<form action="search.html" method="get">
+								<input type="text" name="q" class="form-control" value="" placeholder="Escribe &amp; Presiona Enter para buscar">
+							</form>
+						</div><!-- #top-search end -->
 
 					</nav><!-- #primary-menu end -->
 
@@ -201,7 +216,7 @@
 					<!-- Portfolio Filter
 					============================================= -->
 					
-					<ul id="portfolio-filter" class="clearfix">
+					<ul id="portfolio-filter" class="portfolio-filter clearfix" data-container="#portfolio">
 
 						<li class="activeFilter"><a href="#" data-filter="*">Mostrar Todos</a></li>
 						<li><a href="#" data-filter=".pf-congreso">Legislativo</a></li>
@@ -212,15 +227,16 @@
 
 					</ul><!-- #portfolio-filter end -->
 
-					<div id="portfolio-shuffle">
+					<div id="portfolio-shuffle" class="portfolio-shuffle" data-container="#portfolio">
 						<i class="icon-random"></i>
 					</div>
 
 					<div class="clear"></div>
 
+
 					<!-- Portfolio Items
 					============================================= -->
-					<div id="portfolio" class="portfolio-5 clearfix">
+					<div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix">
 
 						<!-- #Congreso de la República de Guatemala -->
 						<article class="portfolio-item pf-media pf-congreso">
@@ -512,6 +528,16 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-69920801-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 
 </body>
 </html>
