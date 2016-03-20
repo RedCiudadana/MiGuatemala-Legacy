@@ -12992,3 +12992,6 @@ body:not(.no-transition) #wrapper,
 	padding:0!important
 }
 
+img.img-funcionario {
+  width: 20px;
+}
