@@ -2,10 +2,10 @@
     "data": [
         {
             "nombre": "Felipe Alejos Lorenzana",
-            "foto-funcionario": "http://congreso.gob.gt/manager/images/E8750845-62FA-256C-7B96-55ABD2267634.png",
+            "foto-funcionario": null,
             "profesion": null,
             "educacion": null,
-            "fecha-nacimiento": 03-10-1984,
+            "fecha-nacimiento": "03-10-1984",
             "lugar-nacimiento": null,
             "cargo": null,
             "institucion": "Congreso De La Republica De Guatemala",
