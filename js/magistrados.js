@@ -10,7 +10,7 @@
 
         funcionarios.forEach(function(funcionario) {
 
-          // TODO: Crear los HTML elements con la info
+          // Crear los HTML elements con la info
           var fotoFuncionarioUrl = funcionario['foto-funcionario'] ?
             funcionario['foto-funcionario'] :
             'images/magistrados/Congreso/Magistrado.jpg';
@@ -51,13 +51,10 @@
                 .append(
                   $('<a>')
                     .attr('href', 'portfolio-single.html')
-                    // TODO: Revisar que field de la estructura de datos deberíamos
-                    // desplegar aquí, ya que 'cargo' parece traer la versión abreviada
-                    // (por ejemplo 'Titular') en lugar de la descripción extendida
-                    // que sugiere la versión estática (por ejemplo 'Magistrado Titular CC')
-                    .text(funcionario['cargo'] ?
-                      funcionario['cargo'] :
-                      'Valor por defecto para \'cargo\''
+                    .text(
+                      funcionario['cargo']['nombre-completo'] ?
+                        funcionario['cargo']['nombre-completo'] :
+                        'Valor por defecto para \'cargo.nombre-completo\''
                     )
                 )
             )
@@ -66,18 +63,20 @@
                 .append(
                   $('<a>')
                     .attr('href', '#')
-                    .text(funcionario['institucion'] ?
-                      funcionario['institucion'] :
-                      'Valor por defecto para \'institucion\''
+                    .text(
+                      funcionario['institucion']['nombre-completo'] ?
+                        funcionario['institucion']['nombre-completo'] :
+                        'Valor por defecto para \'institucion\''
                     )
                 )
                 .append(', ')
                 .append(
                   $('<a>')
                     .attr('href', '#')
-                    .text(funcionario['cargo'] ?
-                      funcionario['cargo'] :
-                      'Valor por defecto para \'cargo\''
+                    .text(
+                      funcionario['cargo']['nombre-corto'] ?
+                        funcionario['cargo']['nombre-corto'] :
+                        'Valor por defecto para \'cargo\''
                     )
                 )
             );
@@ -86,10 +85,7 @@
             // Appendear los HTML elements al container #portfolio
             $('#portfolio').append(
               $('<article>')
-              // TODO: Cuando ya se tengan la organización de fulanos por institución
-              // hay que agregar aquí una clase de CSS para identificar al fulano con
-              // la institución
-              .addClass('portfolio-item pf-media')
+              .addClass('portfolio-item pf-media ' + funcionario['institucion']['codigo'])
               .append(funcionarioImageWidget)
               .append(funcionarioDescWidget)
             );

@@ -7,8 +7,15 @@
             "educacion": null,
             "fecha-nacimiento": "03-10-1984",
             "lugar-nacimiento": null,
-            "cargo": null,
-            "institucion": "Congreso De La Republica De Guatemala",
+            "cargo": {
+                  "nombre-completo": "Magistrado Titular de la CC",
+                  "nombre-corto": "Titular"
+            },
+            "institucion": {
+                  "codigo": "congreso",
+                  "nombre-completo": "Congreso De La Republica De Guatemala",
+                  "nombre-corto": "Legislativo"
+            },
             "distrito": "Listado Nacional",
             "comision": "Energía y Minas",
             "asistencia": "92%",
@@ -39,8 +46,15 @@
             "educacion": null,
             "fecha-nacimiento": null,
             "lugar-nacimiento": null,
-            "cargo": "Titular",
-            "institucion": "Corte Suprema de Justicia - CSJ",
+            "cargo": {
+                  "nombre-completo": "Magistrado Titular de la CSJ",
+                  "nombre-corto": "Titular"
+            },
+            "institucion": {
+                  "codigo": "csj",
+                  "nombre-completo": "Corte Suprema de Justicia - CSJ",
+                  "nombre-corto": "CSJ"
+            },
             "partido-postulante": null,
             "partido-actual": null,
             "biografia": null,
@@ -69,8 +83,15 @@
             "educacion": null,
             "fecha-nacimiento": null,
             "lugar-nacimiento": null,
-            "cargo": "Titular",
-            "institucion": "Corte Suprema de Justicia - CSJ",
+            "cargo": {
+                  "nombre-completo": "Magistrado Titular de la CSJ",
+                  "nombre-corto": "Titular"
+            },
+            "institucion": {
+                  "codigo": "csj",
+                  "nombre-completo": "Corte Suprema de Justicia - CSJ",
+                  "nombre-corto": "CSJ"
+            },
             "partido-postulante": null,
             "partido-actual": null,
             "biografia": null,
@@ -99,8 +120,15 @@
             "educacion": null,
             "fecha-nacimiento": null,
             "lugar-nacimiento": null,
-            "cargo": "Suplente",
-            "institucion": "Corte Suprema de Justicia - CSJ",
+            "cargo": {
+                  "nombre-completo": "Magistrado Suplente de la CSJ",
+                  "nombre-corto": "Suplente"
+            },
+            "institucion": {
+                  "codigo": "csj",
+                  "nombre-completo": "Corte Suprema de Justicia - CSJ",
+                  "nombre-corto": "CSJ"
+            },
             "partido-postulante": null,
             "partido-actual": null,
             "biografia": null,
