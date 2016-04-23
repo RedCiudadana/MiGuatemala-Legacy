@@ -21,8 +21,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   app.import('bower_components/flexslider/jquery.flexslider.js');
-  // TODO: Make isotope work
-  // app.import('bower_components/isotope/js/isotope.js');
+  app.import('bower_components/isotope/dist/isotope.pkgd.js');
 
   return app.toTree();
 };
