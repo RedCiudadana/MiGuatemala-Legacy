@@ -1,8 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+
   ajax: Ember.inject.service(),
+
   model() {
+
     // TODO: Consider fail mechanism
 
     return this
@@ -60,5 +63,41 @@ export default Ember.Route.extend({
           instituciones: instituciones
         };
       });
+  },
+
+  renderTemplate(controller, model) {
+    this._super(controller, model);
+
+    var $container = Ember.$('#portfolio');
+
+    $container.isotope({ transitionDuration: '0.65s' });
+
+    Ember.$(window).resize(function() {
+      $container.isotope('layout');
+    });
+  },
+
+  actions: {
+    applyFilter() {
+      var $container = Ember.$('#portfolio');
+
+      Ember.$('#portfolio-filter li').removeClass('activeFilter');
+
+      Ember.$(this).parent('li').addClass('activeFilter');
+
+      var selector = Ember.$(this).attr('data-filter');
+
+      $container.isotope({ filter: selector });
+
+      return false;
+    },
+
+    applyShuffle() {
+      var $container = Ember.$('#portfolio');
+
+      $container.isotope('updateSortData').isotope({
+        sortBy: 'random'
+      });
+    }
   }
 });

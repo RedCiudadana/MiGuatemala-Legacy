@@ -58,12 +58,22 @@
 
 <ul id="portfolio-filter" class="portfolio-filter clearfix" data-container="#portfolio">
 
-  <li class="activeFilter"><a href="#" data-filter="*">Mostrar Todos</a></li>
+  <li class="activeFilter">
+    <a
+      href="#"
+      data-filter="*"
+      {{action "applyFilter"}}
+    >Mostrar Todos</a>
+  </li>
 
   {{!-- model.instituciones es un objeto, no un array --}}
   {{#each-in model.instituciones as |codigo institucion|}}
     <li>
-      <a href="#" data-filter=".pf-{{codigo}}">{{institucion.nombreCorto}}</a>
+      <a
+        href="#"
+        data-filter=".pf-{{codigo}}"
+        {{action "applyFilter" }}
+      >{{institucion.nombreCorto}}</a>
     </li>
   {{/each-in}}
 
@@ -71,7 +81,7 @@
 
 <!-- TODO: Evaluar utilidad de este shuffle -->
 <div id="portfolio-shuffle" class="portfolio-shuffle" data-container="#portfolio">
-  <i class="icon-random"></i>
+  <i class="icon-random" {{action "applyShuffle"}}></i>
 </div>
 
 <div class="clear"></div>
