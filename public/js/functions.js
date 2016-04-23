@@ -2211,7 +2211,8 @@ var SEMICOLON = SEMICOLON || {};
 							SEMICOLON.widget.animations();
 							SEMICOLON.initialize.verticalMiddle();
 							slider.parent().removeClass('preloader2');
-							var t = setTimeout( function(){ $('.grid-container').isotope('layout'); }, 1200 );
+							// TODO: Make isotope work
+							// var t = setTimeout( function(){ $('.grid-container').isotope('layout'); }, 1200 );
 							SEMICOLON.initialize.lightbox();
 							$('.flex-prev').html('<i class="icon-angle-left"></i>');
 							$('.flex-next').html('<i class="icon-angle-right"></i>');
@@ -2219,7 +2220,8 @@ var SEMICOLON = SEMICOLON || {};
 						},
 						after: function(){
 							if( $('.grid-container').hasClass('portfolio-full') ) {
-								$('.grid-container.portfolio-full').isotope('layout');
+								// TODO: Make isotope work
+								// $('.grid-container.portfolio-full').isotope('layout');
 								SEMICOLON.portfolio.portfolioDescMargin();
 							}
 						}
