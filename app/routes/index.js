@@ -54,8 +54,9 @@ export default Ember.Route.extend({
           }
 
           e.nombreCorto = e['nombre-corto'];
+          e.selector = 'pf-' + e['codigo'];
 
-          instituciones[e.codigo] = e;
+          instituciones[e['codigo']] = e;
         });
 
         return {
@@ -65,35 +66,40 @@ export default Ember.Route.extend({
       });
   },
 
-  renderTemplate(controller, model) {
+  setupController(controller, model) {
     this._super(controller, model);
 
-    var $container = Ember.$('#portfolio');
+    Ember.run.scheduleOnce('afterRender', this, function() {
+      var $container = Ember.$('#portfolio');
 
-    $container.isotope({ transitionDuration: '0.65s' });
-
-    Ember.$(window).resize(function() {
-      $container.isotope('layout');
+      Ember.$(window).resize(function() {
+        $container.isotope('layout');
+      });
     });
   },
 
   actions: {
-    applyFilter() {
+    applyFilter(selector) {
+
       var $container = Ember.$('#portfolio');
 
       Ember.$('#portfolio-filter li').removeClass('activeFilter');
 
-      Ember.$(this).parent('li').addClass('activeFilter');
+      Ember.$('#' + selector).addClass('activeFilter');
 
-      var selector = Ember.$(this).attr('data-filter');
+      var isotopeSelector = 'pf-todos' === selector ? '*' : '.' + selector;
 
-      $container.isotope({ filter: selector });
+      $container.isotope({transitionDuration: '0.65s'});
+
+      $container.isotope({filter: isotopeSelector});
 
       return false;
     },
 
     applyShuffle() {
       var $container = Ember.$('#portfolio');
+
+      $container.isotope({transitionDuration: '0.65s'});
 
       $container.isotope('updateSortData').isotope({
         sortBy: 'random'

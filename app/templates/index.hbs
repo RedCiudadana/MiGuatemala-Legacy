@@ -58,21 +58,19 @@
 
 <ul id="portfolio-filter" class="portfolio-filter clearfix" data-container="#portfolio">
 
-  <li class="activeFilter">
+  <li class="activeFilter" id="pf-todos">
     <a
       href="#"
-      data-filter="*"
-      {{action "applyFilter"}}
-    >Mostrar Todos</a>
+      {{action "applyFilter" "pf-todos"}}
+    >Mostrar todos</a>
   </li>
 
   {{!-- model.instituciones es un objeto, no un array --}}
   {{#each-in model.instituciones as |codigo institucion|}}
-    <li>
+    <li id="{{institucion.selector}}">
       <a
         href="#"
-        data-filter=".pf-{{codigo}}"
-        {{action "applyFilter" }}
+        {{action "applyFilter" institucion.selector}}
       >{{institucion.nombreCorto}}</a>
     </li>
   {{/each-in}}
