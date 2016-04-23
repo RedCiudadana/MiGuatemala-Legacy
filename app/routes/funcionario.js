@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-
   model(params) {
     let id = Number.parseInt(params.id);
 
@@ -15,5 +14,11 @@ export default Ember.Route.extend({
       funcionario: funcionario,
       institucion: institucion
     };
+  },
+
+  actions: {
+    didTransition() {
+      window.scrollTo(0, 0);
+    }
   }
 });
