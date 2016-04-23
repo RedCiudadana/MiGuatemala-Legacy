@@ -3,18 +3,18 @@
         {
             "id": 1,
             "nombre": "Felipe Alejos Lorenzana",
-            "foto-funcionario": null,
+            "foto-funcionario": "https://raw.githubusercontent.com/RedCiudadana/Congreso-en-Datos/gh-pages/Legislaturas/Octava%20Legislatura/Diputados/Imagenes/1%20-%20Felipe%20Alejos%20Lorenzana.png",
             "profesion": null,
             "educacion": null,
             "fecha-nacimiento": "03-10-1984",
             "lugar-nacimiento": null,
             "cargo": {
-                  "nombre-completo": "Magistrado Titular de la CC",
-                  "nombre-corto": "Titular"
+                  "nombre-completo": "Diputado",
+                  "nombre-corto": "Listado Nacional"
             },
             "institucion": {
                   "codigo": "congreso",
-                  "nombre-completo": "Congreso De La Republica De Guatemala",
+                  "nombre-completo": "Congreso de Guatemala",
                   "nombre-corto": "Legislativo",
                   "foto": null,
                   "fb": null,
@@ -26,7 +26,7 @@
             "partido-postulante": "TODOS",
             "partido-actual": "TODOS",
             "biografia": null,
-            "foto-partido": null,
+            "foto-partido-actual": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Todos_Logo.svg/160px-Todos_Logo.svg.png",
             "foto-institucion": null,
             "email-institucion": null,
             "telefono-institucion": null,
