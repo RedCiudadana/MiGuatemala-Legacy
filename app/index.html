@@ -3,23 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MiGuatemala</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
     {{content-for "head"}}
+
+    <title>Inicio - Comisión Postulación | Corte de Constitucionalidad</title>
+
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/> -->
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/dark.css" type="text/css"/>
+    <!-- <link rel="stylesheet" href="css/font-icons.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="css/animate.css" type="text/css"/> -->
+    <!-- <link rel="stylesheet" href="css/magnific-popup.css" type="text/css"/> -->
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/mi-guatemala.css">
 
-    {{content-for "head-footer"}}
+    <!-- TODO: Still missing -->
+    <!-- <link href="js/select2/css/select2.min.css" rel="stylesheet">
+    <link href="js/select2/css/select2-bootstrap.css" rel="stylesheet"> -->
+
+    <!-- <link rel="stylesheet" href="css/responsive.css" type="text/css" /> -->
+
+    <!-- {{content-for "head-footer"}} -->
+
   </head>
-  <body>
-    {{content-for "body"}}
+  <body class="stretched no-transition">
 
     <script src="assets/vendor.js"></script>
     <script src="assets/mi-guatemala.js"></script>
 
+    {{content-for "body"}}
+
     {{content-for "body-footer"}}
+
+    <!-- Custom template functions -->
+    <!-- <script type="text/javascript" src="js/functions.js"></script> -->
+
   </body>
 </html>
