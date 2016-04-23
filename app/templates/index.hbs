@@ -86,7 +86,7 @@
 
 <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix">
   {{#each model.funcionarios as |funcionario|}}
-    <article class="portfolio-item pf-media {{funcionario.institucionCodigo}}">
+    <article class="portfolio-item pf-media {{funcionario.institucionSelector}}">
 
       <div class="portfolio-image">
         <a href="portfolio-single.html">
@@ -103,7 +103,11 @@
       </div>
 
       <div class="portfolio-desc">
-        <h3><a href="portfolio-single.html">{{funcionario.nombre}}</a></h3>
+        <h3>
+          {{#link-to "funcionario" funcionario.id}}
+            {{funcionario.nombre}}
+          {{/link-to}}
+        </h3>
         <span>
           <a href="#">{{funcionario.institucionNombreCompleto}}</a>,
           <a href="#">{{funcionario.cargoNombreCorto}}</a>

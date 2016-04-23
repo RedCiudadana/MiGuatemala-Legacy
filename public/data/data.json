@@ -1,6 +1,7 @@
 {
     "data": [
         {
+            "id": 1,
             "nombre": "Felipe Alejos Lorenzana",
             "foto-funcionario": null,
             "profesion": null,
@@ -14,7 +15,10 @@
             "institucion": {
                   "codigo": "congreso",
                   "nombre-completo": "Congreso De La Republica De Guatemala",
-                  "nombre-corto": "Legislativo"
+                  "nombre-corto": "Legislativo",
+                  "foto": null,
+                  "fb": null,
+                  "tw": null
             },
             "distrito": "Listado Nacional",
             "comision": "Energía y Minas",
@@ -40,6 +44,7 @@
             "tag2": null
         },
         {
+            "id": 2,
             "nombre": "Neftaly Aldana Herrera",
             "foto-funcionario": "http://www.miguatemala.org/images/magistrados/CSJ/NeftalyAldanaHerrera.jpg",
             "profesion": null,
@@ -53,7 +58,10 @@
             "institucion": {
                   "codigo": "csj",
                   "nombre-completo": "Corte Suprema de Justicia - CSJ",
-                  "nombre-corto": "CSJ"
+                  "nombre-corto": "CSJ",
+                  "foto": null,
+                  "fb": null,
+                  "tw": null
             },
             "partido-postulante": null,
             "partido-actual": null,
@@ -76,6 +84,7 @@
             "tag2": null
         },
         {
+            "id": 3,
             "nombre": "Neftaly Aldana Herrera",
             "foto-funcionario": "http://www.miguatemala.org/images/magistrados/CSJ/NeftalyAldanaHerrera.jpg",
             "profesion": null,
@@ -89,7 +98,10 @@
             "institucion": {
                   "codigo": "csj",
                   "nombre-completo": "Corte Suprema de Justicia - CSJ",
-                  "nombre-corto": "CSJ"
+                  "nombre-corto": "CSJ",
+                  "foto": null,
+                  "fb": null,
+                  "tw": null
             },
             "partido-postulante": null,
             "partido-actual": null,
@@ -112,6 +124,7 @@
             "tag2": null
         },
         {
+            "id": 4,
             "nombre": "María Consuelo Porras Argueta de Porras",
             "foto-funcionario": "http://www.miguatemala.org/images/magistrados/CSJ/MariaPorrasdePorras.jpg",
             "profesion": null,
@@ -125,7 +138,10 @@
             "institucion": {
                   "codigo": "csj",
                   "nombre-completo": "Corte Suprema de Justicia - CSJ",
-                  "nombre-corto": "CSJ"
+                  "nombre-corto": "CSJ",
+                  "foto": null,
+                  "fb": null,
+                  "tw": null
             },
             "partido-postulante": null,
             "partido-actual": null,

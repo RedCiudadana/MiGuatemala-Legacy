@@ -1,1 +1,57 @@
+<div class="single-product">
+    <div class="product-price"><ins>{{model.funcionario.nombre}}</ins></div>
+    <br><br>
+  <div class="product">
+    <div class="col_one_fifth">
+      <div class="product-image">
+          <img src="{{model.funcionario.fotoFuncionario}}" alt="{{model.funcionario.nombre}}">
+      </div>
+    </div>
+    <div class="col_two_fifth product-desc">
+      <div class="panel panel-default product-meta">
+        <div class="panel-body">
+          <span itemprop="productID" class="sku_wrapper">Nombre: <span class="sku">{{model.funcionario.nombre}}</span></span>
+          <span class="posted_in">Cargo: {{model.funcionario.cargoNombreCompleto}}</span>
+          <span class="posted_in">Institución: {{model.funcionario.institucionNombreCompleto}}</span>
+          <span class="posted_in">Profesión: {{model.funcionario.profesion}}</span>
+          <span class="posted_in">Educación: {{model.funcionario.educacion}}</span>
+          <span class="posted_in">Fecha nacimiento: {{model.funcionario.fechaNacimiento}}</span>
+          <span class="posted_in">Lugar de nacimiento: {{model.funcarion.lugarNacimiento}}</span>
+          {{!-- <span class="tagged_as">Tags: Mixco</a>, 
+            <a href="#" rel="tag">Municipalidad</a>, 
+            <a href="#" rel="tag">Muni Mixco</a>, 
+            <a href="#" rel="tag">Alcalde</a>.
+          </span> --}}
+        </div>
+      </div>
+    </div>
+    <div class="col_two_fifth col_last">
+      {{#if model.institucion.logo}}
+        <a href="#" title="{{model.institucion.nombreCompleto}}" class="hidden-xs">
+          <img class="image_fade" src="{{model.institucion.logo}}" alt="{{model.institucion.nombreCompleto}}">
+        </a>
+      {{else}}
+        {{model.institucion.nombreCompleto}}
+      {{/if}}
+      <div class="divider divider-center"><i class="icon-circle-blank"></i></div>
+      {{#if model.institucion.fb }}
+        <div class="feature-box fbox-plain fbox-dark fbox-small">
+          <div class="fbox-icon">
+            <i class="icon-thumbs-up2"></i>
+          </div>
+          <h3>Facebook</h3>
+        </div>
+      {{/if}}
+      {{#if model.institucion.tw}}
+      <div class="feature-box fbox-plain fbox-dark fbox-small">
+        <div class="fbox-icon">
+          <i class="icon-credit-cards"></i>
+        </div>
+        <h3>Twitter</h3>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</div>
 
+<div class="clear"></div><div class="line"></div>

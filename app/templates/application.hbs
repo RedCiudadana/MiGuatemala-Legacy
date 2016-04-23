@@ -4,13 +4,22 @@
       <div class="container clearfix">
         <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
         <div id="logo">
-          <a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
-          <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+          {{!-- TODO: Pendiente definir data-dark-logo="images/logo-dark.png" --}}
+          {{#link-to "index" classNames="standard-logo"}}
+            <img src="images/logo.png" alt="Canvas Logo">
+          {{/link-to}}
+
+          {{!-- TODO: Pendiente definir data-dark-logo="images/logo-dark@2x.png" --}}
+          {{#link-to "index" classNames="retina-logo"}}
+            <img src="images/logo@2x.png" alt="Canvas Logo">
+          {{/link-to}}
         </div>
         <nav id="primary-menu" class="style-3">
           <ul>
             <li>
-              <a href="Index.html"><div>Inicio</div></a>
+              {{#link-to "index"}}
+                <div>Inicio</div>
+              {{/link-to}}
             </li>
               
             <li><a href="#"><div>Instituciones</div></a>
