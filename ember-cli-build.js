@@ -22,6 +22,8 @@ module.exports = function(defaults) {
 
   app.import('bower_components/flexslider/jquery.flexslider.js');
   app.import('bower_components/isotope/dist/isotope.pkgd.js');
+  app.import('bower_components/tabletop/src/tabletop.js');
+  app.import('vendor/shims.js');
 
   return app.toTree();
 };

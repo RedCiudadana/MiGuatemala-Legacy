@@ -66,14 +66,14 @@
   </li>
 
   {{!-- model.instituciones es un objeto, no un array --}}
-  {{#each-in model.instituciones as |codigo institucion|}}
+{{!--   {{#each-in model.instituciones as |codigo institucion|}}
     <li id="{{institucion.selector}}">
       <a
         href="#"
         {{action "applyFilter" institucion.selector}}
       >{{institucion.nombreCorto}}</a>
     </li>
-  {{/each-in}}
+  {{/each-in}} --}}
 
 </ul>
 
@@ -85,7 +85,7 @@
 <div class="clear"></div>
 
 <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix">
-  {{#each model.funcionarios as |funcionario|}}
+  {{#each model as |funcionario|}}
     <article class="portfolio-item pf-media {{funcionario.institucionSelector}}">
 
       <div class="portfolio-image">

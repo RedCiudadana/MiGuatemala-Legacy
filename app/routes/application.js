@@ -7,67 +7,69 @@ export default Ember.Route.extend({
 
     // TODO: Consider fail mechanism
 
-    return this
-      .get('ajax')
-      .request('data/data.json')
-      .then((response) => {
+    // return this
+    //   .get('ajax')
+    //   .request('data/data.json')
+    //   .then((response) => {
 
-        const funcionarios = Ember.A(response.data).map(
-          function(funcionario) {
+    //     const funcionarios = Ember.A(response.data).map(
+    //       function(funcionario) {
 
-            funcionario.fechaNacimiento = funcionario['fecha-nacimiento'];
-            funcionario.lugarNacimiento = funcionario['lugarNacimiento'];
+    //         funcionario.fechaNacimiento = funcionario['fecha-nacimiento'];
+    //         funcionario.lugarNacimiento = funcionario['lugarNacimiento'];
 
-            funcionario.institucionCodigo =
-              funcionario['institucion'] && funcionario['institucion']['codigo'] ?
-                funcionario['institucion']['codigo'] : '';
+    //         funcionario.institucionCodigo =
+    //           funcionario['institucion'] && funcionario['institucion']['codigo'] ?
+    //             funcionario['institucion']['codigo'] : '';
 
-            funcionario.institucionSelector =
-              funcionario['institucion'] && funcionario['institucion']['codigo'] ?
-                ('pf-' + funcionario['institucion']['codigo']) :
-                '';
+    //         funcionario.institucionSelector =
+    //           funcionario['institucion'] && funcionario['institucion']['codigo'] ?
+    //             ('pf-' + funcionario['institucion']['codigo']) :
+    //             '';
 
-            funcionario.fotoFuncionario = funcionario['foto-funcionario'] ?
-              funcionario['foto-funcionario'] :
-              'images/magistrados/Congreso/Magistrado.jpg';
+    //         funcionario.fotoFuncionario = funcionario['foto-funcionario'] ?
+    //           funcionario['foto-funcionario'] :
+    //           'images/magistrados/Congreso/Magistrado.jpg';
 
-            funcionario.cargoNombreCompleto =
-              funcionario['cargo'] && funcionario['cargo']['nombre-completo'] ?
-                funcionario['cargo']['nombre-completo'] :
-                'Valor por defecto para \'cargo.nombre-completo\'';
+    //         funcionario.cargoNombreCompleto =
+    //           funcionario['cargo'] && funcionario['cargo']['nombre-completo'] ?
+    //             funcionario['cargo']['nombre-completo'] :
+    //             'Valor por defecto para \'cargo.nombre-completo\'';
 
-            funcionario.cargoNombreCorto =
-              funcionario['cargo'] && funcionario['cargo']['nombre-corto'] ?
-                funcionario['cargo']['nombre-corto'] :
-                'Valor por defecto para \'cargo\'';
+    //         funcionario.cargoNombreCorto =
+    //           funcionario['cargo'] && funcionario['cargo']['nombre-corto'] ?
+    //             funcionario['cargo']['nombre-corto'] :
+    //             'Valor por defecto para \'cargo\'';
 
-            funcionario.institucionNombreCompleto =
-              funcionario['institucion'] && funcionario['institucion']['nombre-completo'] ?
-                funcionario['institucion']['nombre-completo'] :
-                'Valor por defecto para \'institucion\'';
+    //         funcionario.institucionNombreCompleto =
+    //           funcionario['institucion'] && funcionario['institucion']['nombre-completo'] ?
+    //             funcionario['institucion']['nombre-completo'] :
+    //             'Valor por defecto para \'institucion\'';
 
-            return funcionario;
-          }
-        );
+    //         return funcionario;
+    //       }
+    //     );
 
-        let instituciones = {};
+    //     let instituciones = {};
 
-        funcionarios.mapBy('institucion').forEach((e) => {
-          if (null === e) {
-            return;
-          }
+    //     funcionarios.mapBy('institucion').forEach((e) => {
+    //       if (null === e) {
+    //         return;
+    //       }
 
-          e.nombreCorto = e['nombre-corto'];
-          e.nombreCompleto = e['nombre-completo'];
-          e.selector = 'pf-' + e['codigo'];
+    //       e.nombreCorto = e['nombre-corto'];
+    //       e.nombreCompleto = e['nombre-completo'];
+    //       e.selector = 'pf-' + e['codigo'];
 
-          instituciones[e['codigo']] = e;
-        });
+    //       instituciones[e['codigo']] = e;
+    //     });
 
-        return {
-          funcionarios: funcionarios,
-          instituciones: instituciones
-        };
-      });
+    //     return {
+    //       funcionarios: funcionarios,
+    //       instituciones: instituciones
+    //     };
+    //   });
+
+    return this.store.findAll('funcionario');
   }
 });
