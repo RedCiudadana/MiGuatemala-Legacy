@@ -9,6 +9,9 @@ export default Model.extend({
   profesion: attr(),
   educacion: attr(),
   fechaNacimiento: attr(),
+  lugarNacimiento: attr(),
+  cargoNombreCompleto: attr(),
+  cargoNombreCorto: attr(),
 
   institucion: belongsTo('institucion'),
 
@@ -20,8 +23,11 @@ export default Model.extend({
     return 'images/magistrados/Congreso/Magistrado.jpg';
   }),
 
-  institucionSelector: 'dude',
-  cargoNombreCompleto: 'dude',
-  institucionNombreCompleto: 'dude',
-  cargoNombreCorto: 'dude'
+  institucionSelector: Ember.computed('institucion', function() {
+    if (!this.get('institucion')) {
+      return;
+    }
+
+    return this.get('institucion').get('selector');
+  })
 });

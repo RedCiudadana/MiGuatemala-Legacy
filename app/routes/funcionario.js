@@ -2,13 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
+
     let id = Number.parseInt(params.id);
 
-    let appData = this.modelFor('application');
+    let funcionario = this.store.peekRecord('funcionario', id);
 
-    let funcionario = appData.funcionarios.findBy('id', id);
-
-    let institucion = appData.instituciones[funcionario.institucionCodigo];
+    let institucion = funcionario.get('institucion');
 
     return {
       funcionario: funcionario,
