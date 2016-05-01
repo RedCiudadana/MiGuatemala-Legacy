@@ -70,6 +70,9 @@ export default Ember.Route.extend({
     //     };
     //   });
 
-    return this.store.findAll('funcionario');
+    return Ember.RSVP.hash({
+      funcionarios: this.store.findAll('funcionario'),
+      instituciones: this.store.findAll('institucion')
+    });
   }
 });

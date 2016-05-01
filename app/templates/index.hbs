@@ -65,15 +65,16 @@
     >Mostrar todos</a>
   </li>
 
-  {{!-- model.instituciones es un objeto, no un array --}}
-{{!--   {{#each-in model.instituciones as |codigo institucion|}}
+  {{#each model.instituciones as |institucion|}}
     <li id="{{institucion.selector}}">
       <a
         href="#"
         {{action "applyFilter" institucion.selector}}
-      >{{institucion.nombreCorto}}</a>
+      >
+        {{institucion.nombreCorto}}
+      </a>
     </li>
-  {{/each-in}} --}}
+  {{/each}}
 
 </ul>
 
@@ -85,12 +86,13 @@
 <div class="clear"></div>
 
 <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix">
-  {{#each model as |funcionario|}}
+  {{#each model.funcionarios as |funcionario|}}
     <article class="portfolio-item pf-media {{funcionario.institucionSelector}}">
 
       <div class="portfolio-image">
         <a href="portfolio-single.html">
-          <img alt="{{funcionario.cargoNombreCompleto}}" src="{{funcionario.fotoFuncionario}}" />
+          {{!-- <img alt="{{funcionario.cargoNombreCompleto}}" src="{{funcionario.fotoFuncionario}}" /> --}}
+          <img alt="{{funcionario.cargoNombreCompleto}}" />
           <div class="portfolio-overlay">
             <a class="left-icon" href="{{funcionario.fotoFuncionario}}" data-lightbox="image">
               <li class="icon-line-plus"></li>

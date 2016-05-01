@@ -1,6 +1,7 @@
 import Ember from 'ember';
 import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
+import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
   nombre: attr(),
@@ -8,6 +9,8 @@ export default Model.extend({
   profesion: attr(),
   educacion: attr(),
   fechaNacimiento: attr(),
+
+  institucion: belongsTo('institucion'),
 
   fotoFuncionario: Ember.computed('fotoUrl', function() {
     if (this.get('fotoUrl')) {
@@ -20,5 +23,5 @@ export default Model.extend({
   institucionSelector: 'dude',
   cargoNombreCompleto: 'dude',
   institucionNombreCompleto: 'dude',
-  cargoNombreCorto: 'dude',
+  cargoNombreCorto: 'dude'
 });
