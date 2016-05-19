@@ -3,7 +3,7 @@ git branch -D gh-pages
 git push origin --delete gh-pages
 git checkout -b gh-pages
 ember build --environment production
-git rm app \
+git rm -rf app \
     config \
     tests \
     ember-cli-build.js \
