@@ -14,6 +14,7 @@ export default Model.extend({
   cargoNombreCorto: attr(),
 
   institucion: belongsTo('institucion'),
+  partidoPostulante: attr(),
 
   fotoFuncionario: Ember.computed('fotoUrl', function() {
     if (this.get('fotoUrl')) {
