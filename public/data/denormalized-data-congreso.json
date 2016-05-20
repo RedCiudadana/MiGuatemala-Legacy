@@ -23,6 +23,11 @@
             "cargoNombreCorto": "Listado Nacional",
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
+            "distrito": {
+                "id": "1",
+                "nombre": "Alta Verapaz",
+                "noDeDiputados": "9"
+            },
             "partidoPostulante": {
                 "id": "13",
                 "codigo": "todos",
@@ -37,11 +42,11 @@
                 "Yt": "",
                 "email": "",
                 "telefono": "",
-                "Secretario General": "Felipe Alejos Lorenzana",
-                "Fundación ": "2012",
-                "Ideología Política": "Socialdemocracia",
-                "Sede": "Avenida Reforma 11-50 zona 9",
-                "No. de Afiliados": "24,903",
+                "secretarioGeneral": "Felipe Alejos Lorenzana",
+                "fundacion": "2012",
+                "ideologiaPolitica": "Socialdemocracia",
+                "sede": "Avenida Reforma 11-50 zona 9",
+                "noDeAfiliados": "24,903",
                 "telefono2": "23345063"
             },
             "partidoActual": {
@@ -58,11 +63,11 @@
                 "Yt": "",
                 "email": "",
                 "telefono": "",
-                "Secretario General": "Felipe Alejos Lorenzana",
-                "Fundación ": "2012",
-                "Ideología Política": "Socialdemocracia",
-                "Sede": "Avenida Reforma 11-50 zona 9",
-                "No. de Afiliados": "24,903",
+                "secretarioGeneral": "Felipe Alejos Lorenzana",
+                "fundacion": "2012",
+                "ideologiaPolitica": "Socialdemocracia",
+                "sede": "Avenida Reforma 11-50 zona 9",
+                "noDeAfiliados": "24,903",
                 "telefono2": "23345063"
             },
             "biografia": "Amigas y amigos, soy por primera vez diputado al Congreso de la República, pertenezco al Bloque TODOS, partido del cual soy el secretario general, electo por unanimidad el 26 de agosto de 2012.",
@@ -130,6 +135,11 @@
             "cargoNombreCorto": "Distrito Guatemala",
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
+            "distrito": {
+                "id": "2",
+                "nombre": "Baja Verapaz",
+                "noDeDiputados": "2"
+            },
             "partidoPostulante": {
                 "id": "12",
                 "codigo": "pp",
@@ -144,11 +154,11 @@
                 "Yt": "",
                 "email": "",
                 "telefono": "",
-                "Secretario General": "Carlos Valentín Gramajo Maldonado",
-                "Fundación ": "2001",
-                "Ideología Política": "Liberalismo demócrata",
-                "Sede": "11 calle 11-54 zona 1",
-                "No. de Afiliados": "50,763",
+                "secretarioGeneral": "Carlos Valentín Gramajo Maldonado",
+                "fundacion": "2001",
+                "ideologiaPolitica": "Liberalismo demócrata",
+                "sede": "11 calle 11-54 zona 1",
+                "noDeAfiliados": "50,763",
                 "telefono2": "22306227"
             },
             "partidoActual": {
@@ -165,11 +175,11 @@
                 "Yt": "",
                 "email": "",
                 "telefono": "",
-                "Secretario General": "Carlos Valentín Gramajo Maldonado",
-                "Fundación ": "2001",
-                "Ideología Política": "Liberalismo demócrata",
-                "Sede": "11 calle 11-54 zona 1",
-                "No. de Afiliados": "50,763",
+                "secretarioGeneral": "Carlos Valentín Gramajo Maldonado",
+                "fundacion": "2001",
+                "ideologiaPolitica": "Liberalismo demócrata",
+                "sede": "11 calle 11-54 zona 1",
+                "noDeAfiliados": "50,763",
                 "telefono2": "22306227"
             },
             "biografia": "",
@@ -237,6 +247,11 @@
             "cargoNombreCorto": "",
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
+            "distrito": {
+                "id": "3",
+                "nombre": "Chimaltenango",
+                "noDeDiputados": "5"
+            },
             "partidoPostulante": {
                 "id": "5",
                 "codigo": "fcn",
@@ -251,11 +266,11 @@
                 "Yt": "",
                 "email": "",
                 "telefono": "",
-                "Secretario General": "Jimmy Morales",
-                "Fundación ": "2008",
-                "Ideología Política": "Nacionalista",
-                "Sede": "Ave Centroamérica 13-42 zona 1",
-                "No. de Afiliados": "22,316",
+                "secretarioGeneral": "Jimmy Morales",
+                "fundacion": "2008",
+                "ideologiaPolitica": "Nacionalista",
+                "sede": "Ave Centroamérica 13-42 zona 1",
+                "noDeAfiliados": "22,316",
                 "telefono2": "24252758"
             },
             "partidoActual": {
@@ -272,11 +287,11 @@
                 "Yt": "",
                 "email": "",
                 "telefono": "",
-                "Secretario General": "Jimmy Morales",
-                "Fundación ": "2008",
-                "Ideología Política": "Nacionalista",
-                "Sede": "Ave Centroamérica 13-42 zona 1",
-                "No. de Afiliados": "22,316",
+                "secretarioGeneral": "Jimmy Morales",
+                "fundacion": "2008",
+                "ideologiaPolitica": "Nacionalista",
+                "sede": "Ave Centroamérica 13-42 zona 1",
+                "noDeAfiliados": "22,316",
                 "telefono2": "24252758"
             },
             "biografia": "",
@@ -344,6 +359,11 @@
             "cargoNombreCorto": "",
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
+            "distrito": {
+                "id": "1",
+                "nombre": "Alta Verapaz",
+                "noDeDiputados": "9"
+            },
             "biografia": "",
             "asistencia": "60",
             "comision": {
@@ -409,6 +429,11 @@
             "cargoNombreCorto": "",
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
+            "distrito": {
+                "id": "2",
+                "nombre": "Baja Verapaz",
+                "noDeDiputados": "2"
+            },
             "biografia": "",
             "asistencia": "50",
             "comision": {
@@ -474,6 +499,11 @@
             "cargoNombreCorto": "",
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
+            "distrito": {
+                "id": "3",
+                "nombre": "Chimaltenango",
+                "noDeDiputados": "5"
+            },
             "biografia": "",
             "asistencia": "40",
             "comision": {
@@ -539,6 +569,11 @@
             "cargoNombreCorto": "",
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
+            "distrito": {
+                "id": "4",
+                "nombre": "Chiquimula \r",
+                "noDeDiputados": "3"
+            },
             "biografia": "",
             "asistencia": "30",
             "comision": {
@@ -604,6 +639,11 @@
             "cargoNombreCorto": "",
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
+            "distrito": {
+                "id": "5",
+                "nombre": "Distrito Central",
+                "noDeDiputados": "11"
+            },
             "biografia": "",
             "asistencia": "20",
             "comision": {
@@ -669,6 +709,11 @@
             "cargoNombreCorto": "",
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
+            "distrito": {
+                "id": "6",
+                "nombre": "Distrito Guatemala",
+                "noDeDiputados": "19"
+            },
             "biografia": "",
             "asistencia": "10",
             "comision": {
