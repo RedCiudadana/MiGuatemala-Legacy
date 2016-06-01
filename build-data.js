@@ -67,15 +67,15 @@ Tabletop.init({
 
       delete funcionario.comision3;
 
-      if (comision) {
+      if (comision.length > 0) {
         comisionesFuncionario.push(comision[0]);
       }
 
-      if (comision2) {
+      if (comision2.length > 0) {
         comisionesFuncionario.push(comision2[0]);
       }
 
-      if (comision3) {
+      if (comision3.length > 0) {
         comisionesFuncionario.push(comision3[0]);
       }
 
