@@ -24,9 +24,9 @@
             "cargoNombreCompleto": "Diputado del Congreso de Guatemala",
             "lugarNacimiento": "",
             "distrito": {
-                "id": "1",
-                "nombre": "Alta Verapaz",
-                "noDeDiputados": "9"
+                "id": "24",
+                "nombre": "Listado Nacional",
+                "noDeDiputados": "31"
             },
             "partidoPostulante": {
                 "id": "13",
@@ -72,36 +72,9 @@
             },
             "biografia": "Amigas y amigos, soy por primera vez diputado al Congreso de la República, pertenezco al Bloque TODOS, partido del cual soy el secretario general, electo por unanimidad el 26 de agosto de 2012.",
             "asistencia": "100",
-            "comision": {
-                "id": "1",
-                "codigo": "",
-                "nombreCompleto": "Agricultura, Ganadería y Pesca",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision2": {
-                "id": "1",
-                "codigo": "",
-                "nombreCompleto": "Agricultura, Ganadería y Pesca",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision3": {
-                "id": "1",
-                "codigo": "",
-                "nombreCompleto": "Agricultura, Ganadería y Pesca",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
+            "comision": "1",
+            "comision2": "2",
+            "comision3": "3",
             "emailFuncionario": "falejos@congreso.gob.gt",
             "telefono": "22325395",
             "direccion": "Segunda Vicepresidencia Edificio Central, y 9a. Ave. 8-42 zona 1 Oficina 1",
@@ -110,7 +83,39 @@
             "tw": "",
             "sexo": "Masculino",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "1",
+                    "codigo": "",
+                    "nombreCompleto": "Agricultura, Ganadería y Pesca",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "2",
+                    "codigo": "",
+                    "nombreCompleto": "Ambiente, Ecología y Recursos Naturales",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "3",
+                    "codigo": "",
+                    "nombreCompleto": "Asuntos Municipales",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "2",
@@ -184,36 +189,9 @@
             },
             "biografia": "",
             "asistencia": "80",
-            "comision": {
-                "id": "2",
-                "codigo": "",
-                "nombreCompleto": "Ambiente, Ecología y Recursos Naturales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision2": {
-                "id": "2",
-                "codigo": "",
-                "nombreCompleto": "Ambiente, Ecología y Recursos Naturales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision3": {
-                "id": "2",
-                "codigo": "",
-                "nombreCompleto": "Ambiente, Ecología y Recursos Naturales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
+            "comision": "4",
+            "comision2": "5",
+            "comision3": "6",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -222,7 +200,39 @@
             "tw": "",
             "sexo": "Femenino",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "4",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión de Apoyo Técnico",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "5",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión de Probidad",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "6",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión de Pueblos Indígenas",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "3",
@@ -296,36 +306,9 @@
             },
             "biografia": "",
             "asistencia": "70",
-            "comision": {
-                "id": "3",
-                "codigo": "",
-                "nombreCompleto": "Asuntos Municipales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision2": {
-                "id": "3",
-                "codigo": "",
-                "nombreCompleto": "Asuntos Municipales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision3": {
-                "id": "3",
-                "codigo": "",
-                "nombreCompleto": "Asuntos Municipales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
+            "comision": "7",
+            "comision2": "8",
+            "comision3": "9",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -334,7 +317,39 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "7",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión de Salud y Asistencia Social",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "8",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión del Migrante",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "9",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Asuntos Sobre Discapacidad",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "4",
@@ -366,36 +381,9 @@
             },
             "biografia": "",
             "asistencia": "60",
-            "comision": {
-                "id": "4",
-                "codigo": "",
-                "nombreCompleto": "Comisión de Apoyo Técnico",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision2": {
-                "id": "4",
-                "codigo": "",
-                "nombreCompleto": "Comisión de Apoyo Técnico",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision3": {
-                "id": "4",
-                "codigo": "",
-                "nombreCompleto": "Comisión de Apoyo Técnico",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
+            "comision": "10",
+            "comision2": "11",
+            "comision3": "12",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -404,7 +392,39 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "10",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Cooperación Internacional y Organismos Internacionales",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "11",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Estudio y Análisis del Cambio Climático.",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "12",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Frontera Norte.",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "5",
@@ -436,36 +456,9 @@
             },
             "biografia": "",
             "asistencia": "50",
-            "comision": {
-                "id": "5",
-                "codigo": "",
-                "nombreCompleto": "Comisión de Probidad",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision2": {
-                "id": "5",
-                "codigo": "",
-                "nombreCompleto": "Comisión de Probidad",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision3": {
-                "id": "5",
-                "codigo": "",
-                "nombreCompleto": "Comisión de Probidad",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
+            "comision": "13",
+            "comision2": "14",
+            "comision3": "15",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -474,7 +467,39 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "13",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Frontera Sur.",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "14",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Seguimiento y Apoyo a las Comisiones de Postulación",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "15",
+                    "codigo": "",
+                    "nombreCompleto": "Comunicaciones, Transporte y Obras Públicas",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "6",
@@ -506,36 +531,9 @@
             },
             "biografia": "",
             "asistencia": "40",
-            "comision": {
-                "id": "6",
-                "codigo": "",
-                "nombreCompleto": "Comisión de Pueblos Indígenas",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision2": {
-                "id": "6",
-                "codigo": "",
-                "nombreCompleto": "Comisión de Pueblos Indígenas",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision3": {
-                "id": "6",
-                "codigo": "",
-                "nombreCompleto": "Comisión de Pueblos Indígenas",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
+            "comision": "1",
+            "comision2": "2",
+            "comision3": "3",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -544,7 +542,39 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "1",
+                    "codigo": "",
+                    "nombreCompleto": "Agricultura, Ganadería y Pesca",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "2",
+                    "codigo": "",
+                    "nombreCompleto": "Ambiente, Ecología y Recursos Naturales",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "3",
+                    "codigo": "",
+                    "nombreCompleto": "Asuntos Municipales",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "7",
@@ -576,36 +606,9 @@
             },
             "biografia": "",
             "asistencia": "30",
-            "comision": {
-                "id": "1",
-                "codigo": "",
-                "nombreCompleto": "Agricultura, Ganadería y Pesca",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision2": {
-                "id": "1",
-                "codigo": "",
-                "nombreCompleto": "Agricultura, Ganadería y Pesca",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision3": {
-                "id": "1",
-                "codigo": "",
-                "nombreCompleto": "Agricultura, Ganadería y Pesca",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
+            "comision": "4",
+            "comision2": "5",
+            "comision3": "6",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -614,7 +617,39 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "4",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión de Apoyo Técnico",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "5",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión de Probidad",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "6",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión de Pueblos Indígenas",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "8",
@@ -646,36 +681,9 @@
             },
             "biografia": "",
             "asistencia": "20",
-            "comision": {
-                "id": "2",
-                "codigo": "",
-                "nombreCompleto": "Ambiente, Ecología y Recursos Naturales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision2": {
-                "id": "2",
-                "codigo": "",
-                "nombreCompleto": "Ambiente, Ecología y Recursos Naturales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision3": {
-                "id": "2",
-                "codigo": "",
-                "nombreCompleto": "Ambiente, Ecología y Recursos Naturales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
+            "comision": "7",
+            "comision2": "8",
+            "comision3": "9",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -684,7 +692,39 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "7",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión de Salud y Asistencia Social",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "8",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión del Migrante",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "9",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Asuntos Sobre Discapacidad",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "9",
@@ -716,36 +756,9 @@
             },
             "biografia": "",
             "asistencia": "10",
-            "comision": {
-                "id": "3",
-                "codigo": "",
-                "nombreCompleto": "Asuntos Municipales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision2": {
-                "id": "3",
-                "codigo": "",
-                "nombreCompleto": "Asuntos Municipales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
-            "comision3": {
-                "id": "3",
-                "codigo": "",
-                "nombreCompleto": "Asuntos Municipales",
-                "nombreCorto": "",
-                "presidenteBancada": "",
-                "email": "",
-                "telefono": "",
-                "direccion": ""
-            },
+            "comision": "10",
+            "comision2": "11",
+            "comision3": "12",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -754,7 +767,39 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "10",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Cooperación Internacional y Organismos Internacionales",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "11",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Estudio y Análisis del Cambio Climático.",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "12",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Frontera Norte.",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "10",
@@ -781,6 +826,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "13",
+            "comision2": "14",
+            "comision3": "15",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -789,7 +837,39 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                {
+                    "id": "13",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Frontera Sur.",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "14",
+                    "codigo": "",
+                    "nombreCompleto": "Comisión Extraordinaria de Seguimiento y Apoyo a las Comisiones de Postulación",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                },
+                {
+                    "id": "15",
+                    "codigo": "",
+                    "nombreCompleto": "Comunicaciones, Transporte y Obras Públicas",
+                    "nombreCorto": "",
+                    "presidenteBancada": "",
+                    "email": "",
+                    "telefono": "",
+                    "direccion": ""
+                }
+            ]
         },
         {
             "id": "11",
@@ -816,6 +896,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -824,7 +907,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "12",
@@ -851,6 +939,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -859,7 +950,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "13",
@@ -886,6 +982,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -894,7 +993,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "14",
@@ -921,6 +1025,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -929,7 +1036,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "15",
@@ -956,6 +1068,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -964,7 +1079,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "16",
@@ -991,6 +1111,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -999,7 +1122,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "17",
@@ -1026,6 +1154,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1034,7 +1165,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "18",
@@ -1061,6 +1197,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1069,7 +1208,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "19",
@@ -1096,6 +1240,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1104,7 +1251,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "20",
@@ -1131,6 +1283,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1139,7 +1294,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "21",
@@ -1166,6 +1326,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1174,7 +1337,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "22",
@@ -1201,6 +1369,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1209,7 +1380,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "23",
@@ -1236,6 +1412,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1244,7 +1423,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "24",
@@ -1271,6 +1455,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1279,7 +1466,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "25",
@@ -1306,6 +1498,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1314,7 +1509,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "26",
@@ -1341,6 +1541,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1349,7 +1552,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "27",
@@ -1376,6 +1584,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1384,7 +1595,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "28",
@@ -1411,6 +1627,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1419,7 +1638,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "29",
@@ -1446,6 +1670,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1454,7 +1681,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "30",
@@ -1481,6 +1713,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1489,7 +1724,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "31",
@@ -1516,6 +1756,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1524,7 +1767,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "32",
@@ -1551,6 +1799,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1559,7 +1810,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "33",
@@ -1586,6 +1842,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1594,7 +1853,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "34",
@@ -1621,6 +1885,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1629,7 +1896,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "35",
@@ -1656,6 +1928,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1664,7 +1939,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "36",
@@ -1691,6 +1971,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1699,7 +1982,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "37",
@@ -1726,6 +2014,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1734,7 +2025,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "38",
@@ -1761,6 +2057,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1769,7 +2068,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "39",
@@ -1796,6 +2100,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1804,7 +2111,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "40",
@@ -1831,6 +2143,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1839,7 +2154,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "41",
@@ -1866,6 +2186,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1874,7 +2197,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "42",
@@ -1901,6 +2229,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1909,7 +2240,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "43",
@@ -1936,6 +2272,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1944,7 +2283,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "44",
@@ -1971,6 +2315,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -1979,7 +2326,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "45",
@@ -2006,6 +2358,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2014,7 +2369,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "46",
@@ -2041,6 +2401,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2049,7 +2412,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "47",
@@ -2076,6 +2444,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2084,7 +2455,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "48",
@@ -2111,6 +2487,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2119,7 +2498,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "49",
@@ -2146,6 +2530,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2154,7 +2541,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "50",
@@ -2181,6 +2573,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2189,7 +2584,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "51",
@@ -2216,6 +2616,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2224,7 +2627,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "52",
@@ -2251,6 +2659,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2259,7 +2670,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "53",
@@ -2286,6 +2702,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2294,7 +2713,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "54",
@@ -2321,6 +2745,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2329,7 +2756,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "55",
@@ -2356,6 +2788,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2364,7 +2799,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "56",
@@ -2391,6 +2831,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2399,7 +2842,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "57",
@@ -2426,6 +2874,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2434,7 +2885,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "58",
@@ -2461,6 +2917,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2469,7 +2928,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "59",
@@ -2496,6 +2960,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2504,7 +2971,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "60",
@@ -2531,6 +3003,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2539,7 +3014,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "61",
@@ -2566,6 +3046,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2574,7 +3057,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "62",
@@ -2601,6 +3089,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2609,7 +3100,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "63",
@@ -2636,6 +3132,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2644,7 +3143,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "64",
@@ -2671,6 +3175,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2679,7 +3186,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "65",
@@ -2706,6 +3218,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2714,7 +3229,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "66",
@@ -2741,6 +3261,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2749,7 +3272,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "67",
@@ -2776,6 +3304,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2784,7 +3315,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "68",
@@ -2811,6 +3347,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2819,7 +3358,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "69",
@@ -2846,6 +3390,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2854,7 +3401,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "70",
@@ -2881,6 +3433,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2889,7 +3444,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "71",
@@ -2916,6 +3476,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2924,7 +3487,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "72",
@@ -2951,6 +3519,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2959,7 +3530,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "73",
@@ -2986,6 +3562,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -2994,7 +3573,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "74",
@@ -3021,6 +3605,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3029,7 +3616,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "75",
@@ -3056,6 +3648,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3064,7 +3659,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "76",
@@ -3091,6 +3691,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3099,7 +3702,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "77",
@@ -3126,6 +3734,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3134,7 +3745,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "78",
@@ -3161,6 +3777,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3169,7 +3788,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "79",
@@ -3196,6 +3820,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3204,7 +3831,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "80",
@@ -3231,6 +3863,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3239,7 +3874,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "81",
@@ -3266,6 +3906,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3274,7 +3917,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "82",
@@ -3301,6 +3949,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3309,7 +3960,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "83",
@@ -3336,6 +3992,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3344,7 +4003,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "84",
@@ -3371,6 +4035,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3379,7 +4046,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "85",
@@ -3406,6 +4078,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3414,7 +4089,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "86",
@@ -3441,6 +4121,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3449,7 +4132,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "87",
@@ -3476,6 +4164,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3484,7 +4175,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "88",
@@ -3511,6 +4207,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3519,7 +4218,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "89",
@@ -3546,6 +4250,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3554,7 +4261,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "90",
@@ -3581,6 +4293,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3589,7 +4304,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "91",
@@ -3616,6 +4336,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3624,7 +4347,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "92",
@@ -3651,6 +4379,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3659,7 +4390,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "93",
@@ -3686,6 +4422,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3694,7 +4433,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "94",
@@ -3721,6 +4465,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3729,7 +4476,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "95",
@@ -3756,6 +4508,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3764,7 +4519,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "96",
@@ -3791,6 +4551,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3799,7 +4562,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "97",
@@ -3826,6 +4594,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3834,7 +4605,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "98",
@@ -3861,6 +4637,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3869,7 +4648,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "99",
@@ -3896,6 +4680,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3904,7 +4691,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "100",
@@ -3931,6 +4723,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3939,7 +4734,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "101",
@@ -3966,6 +4766,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -3974,7 +4777,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "102",
@@ -4001,6 +4809,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4009,7 +4820,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "103",
@@ -4036,6 +4852,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4044,7 +4863,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "104",
@@ -4071,6 +4895,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4079,7 +4906,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "105",
@@ -4106,6 +4938,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4114,7 +4949,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "106",
@@ -4141,6 +4981,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4149,7 +4992,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "107",
@@ -4176,6 +5024,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4184,7 +5035,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "108",
@@ -4211,6 +5067,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4219,7 +5078,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "109",
@@ -4246,6 +5110,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4254,7 +5121,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "110",
@@ -4281,6 +5153,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4289,7 +5164,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "111",
@@ -4316,6 +5196,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4324,7 +5207,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "112",
@@ -4351,6 +5239,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4359,7 +5250,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "113",
@@ -4386,6 +5282,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4394,7 +5293,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "114",
@@ -4421,6 +5325,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4429,7 +5336,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "115",
@@ -4456,6 +5368,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4464,7 +5379,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "116",
@@ -4491,6 +5411,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4499,7 +5422,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "117",
@@ -4526,6 +5454,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4534,7 +5465,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "118",
@@ -4561,6 +5497,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4569,7 +5508,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "119",
@@ -4596,6 +5540,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4604,7 +5551,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "120",
@@ -4631,6 +5583,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4639,7 +5594,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "121",
@@ -4666,6 +5626,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4674,7 +5637,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "122",
@@ -4701,6 +5669,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4709,7 +5680,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "123",
@@ -4736,6 +5712,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4744,7 +5723,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "124",
@@ -4771,6 +5755,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4779,7 +5766,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "125",
@@ -4806,6 +5798,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4814,7 +5809,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "126",
@@ -4841,6 +5841,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4849,7 +5852,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "127",
@@ -4876,6 +5884,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4884,7 +5895,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "128",
@@ -4911,6 +5927,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4919,7 +5938,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "129",
@@ -4946,6 +5970,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4954,7 +5981,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "130",
@@ -4981,6 +6013,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -4989,7 +6024,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "131",
@@ -5016,6 +6056,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5024,7 +6067,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "132",
@@ -5051,6 +6099,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5059,7 +6110,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "133",
@@ -5086,6 +6142,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5094,7 +6153,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "134",
@@ -5121,6 +6185,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5129,7 +6196,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "135",
@@ -5156,6 +6228,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5164,7 +6239,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "136",
@@ -5191,6 +6271,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5199,7 +6282,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "137",
@@ -5226,6 +6314,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5234,7 +6325,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "138",
@@ -5261,6 +6357,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5269,7 +6368,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "139",
@@ -5296,6 +6400,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5304,7 +6411,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "140",
@@ -5331,6 +6443,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5339,7 +6454,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "141",
@@ -5366,6 +6486,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5374,7 +6497,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "142",
@@ -5401,6 +6529,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5409,7 +6540,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "143",
@@ -5436,6 +6572,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5444,7 +6583,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "144",
@@ -5471,6 +6615,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5479,7 +6626,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "145",
@@ -5506,6 +6658,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5514,7 +6669,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "146",
@@ -5541,6 +6701,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5549,7 +6712,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "147",
@@ -5576,6 +6744,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5584,7 +6755,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "148",
@@ -5611,6 +6787,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5619,7 +6798,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "149",
@@ -5646,6 +6830,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "10",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5654,7 +6841,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "150",
@@ -5681,6 +6873,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "0",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5689,7 +6884,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "151",
@@ -5716,6 +6916,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "100",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5724,7 +6927,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "152",
@@ -5751,6 +6959,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "80",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5759,7 +6970,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "153",
@@ -5786,6 +7002,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "70",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5794,7 +7013,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "154",
@@ -5821,6 +7045,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "60",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5829,7 +7056,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "155",
@@ -5856,6 +7088,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "50",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5864,7 +7099,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "156",
@@ -5891,6 +7131,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "40",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5899,7 +7142,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "157",
@@ -5926,6 +7174,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "30",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5934,7 +7185,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         },
         {
             "id": "158",
@@ -5961,6 +7217,9 @@
             "lugarNacimiento": "",
             "biografia": "",
             "asistencia": "20",
+            "comision": "",
+            "comision2": "",
+            "comision3": "",
             "emailFuncionario": "",
             "telefono": "",
             "direccion": "",
@@ -5969,7 +7228,12 @@
             "tw": "",
             "sexo": "",
             "tag1": "",
-            "tag2": ""
+            "tag2": "",
+            "comisiones": [
+                null,
+                null,
+                null
+            ]
         }
     ]
 }
