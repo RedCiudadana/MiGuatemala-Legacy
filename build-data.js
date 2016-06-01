@@ -51,15 +51,21 @@ Tabletop.init({
         return comision.id === funcionario.comision;
       });
 
+      delete funcionario.comision;
+
       // Considerar comisión dos
       var comision2 = comisiones.filter(function(comision2) {
         return comision2.id === funcionario.comision2;
       });
 
+      delete funcionario.comision2;
+
       // Considerar comisión tres
       var comision3 = comisiones.filter(function(comision3) {
         return comision3.id === funcionario.comision3;
       });
+
+      delete funcionario.comision3;
 
       if (comision) {
         comisionesFuncionario.push(comision[0]);
