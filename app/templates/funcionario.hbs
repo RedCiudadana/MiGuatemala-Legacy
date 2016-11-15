@@ -1,5 +1,3 @@
-Institucion: {{model.institucion.codigo}}
-
 <div class="single-product">
     <div class="product-price"><ins>{{model.funcionario.nombre}}</ins></div>
     <br><br>
@@ -44,33 +42,34 @@ Institucion: {{model.institucion.codigo}}
             Partido postulante: {{model.funcionario.partidoPostulante}}
           </span>
           <span class="posted_in">
-            Partido actual: {{model.funcionario.partidoActual}}
+            Partido actual: {{model.funcionario.partidoActual.nombreCorto}}
           </span>
         </div>
       </div>
     </div>
     <div class="col_two_fifth col_last">
-      {{#if model.funcionario.institucion.logo}}
-        <a href="#" title="{{model.funcionario.institucion.nombreCompleto}}" class="hidden-xs">
-          <img
-            class="image_fade"
-            src="{{model.funcionario.institucion.logo}}"
-            alt="{{model.funcionario.institucion.nombreCompleto}}"
-          >
-        </a>
-      {{else}}
-        {{model.funcionario.institucion.nombreCompleto}}
+      <div style="text-align: center;">
+        {{#if model.funcionario.partidoActual.logo}}
+          <div style="margin-bottom: 10px;">
+            <a href="#" title="{{model.funcionario.partidoActual.nombreCompleto}}" class="hidden-xs">
+              <img
+                class="image_fade"
+                src="{{model.funcionario.partidoActual.logo}}"
+                alt="{{model.funcionario.partidoActual.nombreCompleto}}"
+              >
+            </a>
+          </div>
+        {{/if}}
+        {{model.funcionario.partidoActual.nombreCompleto}}
+      </div>
+
+      <div class="divider divider-center" style="margin: auto;">
+        <i class="icon-circle-blank"></i>
+      </div>
+
+      {{#if model.funcionario.email }}
+
       {{/if}}
-
-      <div class="divider divider-center"><i class="icon-circle-blank"></i></div>
-
-      {{!-- <img
-        class="image_fade"
-        src=""
-        alt="{{model.partido}}"
-      > --}}
-
-      <div class="divider divider-center"><i class="icon-circle-blank"></i></div>
 
       {{#if model.funcionario.fb }}
         <div class="feature-box fbox-plain fbox-dark fbox-small">
@@ -82,6 +81,7 @@ Institucion: {{model.institucion.codigo}}
           </a>
         </div>
       {{/if}}
+
       {{#if model.funcionario.tw}}
       <div class="feature-box fbox-plain fbox-dark fbox-small">
         <a href="http://twitter.com/{{model.funcionario.tw}}">

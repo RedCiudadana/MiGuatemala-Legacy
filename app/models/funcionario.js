@@ -15,7 +15,7 @@ export default Model.extend({
 
   institucion: belongsTo('institucion'),
   partidoPostulante: attr(),
-  partidoActual: attr(),
+  partidoActual: belongsTo('partido'),
 
   fotoFuncionario: Ember.computed('fotoUrl', function() {
     if (this.get('fotoUrl')) {

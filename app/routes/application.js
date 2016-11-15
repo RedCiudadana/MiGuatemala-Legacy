@@ -7,7 +7,7 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       funcionarios: this.store.findAll('funcionario'),
       instituciones: this.store.findAll('institucion'),
-      instituciones: this.store.findAll('partido')
+      partidos: this.store.findAll('partido')
     });
   }
 });

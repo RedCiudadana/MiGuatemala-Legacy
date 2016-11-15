@@ -8,5 +8,6 @@ export default Model.extend({
   nombreCompleto: attr(),
   nombreCorto: attr(),
   fb: attr(),
-  tw: attr()
+  tw: attr(),
+  logo: attr()
 });

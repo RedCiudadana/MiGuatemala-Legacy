@@ -9,10 +9,13 @@ export default Ember.Route.extend({
 
     let institucion = funcionario.get('institucion');
 
-    return {
+    let partidoActual = funcionario.get('partidoActual');
+
+    return Ember.RSVP.hash({
       funcionario: funcionario,
-      institucion: institucion
-    };
+      institucion: institucion,
+      partidoActual: partidoActual
+    });
   },
 
   actions: {
