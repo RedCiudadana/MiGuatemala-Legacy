@@ -1,56 +1,95 @@
+Institucion: {{model.institucion.codigo}}
+
 <div class="single-product">
     <div class="product-price"><ins>{{model.funcionario.nombre}}</ins></div>
     <br><br>
   <div class="product">
     <div class="col_one_fifth">
       <div class="product-image">
-          <img src="{{model.funcionario.fotoFuncionario}}" alt="{{model.funcionario.nombre}}">
+          <img
+            src="{{model.funcionario.fotoFuncionario}}"
+            alt="{{model.funcionario.nombre}}"
+          >
       </div>
     </div>
     <div class="col_two_fifth product-desc">
       <div class="panel panel-default product-meta">
         <div class="panel-body">
-          <span itemprop="productID" class="sku_wrapper">Nombre: <span class="sku">{{model.funcionario.nombre}}</span></span>
-          <span class="posted_in">
-            Cargo: {{if model.funcionario.cargoNombreCompleto model.funcionario.cargoNombreCompleto model.funcionario.cargoNombreCorto}}
+          <span itemprop="productID" class="sku_wrapper">
+            Nombre: <span class="sku">{{model.funcionario.nombre}}</span>
           </span>
-          <span class="posted_in">Institución: {{model.funcionario.institucion.nombreCompleto}}</span>
-          <span class="posted_in">Profesión: {{model.funcionario.profesion}}</span>
-          <span class="posted_in">Educación: {{model.funcionario.educacion}}</span>
-          <span class="posted_in">Fecha nacimiento: {{model.funcionario.fechaNacimiento}}</span>
-          <span class="posted_in">Lugar de nacimiento: {{model.funcionario.lugarNacimiento}}</span>
-          <span class="posted_in">Partido postulante: {{model.funcionario.partidoPostulante}}</span>
-          {{!-- <span class="tagged_as">Tags: Mixco</a>, 
-            <a href="#" rel="tag">Municipalidad</a>, 
-            <a href="#" rel="tag">Muni Mixco</a>, 
-            <a href="#" rel="tag">Alcalde</a>.
-          </span> --}}
+          <span class="posted_in">
+            Cargo: {{if
+              model.funcionario.cargoNombreCompleto
+              model.funcionario.cargoNombreCompleto
+              model.funcionario.cargoNombreCorto
+            }}
+          </span>
+          <span class="posted_in">
+            Institución: {{model.funcionario.institucion.nombreCompleto}}
+          </span>
+          <span class="posted_in">
+            Profesión: {{model.funcionario.profesion}}
+          </span>
+          <span class="posted_in">
+            Educación: {{model.funcionario.educacion}}
+          </span>
+          <span class="posted_in">
+            Fecha nacimiento: {{model.funcionario.fechaNacimiento}}
+          </span>
+          <span class="posted_in">
+            Lugar de nacimiento: {{model.funcionario.lugarNacimiento}}
+          </span>
+          <span class="posted_in">
+            Partido postulante: {{model.funcionario.partidoPostulante}}
+          </span>
+          <span class="posted_in">
+            Partido actual: {{model.funcionario.partidoActual}}
+          </span>
         </div>
       </div>
     </div>
     <div class="col_two_fifth col_last">
-      {{#if model.institucion.logo}}
-        <a href="#" title="{{model.institucion.nombreCompleto}}" class="hidden-xs">
-          <img class="image_fade" src="{{model.institucion.logo}}" alt="{{model.institucion.nombreCompleto}}">
+      {{#if model.funcionario.institucion.logo}}
+        <a href="#" title="{{model.funcionario.institucion.nombreCompleto}}" class="hidden-xs">
+          <img
+            class="image_fade"
+            src="{{model.funcionario.institucion.logo}}"
+            alt="{{model.funcionario.institucion.nombreCompleto}}"
+          >
         </a>
       {{else}}
-        {{model.institucion.nombreCompleto}}
+        {{model.funcionario.institucion.nombreCompleto}}
       {{/if}}
+
       <div class="divider divider-center"><i class="icon-circle-blank"></i></div>
-      {{#if model.institucion.fb }}
+
+      {{!-- <img
+        class="image_fade"
+        src=""
+        alt="{{model.partido}}"
+      > --}}
+
+      <div class="divider divider-center"><i class="icon-circle-blank"></i></div>
+
+      {{#if model.funcionario.fb }}
         <div class="feature-box fbox-plain fbox-dark fbox-small">
-          <div class="fbox-icon">
-            <i class="icon-thumbs-up2"></i>
-          </div>
-          <h3>Facebook</h3>
+          <a href="{{model.funcionario.fb}}">
+            <div class="fbox-icon">
+              <i class="icon-thumbs-up2"></i>
+            </div>
+            <h3>Facebook</h3>
+          </a>
         </div>
       {{/if}}
-      {{#if model.institucion.tw}}
+      {{#if model.funcionario.tw}}
       <div class="feature-box fbox-plain fbox-dark fbox-small">
-        <div class="fbox-icon">
-          <i class="icon-credit-cards"></i>
-        </div>
-        <h3>Twitter</h3>
+        <a href="http://twitter.com/{{model.funcionario.tw}}">
+          <div class="fbox-icon">
+            <i class="icon-credit-cards"></i>
+          </div>
+          <h3>Twitter</h3>
+        </a>
       </div>
       {{/if}}
     </div>
