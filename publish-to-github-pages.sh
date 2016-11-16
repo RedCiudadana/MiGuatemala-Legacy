@@ -12,7 +12,7 @@ git rm -rf app \
     ember-cli-build.js \
     bower.json \
     package.json \
-    testem.json \
+    testem.js \
     .bowerrc \
     .editorconfig \
     .jshintrc \
