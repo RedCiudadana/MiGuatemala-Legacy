@@ -2,51 +2,81 @@
     <div class="product-price"><ins>{{model.funcionario.nombre}}</ins></div>
     <br><br>
   <div class="product">
-    <div class="col_one_fifth">
-      <div class="product-image">
-          <img
-            src="{{model.funcionario.fotoFuncionario}}"
-            alt="{{model.funcionario.nombre}}"
-          >
-      </div>
-    </div>
-    <div class="col_two_fifth product-desc">
-      <div class="panel panel-default product-meta">
-        <div class="panel-body">
-          <span itemprop="productID" class="sku_wrapper">
-            Nombre: <span class="sku">{{model.funcionario.nombre}}</span>
-          </span>
-          <span class="posted_in">
-            Cargo: {{if
-              model.funcionario.cargoNombreCompleto
-              model.funcionario.cargoNombreCompleto
-              model.funcionario.cargoNombreCorto
-            }}
-          </span>
-          <span class="posted_in">
-            Institución: {{model.funcionario.institucion.nombreCompleto}}
-          </span>
-          <span class="posted_in">
-            Profesión: {{model.funcionario.profesion}}
-          </span>
-          <span class="posted_in">
-            Educación: {{model.funcionario.educacion}}
-          </span>
-          <span class="posted_in">
-            Fecha nacimiento: {{model.funcionario.fechaNacimiento}}
-          </span>
-          <span class="posted_in">
-            Lugar de nacimiento: {{model.funcionario.lugarNacimiento}}
-          </span>
-          <span class="posted_in">
-            Partido postulante: {{model.funcionario.partidoPostulante}}
-          </span>
-          <span class="posted_in">
-            Partido actual: {{model.funcionario.partidoActual.nombreCorto}}
-          </span>
+    <div class="col_three_fifth">
+
+      <div class="col_two_fifth">
+        <div class="product-image">
+            <img
+              src="{{model.funcionario.fotoFuncionario}}"
+              alt="{{model.funcionario.nombre}}"
+            >
         </div>
       </div>
+
+      <div class="col_three_fifth product-desc" style="width: 54.4%;">
+        <div class="panel panel-default product-meta">
+          <div class="panel-body">
+            <span itemprop="productID" class="sku_wrapper">
+              <strong>Nombre:</strong> <span class="sku">{{model.funcionario.nombre}}</span>
+            </span>
+            <span class="posted_in">
+              <strong>Cargo:</strong> {{if
+                model.funcionario.cargoNombreCompleto
+                model.funcionario.cargoNombreCompleto
+                model.funcionario.cargoNombreCorto
+              }}
+            </span>
+            <span class="posted_in">
+              <strong>Institución:</strong>
+              {{model.funcionario.institucion.nombreCompleto}}
+            </span>
+            <span class="posted_in">
+              <strong>Profesión:</strong>
+              {{model.funcionario.profesion}}
+            </span>
+            <span class="posted_in">
+              <strong>Educación:</strong>
+              {{model.funcionario.educacion}}
+            </span>
+            <span class="posted_in">
+              <strong>Fecha nacimiento:</strong>
+              {{model.funcionario.fechaNacimiento}}
+            </span>
+            <span class="posted_in">
+              <strong>Lugar de nacimiento:</strong>
+              {{model.funcionario.lugarNacimiento}}
+            </span>
+            <span class="posted_in">
+              <strong>Partido postulante:</strong>
+              {{model.funcionario.partidoPostulante.nombreCorto}}
+            </span>
+            <span class="posted_in">
+              <strong>Partido actual:</strong>
+              {{model.funcionario.partidoActual.nombreCorto}}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col_full">
+        {{#bs-tab}}
+          <div class="tab-container">
+            {{#bs-tab-pane title="Biografía"}}
+              {{{ model.funcionario.biografia }}}
+            {{/bs-tab-pane}}
+
+            {{#bs-tab-pane title="Historial político"}}
+              Historial político
+            {{/bs-tab-pane}}
+
+            {{#bs-tab-pane title="Comentarios"}}
+              Comentarios
+            {{/bs-tab-pane}}
+          </div>
+        {{/bs-tab}}
+      </div>
     </div>
+
     <div class="col_two_fifth col_last">
       <div style="text-align: center;">
         {{#if model.funcionario.partidoActual.logo}}
@@ -63,17 +93,42 @@
         {{model.funcionario.partidoActual.nombreCompleto}}
       </div>
 
-      <div class="divider divider-center" style="margin: auto;">
+      <div class="divider divider-center" style="margin: auto; margin-top: 20px;">
         <i class="icon-circle-blank"></i>
       </div>
 
       {{#if model.funcionario.email }}
+        <div class="feature-box fbox-plain fbox-dark fbox-small">
+          <a href="{{model.funcionario.fb}}" target="_blank">
+            <div class="fbox-icon">
+              <i class="icon-mail"></i>
+            </div>
+            <h3>{{ model.funcionario.email }}</h3>
+          </a>
+        </div>
+      {{/if}}
 
+      {{#if model.funcionario.direccion }}
+        <div class="feature-box fbox-plain fbox-dark fbox-small">
+          <div class="fbox-icon">
+            <i class="icon-location"></i>
+          </div>
+          <h3>{{ model.funcionario.direccion }}</h3>
+        </div>
+      {{/if}}
+
+      {{#if model.funcionario.telefono }}
+        <div class="feature-box fbox-plain fbox-dark fbox-small">
+          <div class="fbox-icon">
+            <i class="icon-phone"></i>
+          </div>
+          <h3>{{ model.funcionario.telefono }}</h3>
+        </div>
       {{/if}}
 
       {{#if model.funcionario.fb }}
         <div class="feature-box fbox-plain fbox-dark fbox-small">
-          <a href="{{model.funcionario.fb}}">
+          <a href="{{model.funcionario.fb}}" target="_blank">
             <div class="fbox-icon">
               <i class="icon-thumbs-up2"></i>
             </div>
@@ -83,14 +138,14 @@
       {{/if}}
 
       {{#if model.funcionario.tw}}
-      <div class="feature-box fbox-plain fbox-dark fbox-small">
-        <a href="http://twitter.com/{{model.funcionario.tw}}">
-          <div class="fbox-icon">
-            <i class="icon-credit-cards"></i>
-          </div>
-          <h3>Twitter</h3>
-        </a>
-      </div>
+        <div class="feature-box fbox-plain fbox-dark fbox-small">
+          <a href="http://twitter.com/{{model.funcionario.tw}}" target="_blank">
+            <div class="fbox-icon">
+              <i class="icon-credit-cards"></i>
+            </div>
+            <h3>@{{model.funcionario.tw}}</h3>
+          </a>
+        </div>
       {{/if}}
     </div>
   </div>

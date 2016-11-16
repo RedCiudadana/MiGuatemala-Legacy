@@ -12,9 +12,15 @@ export default Model.extend({
   lugarNacimiento: attr(),
   cargoNombreCompleto: attr(),
   cargoNombreCorto: attr(),
+  email: attr(),
+  fb: attr(),
+  tw: attr(),
+  direccion: attr(),
+  telefono: attr(),
+  biografia: attr(),
 
   institucion: belongsTo('institucion'),
-  partidoPostulante: attr(),
+  partidoPostulante: belongsTo('partido'),
   partidoActual: belongsTo('partido'),
 
   fotoFuncionario: Ember.computed('fotoUrl', function() {
