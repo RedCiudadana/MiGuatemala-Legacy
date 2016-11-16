@@ -1,8 +1,11 @@
 #!/bin/bash
+echo "Deleting local gh-pages branch" && \
 git branch -D gh-pages && \
-git push origin --delete gh-pages  && \
-git checkout -b gh-pages  && \
-ember build --environment production  && \
+echo "Checking out new local gh-pages branch" && \
+git checkout -b gh-pages && \
+echo "Building.." && \
+ember build --environment production && \
+echo "Building done, deleting" && \
 git rm -rf app \
     config \
     tests \
@@ -14,8 +17,15 @@ git rm -rf app \
     .editorconfig \
     .jshintrc \
     .travis.yml && \
+echo "Moving stuff" && \
 mv dist/* . && \
+echo "Adding to commit" && \
 git add . && \
+echo "Commiting" && \
 git commit -m "Publishing to github pages" && \
+echo "Deleting remote gh-pages branch" && \
+git push origin --delete gh-pages && \
+echo "Pushing new remote gh-pages branch" && \
 git push origin gh-pages && \
+echo "Going back to default branch" && \
 git checkout dev-ember
