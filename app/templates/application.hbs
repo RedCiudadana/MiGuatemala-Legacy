@@ -1,143 +1,102 @@
-<div id="wrapper" class="clearfix">
-  <header id="header" class="full-header">
-    <div id="header-wrap">
-      <div class="container clearfix">
-        <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-        <div id="logo">
-          {{!-- TODO: Pendiente definir data-dark-logo="images/logo-dark.png" --}}
-          {{#link-to "index" classNames="standard-logo"}}
-            <img src="images/logo.png" alt="Canvas Logo">
-          {{/link-to}}
+<header class="zerogrid">
+    <div class="wrap-header">
+        <div class="col-2-5"><div id="logo"><a href="#"><img src="./images/logo.png"/></a></div></div>
+        <div class="col-3-5">
+            <nav>
+                <div class="wrap-nav">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Congreso<br> 2016</a></li>
+                            <li style="border-bottom: 7px solid #42a4f5;"><a href="#">¿Quien es<br> mi representante?</a></li>
+                            <li><a href="#">Iniciativas de<br> Ley</a></li>
+                            <li><a href="#">Adopta a tu<br> Diputado</a></li>
+                            <li><a href="#">Peguntales/<br> Escribeles</a></li>
+                            <li><a href="#">Ranking</a></li>
+                        </ul>
+                    </div>
 
-          {{!-- TODO: Pendiente definir data-dark-logo="images/logo-dark@2x.png" --}}
-          {{#link-to "index" classNames="retina-logo"}}
-            <img src="images/logo@2x.png" alt="Canvas Logo">
-          {{/link-to}}
-        </div>
-        <nav id="primary-menu" class="style-3">
-          <ul>
-            <li>
-              {{#link-to "index"}}
-                <div>Inicio</div>
-              {{/link-to}}
-            </li>
-              
-            <li><a href="#"><div>Instituciones</div></a>
-              <ul>
-                <li>
-                  <a href="Congreso.html"><div><i class="icon-stack"></i>Congreso de la República de Guatemala</div></a>
-                </li>
-                <li>
-                  <a href="CSJ.html"><div><i class="icon-stack"></i>Corte Suprema de Justicia – CSJ</div></a>
-                </li>
-                <li>
-                  <a href="CANG.html"><div><i class="icon-stack"></i>Colegio de Abogados y Notarios de Guatemala – CANG</div></a>
-                </li>
-                <li>
-                  <a href="USAC.html"><div><i class="icon-stack"></i>Consejo Superior Universitarios – USAC</div></a>
-                </li>
-                <li>
-                  <a href="Ejecutivo.html"><div><i class="icon-stack"></i>Ejecutivo</div></a>
-                </li> 
-              </ul>
-            </li>
-            <li>
-              <a href="Candidatos.html"><div>Candidatos</div></a>
-            </li>
-            <li>
-              <a href="Ranking.html"><div>Ranking</div></a>
-            </li>
-            <li>
-              <a href="Metodologia.html"><div>Metodologia</div></a>
-              <ul>
-                <li>
-                  <a href="CSJ.html"><div><i class="icon-stack"></i>Metodologia</div></a>
-                </li>
-                <li>
-                  <a href="CANG.html"><div><i class="icon-stack"></i>Acceso a la Información</div></a>
-                </li>
-                <li>
-                  <a href="USAC.html"><div><i class="icon-stack"></i>Ranking</div></a>
-                </li>
-                <li>
-                  <a href="Ejecutivo.html"><div><i class="icon-stack"></i>FAQS</div></a>
-                </li>
-                <li>
-                  <a href="Ejecutivo.html"><div><i class="icon-stack"></i>Red Ciudadana</div></a>
-                </li> 
-              </ul>
-            </li>
-          </ul>
-          <div id="top-search">
-            <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-            <form action="search.html" method="get">
-              <input type="text" name="q" class="form-control" value="" placeholder="Escribe &amp; Presiona Enter para buscar">
-            </form>
-          </div><!-- #top-search end -->
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <section id="content">
-    <div class="content-wrap">
-      <div class="container clearfix">
-        {{outlet}}
-      </div>
-    </div>
-  </section>
-
-  <div class="promo promo-dark promo-flat promo-full bottommargin">
-    <div class="container clearfix">
-      <h3>Tu apoyo es vital <span>ayudanos a continuar innovando</span> </h3>
-      <span>la forma en la que los ciudadanos nos acercamos a nuestro gobierno.</span>
-        
-      <a href="http://donacion.redciudadana.org/" class="button button-xlarge button-rounded">Quiero Donar</a>
-    </div>
-  </div>
-
-  <footer id="footer" class="dark">
-    <div class="container">
-      <div class="footer-widgets-wrap clearfix">
-        <div class="inner">
-          <div class="container">
-            <div class="col-md-4 pull-left">
-              <p>Ayúdanos a llegar a más personas</p>
-              <ul>
-                <li>
-                  <a class="hoverless-anchor" href="http://donacion.redciudadana.org/">
-                    <img src="images/footer/donaciones.png" style="height: 17px; width: 17px;"> Donaciones
-                  </a>
-                </li>
-                <li>
-                  <a class="hoverless-anchor" href="http://eepurl.com/bEqZhv">
-                    <img src="images/footer/voluntariado.png" style="height: 17px; width: 17px;"> Voluntariado
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4 pull-left">
-              <div class="row">
-                <div class="col-md-6">
-                  <p>Desarrollado por:</p>
-                  <a href="http://www.redciudadana.org/">
-                    <img src="images/footer/red-ciudadana-logo.png" class="img-responsive">
-                  </a>
+                    <div class="minimenu">
+                        <div>MENU</div>
+                        <select onchange="location=this.value">
+                            <option></option>
+                            <option value="#">Congreso 2016</option>
+                            <option value="#">? Quien es mi representante</option>
+                            <option value="#">Iniciativas de Ley</option>
+                            <option value="#">Adopta a tu Diputado</option>
+                            <option value="#">Peguntales Escribeles</option>
+                            <option value="#">Ranking</option>
+                        </select>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4 pull-left">
-              <p>Contáctanos</p>
-              <ul>
-                  <li><a href="/cdn-cgi/l/email-protection#a0c9cec6cfe0d2c5c4c3c9d5c4c1c4c1cec18ecfd2c78ec7d4" class="hoverless-anchor"><i class="icon-envelope-alt"></i>   Email</a></li>
-                  <li><i class="icon-map-marker"></i>    12 calle 1-25 zona 10</li>
-                  <li>Edificio Géminis 10</li>
-                  <li>Torre Norte Oficina 14-13</li>
-              </ul>
-            </div>
-          </div>
+            </nav>
         </div>
-      </div>
+        <div class="wrap-header" style=" height:30px; margin-top: 5px;">
+            <div class="col-1-5" style=" float:right;">
+                <div class="social">
+                    <a href="#" class="fb">
+                        <i class="fa fa-facebook" style="margin-top:4px;"></i>
+                    </a>
+
+                    <a href="#" class="tw">
+                        <i class="fa fa-twitter" style="margin-top:4px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
-</div>
+</header>
+
+<section id="content">
+    <div class="wrap-content zerogrid">
+        {{outlet}}
+    </div>
+</section>
+
+<footer>
+    <div class="wrap-footer zerogrid">
+        <div class="row">
+            <div class="col-1-3">
+                <div class="wrap-col">
+                    <div class="box">
+                        <div class="heading"><h2>Ayúdanos: </h2></div>
+                        <div class="content">
+                            <p>- Voluntario<br> - Donación</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <div class="wrap-col">
+                    <div class="box">
+                        <div class="heading"><h2>Un proyecto desarrollado por: </h2></div>
+                        <div class="content">
+                            <div class="gallery">
+                                <a href="#"><img src="images/r.png" /></a>
+                            </div>
+                        </div>
+                        <div class="heading"><h2>Con el apoyo de: </h2></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <div class="wrap-col">
+                    <div class="box">
+                        <div class="heading"><h2>Contáctanos</h2></div>
+                        <div class="content">
+                            <p>
+                                Info@redciudadana.org.gt
+
+                                <br><br>
+
+                                12 calle 1-25 zona 10, <br>
+                                Edificio Géminis 10,<br>
+                                Edificio Torre Norte,<br>
+                                Guatemala, Guatemala
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

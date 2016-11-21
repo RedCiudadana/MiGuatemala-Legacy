@@ -8,7 +8,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'mi-guatemala',
     environment: environment,
-    baseURL: '/',
+    rootURL: '/',
     locationType: 'hash',
     EmberENV: {
       FEATURES: {

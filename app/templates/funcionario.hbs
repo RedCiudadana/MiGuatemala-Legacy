@@ -1,154 +1,169 @@
-<div class="single-product">
-    <div class="product-price"><ins>{{model.funcionario.nombre}}</ins></div>
-    <br><br>
-  <div class="product">
-    <div class="col_three_fifth">
+<div class="row block02" style="padding:10px 0px; background-image:none; width: 75%; margin: 0 auto;">
+    <h3 class="new" style="padding-bottom:0; text-align:center;">
+        {{model.funcionario.nombre}}
+    </h3>
+</div>
 
-      <div class="col_two_fifth">
-        <div class="product-image">
+<div class="row block02" style="padding:30px 0px; background-image:none;">
+    <div class="col-1-3">
+        <p>
             <img
               src="{{model.funcionario.fotoFuncionario}}"
               alt="{{model.funcionario.nombre}}"
             >
-        </div>
-      </div>
-
-      <div class="col_three_fifth product-desc" style="width: 54.4%;">
-        <div class="panel panel-default product-meta">
-          <div class="panel-body">
-            <span itemprop="productID" class="sku_wrapper">
-              <strong>Nombre:</strong> <span class="sku">{{model.funcionario.nombre}}</span>
-            </span>
-            <span class="posted_in">
-              <strong>Cargo:</strong> {{if
-                model.funcionario.cargoNombreCompleto
-                model.funcionario.cargoNombreCompleto
-                model.funcionario.cargoNombreCorto
-              }}
-            </span>
-            <span class="posted_in">
-              <strong>Institución:</strong>
-              {{model.funcionario.institucion.nombreCompleto}}
-            </span>
-            <span class="posted_in">
-              <strong>Profesión:</strong>
-              {{model.funcionario.profesion}}
-            </span>
-            <span class="posted_in">
-              <strong>Educación:</strong>
-              {{model.funcionario.educacion}}
-            </span>
-            <span class="posted_in">
-              <strong>Fecha nacimiento:</strong>
-              {{model.funcionario.fechaNacimiento}}
-            </span>
-            <span class="posted_in">
-              <strong>Lugar de nacimiento:</strong>
-              {{model.funcionario.lugarNacimiento}}
-            </span>
-            <span class="posted_in">
-              <strong>Partido postulante:</strong>
-              {{model.funcionario.partidoPostulante.nombreCorto}}
-            </span>
-            <span class="posted_in">
-              <strong>Partido actual:</strong>
-              {{model.funcionario.partidoActual.nombreCorto}}
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col_full">
-        {{#bs-tab}}
-          <div class="tab-container">
-            {{#bs-tab-pane title="Biografía"}}
-              {{{ model.funcionario.biografia }}}
-            {{/bs-tab-pane}}
-
-            {{#bs-tab-pane title="Historial político"}}
-              Historial político
-            {{/bs-tab-pane}}
-
-            {{#bs-tab-pane title="Comentarios"}}
-              Comentarios
-            {{/bs-tab-pane}}
-          </div>
-        {{/bs-tab}}
-      </div>
+        </p>
     </div>
 
-    <div class="col_two_fifth col_last">
-      <div style="text-align: center;">
-        {{#if model.funcionario.partidoActual.logo}}
-          <div style="margin-bottom: 10px;">
-            <a href="#" title="{{model.funcionario.partidoActual.nombreCompleto}}" class="hidden-xs">
+    <div class="col-1-3">
+        <p>
+          <strong>Cargo:</strong>
+          {{if
+            model.funcionario.cargoNombreCompleto
+            model.funcionario.cargoNombreCompleto
+            model.funcionario.cargoNombreCorto
+          }}
+        </p>
+        <p>
+          <strong>Institución:</strong>
+          {{model.funcionario.institucion.nombreCompleto}}
+        </p>
+        <p>
+          <strong>Profesión:</strong>
+          {{model.funcionario.profesion}}
+        </p>
+        <p>
+          <strong>Educación:</strong>
+          {{model.funcionario.educacion}}
+        </p>
+        <p>
+          <strong>Fecha nacimiento:</strong>
+          {{model.funcionario.fechaNacimiento}}
+        </p>
+        <p>
+          <strong>Lugar de nacimiento:</strong>
+          {{model.funcionario.lugarNacimiento}}
+        </p>
+        <p>
+          <strong>Partido postulante:</strong>
+          {{model.funcionario.partidoPostulante.nombreCorto}}
+        </p>
+        <p>
+          <strong>Partido actual:</strong>
+          {{model.funcionario.partidoActual.nombreCorto}}
+        </p>
+    </div>
+
+    <div class="col-1-3">
+        <div style="text-align: center;">
+            {{#if model.funcionario.partidoActual.logo}}
               <img
-                class="image_fade"
                 src="{{model.funcionario.partidoActual.logo}}"
                 alt="{{model.funcionario.partidoActual.nombreCompleto}}"
               >
-            </a>
-          </div>
+            {{/if}}
+
+            <p>
+                {{model.funcionario.partidoActual.nombreCompleto}}
+            </p>
+        </div>
+
+        <br>
+
+        {{#if model.funcionario.email }}
+            <p class="te">
+                <i
+                    class="fa fa-envelope"
+                    aria-hidden="true"
+                    style="color:#78c1ec; margin-top: 7px; margin-right:10px;"
+                ></i>
+                {{ model.funcionario.email }}
+            </p>
         {{/if}}
-        {{model.funcionario.partidoActual.nombreCompleto}}
-      </div>
 
-      <div class="divider divider-center" style="margin: auto; margin-top: 20px;">
-        <i class="icon-circle-blank"></i>
-      </div>
+        {{#if model.funcionario.direccion }}
+            <p class="te">
+                <i
+                    class="fa fa-map-marker"
+                    aria-hidden="true"
+                    style="color: #78c1ec; margin-right: 11px; font-size: 20px; margin-top: 5px; margin-left: 2px;"
+                ></i>
+                {{ model.funcionario.direccion }}
+            </p>
+        {{/if}}
 
-      {{#if model.funcionario.email }}
-        <div class="feature-box fbox-plain fbox-dark fbox-small">
-          <a href="{{model.funcionario.fb}}" target="_blank">
-            <div class="fbox-icon">
-              <i class="icon-mail"></i>
-            </div>
-            <h3>{{ model.funcionario.email }}</h3>
-          </a>
-        </div>
-      {{/if}}
+        {{#if model.funcionario.telefono }}
+            <p class="te">
+                <i
+                    class="fa fa-mobile"
+                    aria-hidden="true"
+                    style="color: #78c1ec; margin-right: 11px; font-size: 25px; margin-left: 3px;"
+                ></i>
+                {{ model.funcionario.telefono }}
+            </p>
+        {{/if}}
 
-      {{#if model.funcionario.direccion }}
-        <div class="feature-box fbox-plain fbox-dark fbox-small">
-          <div class="fbox-icon">
-            <i class="icon-location"></i>
-          </div>
-          <h3>{{ model.funcionario.direccion }}</h3>
-        </div>
-      {{/if}}
+        {{#if model.funcionario.fb }}
+            <p class="te">
+                <i
+                    class="fa fa-facebook"
+                    aria-hidden="true"
+                    style="color: #78c1ec; margin-right: 11px; font-size: 25px; margin-left: 3px;"
+                ></i>
+                <a href="{{model.funcionario.fb}}" target="_blank">Facebook</a>
+            </p>
+        {{/if}}
 
-      {{#if model.funcionario.telefono }}
-        <div class="feature-box fbox-plain fbox-dark fbox-small">
-          <div class="fbox-icon">
-            <i class="icon-phone"></i>
-          </div>
-          <h3>{{ model.funcionario.telefono }}</h3>
-        </div>
-      {{/if}}
-
-      {{#if model.funcionario.fb }}
-        <div class="feature-box fbox-plain fbox-dark fbox-small">
-          <a href="{{model.funcionario.fb}}" target="_blank">
-            <div class="fbox-icon">
-              <i class="icon-thumbs-up2"></i>
-            </div>
-            <h3>Facebook</h3>
-          </a>
-        </div>
-      {{/if}}
-
-      {{#if model.funcionario.tw}}
-        <div class="feature-box fbox-plain fbox-dark fbox-small">
-          <a href="http://twitter.com/{{model.funcionario.tw}}" target="_blank">
-            <div class="fbox-icon">
-              <i class="icon-credit-cards"></i>
-            </div>
-            <h3>@{{model.funcionario.tw}}</h3>
-          </a>
-        </div>
-      {{/if}}
+        {{#if model.funcionario.tw}}
+            <p class="te">
+                <i
+                    class="fa fa-twitter"
+                    aria-hidden="true"
+                    style="color: #78c1ec; margin-right: 11px; font-size: 25px; margin-left: 3px;"
+                ></i>
+                <a href="{{model.funcionario.tw}}" target="_blank">@{{model.funcionario.tw}}</a>
+            </p>
+        {{/if}}
     </div>
-  </div>
 </div>
 
-<div class="clear"></div><div class="line"></div>
+<div class="row block01">
+    <div class="col-1-4">
+        <div class="wrap-col">
+            <img src="images/a1.png" />
+        </div>
+    </div>
+    <div class="col-1-4">
+        <div class="wrap-col">
+            <img src="images/a2.png" />
+        </div>
+    </div>
+    <div class="col-1-4">
+        <div class="wrap-col">
+            <img src="images/a3.png" />
+        </div>
+    </div>
+    <div class="col-1-4">
+        <div class="wrap-col">
+            <img src="images/a4.png" />
+        </div>
+    </div>
+</div>
+
+<div
+    class="row block02"
+    style=" background:#78c1ec; box-sizing: border-box; border-radius: 10px; padding: 30px;"
+>
+    <ul class="tabs">
+        <li class="active" rel="tab1">Biografia</li>
+    </ul>
+    <div class="tab_container">
+        <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+        <div id="tab1" class="tab_content">
+            {{{ model.funcionario.biografia }}}
+        </div>
+    </div>
+</div>
+
+<div class="row block02" style=" background:#f2f2f2;">
+    <h3 class="new" style="text-align:center;">DISQUS</h3>
+</div>
