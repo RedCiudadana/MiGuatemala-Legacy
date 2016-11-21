@@ -18,6 +18,8 @@ export default Model.extend({
   direccion: attr(),
   telefono: attr(),
   biografia: attr(),
+  desempenio: attr(),
+  historialPolitico: attr(),
 
   institucion: belongsTo('institucion'),
   partidoPostulante: belongsTo('partido'),

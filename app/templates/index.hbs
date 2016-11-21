@@ -90,17 +90,9 @@
     <article class="portfolio-item pf-media {{funcionario.institucionSelector}}">
 
       <div class="portfolio-image">
-        <a href="portfolio-single.html">
+        {{#link-to "funcionario" funcionario.id}}
           <img alt="{{funcionario.cargoNombreCompleto}}" src="{{funcionario.fotoFuncionario}}" />
-          <div class="portfolio-overlay">
-            <a class="left-icon" href="{{funcionario.fotoFuncionario}}" data-lightbox="image">
-              <li class="icon-line-plus"></li>
-            </a>
-            <a class="right-icon" href="portfolio-single.html">
-              <li class="icon-line-ellipsis"></li>
-            </a>
-          </div>
-        </a>
+        {{/link-to}}
       </div>
 
       <div class="portfolio-desc">
