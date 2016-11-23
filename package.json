@@ -39,7 +39,8 @@
     "ember-data": "^2.9.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
-    "ember-resolver": "^2.0.3"
+    "ember-resolver": "^2.0.3",
+    "ember-share": "0.1.1"
   },
   "dependencies": {
     "jsonfile": "^2.3.1",
