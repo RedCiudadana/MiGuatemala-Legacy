@@ -7,7 +7,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/"><img src="http://vi-gt2015.s3.amazonaws.com/img/logo-candidatos.svg" class="img-responsive" title="CandiDatos" alt="CandiDatos"></a>
+        {{#link-to "application"}}
+          <img src="http://vi-gt2015.s3.amazonaws.com/img/logo-candidatos.svg" class="img-responsive" title="CandiDatos" alt="CandiDatos">
+        {{/link-to}}
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
@@ -20,12 +22,6 @@
   </div>
 
   <div class="container">
-    <section id="election">
-      <div>
-        <h2 class="text-center">Funcionarios - Congreso de la República</h2>
-      </div>
-
-      {{outlet}}
-    </section>
+    {{outlet}}
   </div>
 </div>

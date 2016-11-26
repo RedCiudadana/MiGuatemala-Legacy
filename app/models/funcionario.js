@@ -30,7 +30,7 @@ export default Model.extend({
       return this.get('fotoUrl');
     }
 
-    return 'images/magistrados/Congreso/Magistrado.jpg';
+    return 'base-style/images/magistrados/Congreso/Magistrado.jpg';
   }),
 
   institucionSelector: Ember.computed('institucion', function() {

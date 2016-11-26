@@ -1,89 +1,10 @@
-<div class="heading-block nobottomborder center">
-  <h1>Comisión de Postulación <span>| Corte de Constitucionalidad</span></h1>
-  <span>¡Infórmate, interactúa e incide!</span>
-</div>
+<h2 class="text-center intro-home">
+  Diputados del Contreso de la República
 
-<div class="fslider bottommargin" data-animation="fade">
-  <div class="flexslider">
-    <div class="slider-wrap">
-      <div class="slide">
-        <a href="#">
-          <img src="images/slider/CC/slider-1.jpg" alt="Slide 1">
-        </a>
-        <div class="flex-caption slider-caption-bg">Comisión de Postulación | Corte de Constitucionalidad</div>
-      </div>
-      <!--
-      <div class="slide">
-        <a href="#">
-          <img src="images/slider/CC/slide2.jpg" alt="Slide 2">
-        </a>
-        <div class="flex-caption slider-caption-bg slider-caption-bottom-right">Proceso de Elección de Magistrados a la Corte de Constitucionalidad</div>
-      </div> -->
-      <div class="slide">
-        <a href="#">
-          <img src="images/slider/CC/slider-2.jpg" alt="Slide 3">
-        </a>
-        <div class="flex-caption slider-caption-bg">Magistrados Corte de Constitucionalidad</div>
-      </div>
+  <br />
 
-      <!-- 
-      <div class="slide">
-        <a href="#">
-          <img src="images/slider/CC/slide4.jpg" alt="Slide 4">
-        </a>
-        <div class="flex-caption slider-caption-bg slider-caption-bottom-right">¡Infórmate, interactúa e incide!</div>
-      </div> -->
-
-    </div>
-  </div>
-</div>
-
-<div class="promo promo-light bottommargin">
-  <h3>¿Te gusta lo que hacemos? <span>Suscríbete</span></h3>
-  <span>y no te pierdas las novedades de Red Ciudadana</span> 
-
-  <a href="http://redciudadana.us5.list-manage.com/subscribe?u=174467d46e3a686561cca001d&id=9c18fd7b38" class="button button-dark button-xlarge button-rounded">Suscríbete</a>
-</div>
-
-<div class="heading-block nobottomborder center">
-  <h1>Magistrados de la <span>Corte de Constitucionalidad (2016-2021)</span></h1>
-  <span>¡Infórmate, interactúa e incide!</span>
-</div>
-
-<div id="portfolio-ajax-wrap">
-  <div id="portfolio-ajax-container"></div>
-</div>
-
-<div id="portfolio-ajax-loader"><img src="images/preloader-dark.gif" alt="Preloader"></div>
-
-<ul id="portfolio-filter" class="portfolio-filter clearfix" data-container="#portfolio">
-
-  <li class="activeFilter" id="pf-todos">
-    <a
-      href="#"
-      {{action "applyFilter" "pf-todos"}}
-    >Mostrar todos</a>
-  </li>
-
-  {{#each model.instituciones as |institucion|}}
-    <li id="{{institucion.selector}}">
-      <a
-        href="#"
-        {{action "applyFilter" institucion.selector}}
-      >
-        {{institucion.nombreCorto}}
-      </a>
-    </li>
-  {{/each}}
-
-</ul>
-
-<!-- TODO: Evaluar utilidad de este shuffle -->
-<div id="portfolio-shuffle" class="portfolio-shuffle" data-container="#portfolio">
-  <i class="icon-random" {{action "applyShuffle"}}></i>
-</div>
-
-<div class="clear"></div>
+  <small>¡Infórmate, interactúa e incide!</small>
+</h2>
 
 <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix">
   {{#each model.funcionarios as |funcionario|}}
@@ -102,12 +23,13 @@
           {{/link-to}}
         </h3>
         <span>
-          <a href="#">{{funcionario.institucion.nombreCompleto}}</a>,
-          <a href="#">{{funcionario.cargoNombreCorto}}</a>
+          {{#link-to "funcionario" funcionario.id}}
+            {{funcionario.institucion.nombreCompleto}},
+            {{funcionario.cargoNombreCorto}}
+          {{/link-to}}
         </span>
       </div>
 
     </article>
   {{/each}}
 </div>
-
