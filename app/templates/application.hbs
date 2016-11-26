@@ -1,102 +1,31 @@
-<header class="zerogrid">
-    <div class="wrap-header">
-        <div class="col-2-5"><div id="logo"><a href="#"><img src="./images/logo.png"/></a></div></div>
-        <div class="col-3-5">
-            <nav>
-                <div class="wrap-nav">
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#">Congreso<br> 2016</a></li>
-                            <li style="border-bottom: 7px solid #42a4f5;"><a href="#">¿Quien es<br> mi representante?</a></li>
-                            <li><a href="#">Iniciativas de<br> Ley</a></li>
-                            <li><a href="#">Adopta a tu<br> Diputado</a></li>
-                            <li><a href="#">Peguntales/<br> Escribeles</a></li>
-                            <li><a href="#">Ranking</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="minimenu">
-                        <div>MENU</div>
-                        <select onchange="location=this.value">
-                            <option></option>
-                            <option value="#">Congreso 2016</option>
-                            <option value="#">¿Quien es mi representante</option>
-                            <option value="#">Iniciativas de Ley</option>
-                            <option value="#">Adopta a tu Diputado</option>
-                            <option value="#">Peguntales Escribeles</option>
-                            <option value="#">Ranking</option>
-                        </select>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="wrap-header" style=" height:30px; margin-top: 5px;">
-            <div class="col-1-5" style=" float:right;">
-                <div class="social">
-                    <a href="#" class="fb">
-                        <i class="fa fa-facebook" style="margin-top:4px;"></i>
-                    </a>
-
-                    <a href="#" class="tw">
-                        <i class="fa fa-twitter" style="margin-top:4px;"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+<div id="wrapper">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="http://vi-gt2015.s3.amazonaws.com/img/logo-candidatos.svg" class="img-responsive" title="CandiDatos" alt="CandiDatos"></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/pages/Glosario/">Glosario</a></li>
+          <li><a href="/pages/Metodología/">Metodología</a></li>
+          <li><a href="/pages/quienes-somos/">¿Quiénes somos?</a></li>
+        </ul>
+      </div>
     </div>
-</header>
+  </div>
 
-<section id="content">
-    <div class="wrap-content zerogrid">
-        {{outlet}}
-    </div>
-</section>
+  <div class="container">
+    <section id="election">
+      <div>
+        <h2 class="text-center">Funcionarios - Congreso de la República</h2>
+      </div>
 
-<footer>
-    <div class="wrap-footer zerogrid">
-        <div class="row">
-            <div class="col-1-3">
-                <div class="wrap-col">
-                    <div class="box">
-                        <div class="heading"><h2>Ayúdanos: </h2></div>
-                        <div class="content">
-                            <p>- Voluntario<br> - Donación</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="wrap-col">
-                    <div class="box">
-                        <div class="heading"><h2>Un proyecto desarrollado por: </h2></div>
-                        <div class="content">
-                            <div class="gallery">
-                                <a href="#"><img src="images/r.png" /></a>
-                            </div>
-                        </div>
-                        <div class="heading"><h2>Con el apoyo de: </h2></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="wrap-col">
-                    <div class="box">
-                        <div class="heading"><h2>Contáctanos</h2></div>
-                        <div class="content">
-                            <p>
-                                Info@redciudadana.org.gt
-
-                                <br><br>
-
-                                12 calle 1-25 zona 10, <br>
-                                Edificio Géminis 10,<br>
-                                Edificio Torre Norte,<br>
-                                Guatemala, Guatemala
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+      {{outlet}}
+    </section>
+  </div>
+</div>

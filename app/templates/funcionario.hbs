@@ -1,173 +1,143 @@
-<div class="row block02" style="padding:10px 0px; background-image:none; width: 75%; margin: 0 auto;">
-    <h3 class="new" style="padding-bottom:0; text-align:center;">
-        {{model.funcionario.nombre}}
-    </h3>
-</div>
+<div class="container-profile">
+  <div>
+    <h3>{{model.funcionario.nombre}}</h3>
+  </div>
 
-<div class="row block02" style="padding:30px 0px; background-image:none;">
-    <div class="col-1-3">
-        <p>
-            <img
-              src="{{model.funcionario.fotoFuncionario}}"
-              alt="{{model.funcionario.nombre}}"
-            >
-        </p>
-    </div>
+  <div class="profile-candidate">
+    <div class="row">
+      <div class="col-md-3">
+        <div id="candidate-img-profile">
+          <img
+            src="{{model.funcionario.fotoFuncionario}}"
+            alt="{{model.funcionario.nombre}}"
+            height="300"
+            width="300"
+            border="0"
+            class="img-responsive"
+          >
+        </div>
+      </div>
 
-    <div class="col-1-3">
-        <p>
-          <strong>Cargo:</strong>
-          {{if
-            model.funcionario.cargoNombreCompleto
-            model.funcionario.cargoNombreCompleto
-            model.funcionario.cargoNombreCorto
-          }}
-        </p>
-        <p>
-          <strong>Institución:</strong>
-          {{model.funcionario.institucion.nombreCompleto}}
-        </p>
-        <p>
-          <strong>Profesión:</strong>
-          {{model.funcionario.profesion}}
-        </p>
-        <p>
-          <strong>Educación:</strong>
-          {{model.funcionario.educacion}}
-        </p>
-        <p>
-          <strong>Fecha nacimiento:</strong>
-          {{model.funcionario.fechaNacimiento}}
-        </p>
-        <p>
-          <strong>Lugar de nacimiento:</strong>
-          {{model.funcionario.lugarNacimiento}}
-        </p>
-        <p>
-          <strong>Partido postulante:</strong>
-          {{model.funcionario.partidoPostulante.nombreCorto}}
-        </p>
-        <p>
-          <strong>Partido actual:</strong>
-          {{model.funcionario.partidoActual.nombreCorto}}
-        </p>
-    </div>
+      <div class="col-md-5">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>
+                <span>Cargo:</span>
+                {{if
+                  model.funcionario.cargoNombreCompleto
+                  model.funcionario.cargoNombreCompleto
+                  model.funcionario.cargoNombreCorto
+                }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Institución:</span>
+                {{model.funcionario.institucion.nombreCompleto}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Profesión:</span>
+                {{model.funcionario.profesion}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Educación:</span>
+                {{model.funcionario.educacion}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Fecha nacimiento:</span>
+                {{model.funcionario.fechaNacimiento}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Lugar de nacimiento:</span>
+                {{model.funcionario.lugarNacimiento}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Partido postulante:</span>
+                {{model.funcionario.partidoPostulante.nombreCorto}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Partido actual:</span>
+                {{model.funcionario.partidoActual.nombreCorto}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <div class="col-1-3">
-        <div style="text-align: center;">
-            {{#if model.funcionario.partidoActual.logo}}
-              <img
-                src="{{model.funcionario.partidoActual.logo}}"
-                alt="{{model.funcionario.partidoActual.nombreCompleto}}"
+      <div class="col-md-4 social-side">
+        <div class="logo-partido">
+          <img
+            src="{{model.funcionario.partidoActual.logo}}"
+            alt="{{model.funcionario.partidoActual.nombreCompleto}}"
+          >
+        </div>
+        <ul class="list-unstyled">
+
+          {{#if model.funcionario.tw}}
+            <li>
+              <a
+                href="https://twitter.com/{{model.funcionario.tw}}"
+                class="social-link-candidate"
+                target="_blank">@{{model.funcionario.tw}}
+              </a>
+            </li>
+          {{/if}}
+
+          {{#if model.funcionario.fb}}
+            <li>
+              <a
+                href="{{model.funcionario.fb}}"
+                class="social-link-candidate"
+                target="_blank"
               >
-            {{/if}}
-
-            <p>
-                {{model.funcionario.partidoActual.nombreCompleto}}
-            </p>
-        </div>
-
-        <br>
-
-        {{#if model.funcionario.email }}
-            <p class="te">
-                <i
-                    class="fa fa-envelope"
-                    aria-hidden="true"
-                    style="color:#78c1ec; margin-top: 7px; margin-right:10px;"
-                ></i>
-                {{ model.funcionario.email }}
-            </p>
-        {{/if}}
-
-        {{#if model.funcionario.direccion }}
-            <p class="te">
-                <i
-                    class="fa fa-map-marker"
-                    aria-hidden="true"
-                    style="color: #78c1ec; margin-right: 11px; font-size: 20px; margin-top: 5px; margin-left: 2px;"
-                ></i>
-                {{ model.funcionario.direccion }}
-            </p>
-        {{/if}}
-
-        {{#if model.funcionario.telefono }}
-            <p class="te">
-                <i
-                    class="fa fa-mobile"
-                    aria-hidden="true"
-                    style="color: #78c1ec; margin-right: 11px; font-size: 25px; margin-left: 3px;"
-                ></i>
-                {{ model.funcionario.telefono }}
-            </p>
-        {{/if}}
-
-        {{#if model.funcionario.fb }}
-            <p class="te">
-                <i
-                    class="fa fa-facebook"
-                    aria-hidden="true"
-                    style="color: #78c1ec; margin-right: 11px; font-size: 25px; margin-left: 3px;"
-                ></i>
-                <a href="{{model.funcionario.fb}}" target="_blank">Facebook</a>
-            </p>
-        {{/if}}
-
-        {{#if model.funcionario.tw}}
-            <p class="te">
-                <i
-                    class="fa fa-twitter"
-                    aria-hidden="true"
-                    style="color: #78c1ec; margin-right: 11px; font-size: 25px; margin-left: 3px;"
-                ></i>
-                <a href="{{model.funcionario.tw}}" target="_blank">@{{model.funcionario.tw}}</a>
-            </p>
-        {{/if}}
+                {{model.funcionario.nombre}}
+              </a>
+            </li>
+          {{/if}}
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="row block01">
-    <div class="col-1-4">
-        <div class="wrap-col">
-            <img src="images/a1.png" />
-        </div>
+<div class="questionary">
+  <div class="row">
+    <div class="col-md-6">
+      <h3></h3>
     </div>
-    <div class="col-1-4">
-        <div class="wrap-col">
-            <img src="images/a2.png" />
-        </div>
-    </div>
-    <div class="col-1-4">
-        <div class="wrap-col">
-            <img src="images/a3.png" />
-        </div>
-    </div>
-    <div class="col-1-4">
-        <div class="wrap-col">
-            <img src="images/a4.png" />
-        </div>
-    </div>
-</div>
+  </div>
 
-<div
-    class="row block02"
-    style=" background:#78c1ec; box-sizing: border-box; border-radius: 10px; padding: 30px;"
->
-    <div class="tab_container">
-        <div id="biografia" class="tab_content">
-            {{{ model.funcionario.biografia }}}
-        </div>
-
-        <div id="desempenio" class="tab_content">
-            {{{ model.funcionario.desempenio }}}
-        </div>
-
-        <div id="historial-politico" class="tab_content">
-            {{{ model.funcionario.historialPolitico }}}
-        </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">Biografía</div>
+    <div class="panel-body">
+      {{{ model.funcionario.biografia }}}
     </div>
-</div>
+  </div>
 
-<div class="row block02" style=" background:#f2f2f2;">
-    <h3 class="new" style="text-align:center;">DISQUS</h3>
+  <div class="panel panel-default">
+    <div class="panel-heading">Desempeño</div>
+    <div class="panel-body">
+      {{{ model.funcionario.desempenio }}}
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Historial político</div>
+    <div class="panel-body">
+      {{{ model.funcionario.historialPolitico }}}
+    </div>
+  </div>
 </div>
