@@ -8,6 +8,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('funcionario', {path: '/funcionario/:id'});
+
+  // TODO: Ruta pendiente de completar
   this.route('institucion');
 });
 
