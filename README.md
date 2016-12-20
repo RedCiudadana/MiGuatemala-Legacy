@@ -21,7 +21,7 @@ Dentro del repositorio existen los siguientes branches:
 Los siguientes paquetes deberán estar instalados en el equipo:
 
 * [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
+* [Node.js](http://nodejs.org/) (con NPM)
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
