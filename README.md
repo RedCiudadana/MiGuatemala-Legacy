@@ -3,6 +3,9 @@
 [MiGuatemala](http://miguatemala.redciudadana.org) es una aplicación destinada a
 la transparencia en materia de funcionarios públicos.
 
+Su objetivo es ser una herramienta para visualización de perfiles, reutilizable
+para distintos proyectos.
+
 Está construida como una aplicación [Ember](http://emberjs.com/) que obtiene datos
 de un [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1DnOk0jXyC-bGPG1uSUvi94tJ9zJWSBNEZWaVUYtg3LI/pubhtml)
 por medio de [Tabletop](https://github.com/jsoma/tabletop), y hosteada en [GitHub Pages](https://pages.github.com/).
