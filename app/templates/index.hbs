@@ -11,19 +11,19 @@
     <article class="portfolio-item pf-media {{funcionario.institucionSelector}}">
 
       <div class="portfolio-image">
-        {{#link-to "funcionario" funcionario.id}}
+        {{#link-to "perfil" funcionario.id}}
           <img alt="{{funcionario.cargoNombreCompleto}}" src="{{funcionario.fotoFuncionario}}" />
         {{/link-to}}
       </div>
 
       <div class="portfolio-desc">
         <h3>
-          {{#link-to "funcionario" funcionario.id}}
+          {{#link-to "perfil" funcionario.id}}
             {{funcionario.nombre}}
           {{/link-to}}
         </h3>
         <span>
-          {{#link-to "funcionario" funcionario.id}}
+          {{#link-to "perfil" funcionario.id}}
             {{funcionario.institucion.nombreCompleto}},
             {{funcionario.cargoNombreCorto}}
           {{/link-to}}

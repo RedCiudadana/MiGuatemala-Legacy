@@ -7,10 +7,14 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('funcionario', {path: '/funcionario/:id'});
+  this.route('perfil', {path: '/perfil/:id'});
 
-  // TODO: Ruta pendiente de completar
+  // TODO: Rutas pendiente de completar
   this.route('institucion');
+  this.route('perfiles');
+  this.route('propuestas');
+  this.route('metodologia');
+  this.route('contacto');
 });
 
 export default Router;

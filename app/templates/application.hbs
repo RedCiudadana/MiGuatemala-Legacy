@@ -7,15 +7,41 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+
         {{#link-to "application"}}
-          <img src="http://vi-gt2015.s3.amazonaws.com/img/logo-candidatos.svg" class="img-responsive" title="CandiDatos" alt="CandiDatos">
+          <img
+            src="{{model.config.logoUrl}}"
+            class="img-responsive"
+            title="{{model.config.logoTitle}}"
+            alt="{{model.config.logoTitle}}">
         {{/link-to}}
       </div>
+
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/pages/Glosario/">Glosario</a></li>
-          <li><a href="/pages/Metodología/">Metodología</a></li>
-          <li><a href="/pages/quienes-somos/">¿Quiénes somos?</a></li>
+          {{#each model.config.navbarLinks as |link|}}
+            <li>
+              {{#link-to link.route}}
+                {{link.title}}
+              {{/link-to}}
+            </li>
+          {{/each}}
+
+          {{#if model.config.siteTwLink}}
+            <li>
+              <a href="{{model.config.siteTwLink}}" class="social-link-candidate" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+          {{/if}}
+
+          {{#if model.config.siteFbLink}}
+            <li>
+              <a href="{{model.config.siteFbLink}}" class="social-link-candidate" target="_blank">
+                <i class="fa fa-facebook-official"></i>
+              </a>
+            </li>
+          {{/if}}
         </ul>
       </div>
     </div>

@@ -6,13 +6,14 @@
         "browser": true,
         "embertest": true
     },
-    "ecmaFeatures": {
-        "modules": true
+    "parserOptions": {
+        "sourceType": "module"
     },
     "rules": {
         "indent": [
             2,
-            2
+            2,
+            { SwitchCase: 1 }
         ],
         "quotes": [
             2,
@@ -26,5 +27,6 @@
             2,
             "always"
         ]
-    }
+    },
+    "globals": {}
 }
