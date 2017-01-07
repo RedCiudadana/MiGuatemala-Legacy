@@ -27,17 +27,24 @@
             </li>
           {{/each}}
 
-          {{#if model.config.siteTwLink}}
+          {{#if model.config.twitterShareLink}}
             <li>
-              <a href="{{model.config.siteTwLink}}" class="social-link-candidate" target="_blank">
+              <a
+                href="#"
+                target="_blank"
+                onclick={{action 'shareOnTwitter'}}
+              >
                 <i class="fa fa-twitter"></i>
               </a>
             </li>
           {{/if}}
 
-          {{#if model.config.siteFbLink}}
+          {{#if model.config.facebookShareLink}}
             <li>
-              <a href="{{model.config.siteFbLink}}" class="social-link-candidate" target="_blank">
+              <a
+                href="{{model.config.facebookShareLink}}"
+                target="_blank"
+              >
                 <i class="fa fa-facebook-official"></i>
               </a>
             </li>

@@ -33,5 +33,5 @@ export default Ember.Route.extend({
     this._super(controller, model);
 
     model.config.navbarLinks = model.navbarLinks;
-  },
+  }
 });

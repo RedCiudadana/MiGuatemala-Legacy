@@ -1,10 +1,6 @@
-<h2 class="text-center intro-home">
-  Diputados del Contreso de la República
-
-  <br />
-
-  <small>¡Infórmate, interactúa e incide!</small>
-</h2>
+{{#if model.config.siteMainTitle}}
+  {{{model.config.siteMainTitle}}}
+{{/if}}
 
 <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix">
   {{#each model.funcionarios as |funcionario|}}
