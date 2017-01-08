@@ -35,6 +35,7 @@ export default Ember.Route.extend({
           return routeRecognizer.hasRoute(link.route);
         });
       }),
+      mainPageSliderData: spreadsheet.fetch('main-page-slider-data')
     });
   },
 
@@ -43,5 +44,6 @@ export default Ember.Route.extend({
 
     model.config.navbarLinks = model.navbarLinks;
     model.config.mainPageLinks = model.mainPageLinks;
+    model.config.mainPageSliderData = model.mainPageSliderData;
   }
 });
