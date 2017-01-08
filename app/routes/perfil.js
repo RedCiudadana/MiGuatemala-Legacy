@@ -5,14 +5,14 @@ export default Ember.Route.extend({
 
     let id = Number.parseInt(params.id);
 
-    let funcionario = this.store.peekRecord('funcionario', id);
+    let perfil = this.store.peekRecord('perfil', id);
 
-    let institucion = funcionario.get('institucion');
+    let institucion = perfil.get('institucion');
 
-    let partidoActual = funcionario.get('partidoActual');
+    let partidoActual = perfil.get('partidoActual');
 
     return Ember.RSVP.hash({
-      funcionario: funcionario,
+      perfil: perfil,
       institucion: institucion,
       partidoActual: partidoActual
     });

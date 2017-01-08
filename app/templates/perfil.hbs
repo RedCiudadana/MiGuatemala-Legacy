@@ -1,11 +1,11 @@
 <section id="election">
   <div>
-    <h2 class="text-center">Funcionarios - Congreso de la República</h2>
+    <h2 class="text-center">Perfiles - Congreso de la República</h2>
   </div>
 
   <div class="container-profile">
     <div>
-      <h3>{{model.funcionario.nombre}}</h3>
+      <h3>{{model.perfil.nombre}}</h3>
     </div>
 
     <div class="profile-candidate">
@@ -13,8 +13,8 @@
         <div class="col-md-3">
           <div id="candidate-img-profile">
             <img
-              src="{{model.funcionario.fotoFuncionario}}"
-              alt="{{model.funcionario.nombre}}"
+              src="{{model.perfil.fotoPerfil}}"
+              alt="{{model.perfil.nombre}}"
               height="300"
               width="300"
               border="0"
@@ -30,52 +30,52 @@
                 <td>
                   <span>Cargo:</span>
                   {{if
-                    model.funcionario.cargoNombreCompleto
-                    model.funcionario.cargoNombreCompleto
-                    model.funcionario.cargoNombreCorto
+                    model.perfil.cargoNombreCompleto
+                    model.perfil.cargoNombreCompleto
+                    model.perfil.cargoNombreCorto
                   }}
                 </td>
               </tr>
               <tr>
                 <td>
                   <span>Institución:</span>
-                  {{model.funcionario.institucion.nombreCompleto}}
+                  {{model.perfil.institucion.nombreCompleto}}
                 </td>
               </tr>
               <tr>
                 <td>
                   <span>Profesión:</span>
-                  {{model.funcionario.profesion}}
+                  {{model.perfil.profesion}}
                 </td>
               </tr>
               <tr>
                 <td>
                   <span>Educación:</span>
-                  {{model.funcionario.educacion}}
+                  {{model.perfil.educacion}}
                 </td>
               </tr>
               <tr>
                 <td>
                   <span>Fecha nacimiento:</span>
-                  {{model.funcionario.fechaNacimiento}}
+                  {{model.perfil.fechaNacimiento}}
                 </td>
               </tr>
               <tr>
                 <td>
                   <span>Lugar de nacimiento:</span>
-                  {{model.funcionario.lugarNacimiento}}
+                  {{model.perfil.lugarNacimiento}}
                 </td>
               </tr>
               <tr>
                 <td>
                   <span>Partido postulante:</span>
-                  {{model.funcionario.partidoPostulante.nombreCorto}}
+                  {{model.perfil.partidoPostulante.nombreCorto}}
                 </td>
               </tr>
               <tr>
                 <td>
                   <span>Partido actual:</span>
-                  {{model.funcionario.partidoActual.nombreCorto}}
+                  {{model.perfil.partidoActual.nombreCorto}}
                 </td>
               </tr>
             </tbody>
@@ -85,30 +85,30 @@
         <div class="col-md-4 social-side">
           <div class="logo-partido">
             <img
-              src="{{model.funcionario.partidoActual.logo}}"
-              alt="{{model.funcionario.partidoActual.nombreCompleto}}"
+              src="{{model.perfil.partidoActual.logo}}"
+              alt="{{model.perfil.partidoActual.nombreCompleto}}"
             >
           </div>
           <ul class="list-unstyled">
 
-            {{#if model.funcionario.tw}}
+            {{#if model.perfil.tw}}
               <li>
                 <a
-                  href="https://twitter.com/{{model.funcionario.tw}}"
+                  href="https://twitter.com/{{model.perfil.tw}}"
                   class="social-link-candidate"
-                  target="_blank">@{{model.funcionario.tw}}
+                  target="_blank">@{{model.perfil.tw}}
                 </a>
               </li>
             {{/if}}
 
-            {{#if model.funcionario.fb}}
+            {{#if model.perfil.fb}}
               <li>
                 <a
-                  href="{{model.funcionario.fb}}"
+                  href="{{model.perfil.fb}}"
                   class="social-link-candidate"
                   target="_blank"
                 >
-                  {{model.funcionario.nombre}}
+                  {{model.perfil.nombre}}
                 </a>
               </li>
             {{/if}}
@@ -128,21 +128,21 @@
     <div class="panel panel-default">
       <div class="panel-heading">Biografía</div>
       <div class="panel-body">
-        {{{ model.funcionario.biografia }}}
+        {{{ model.perfil.biografia }}}
       </div>
     </div>
 
     <div class="panel panel-default">
       <div class="panel-heading">Desempeño</div>
       <div class="panel-body">
-        {{{ model.funcionario.desempenio }}}
+        {{{ model.perfil.desempenio }}}
       </div>
     </div>
 
     <div class="panel panel-default">
       <div class="panel-heading">Historial político</div>
       <div class="panel-body">
-        {{{ model.funcionario.historialPolitico }}}
+        {{{ model.perfil.historialPolitico }}}
       </div>
     </div>
   </div>

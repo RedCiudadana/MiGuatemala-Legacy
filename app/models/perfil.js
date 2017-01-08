@@ -25,7 +25,7 @@ export default Model.extend({
   partidoPostulante: belongsTo('partido'),
   partidoActual: belongsTo('partido'),
 
-  fotoFuncionario: Ember.computed('fotoUrl', function() {
+  fotoPerfil: Ember.computed('fotoUrl', function() {
     if (this.get('fotoUrl')) {
       return this.get('fotoUrl');
     }

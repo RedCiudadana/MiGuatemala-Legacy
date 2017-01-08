@@ -15,11 +15,17 @@
     <div class="accordion" id="slider">
       {{#each model.config.mainPageSliderData as |link|}}
         <li>
-        <a href="#">
-          <img src="{{link.imageLink}}" alt="{{link.caption}}"/>
-        </a>
-        <div class="caption">{{link.caption}}</div>
-      </li>
+          {{#if link.link}}
+            <a href="{{link.link}}">
+              <img src="{{link.imageLink}}" alt="{{link.caption}}"/>
+            </a>
+          {{else}}
+            {{#link-to link.route link.id}}
+              <img src="{{link.imageLink}}" alt="{{link.caption}}"/>
+            {{/link-to}}
+          {{/if}}
+          <div class="caption">{{link.caption}}</div>
+        </li>
       {{/each}}
     </div>
   {{/if}}

@@ -9,7 +9,7 @@ export default Ember.Route.extend({
     const routeRecognizer = this.get('routeRecognizer');
 
     return Ember.RSVP.hash({
-      funcionarios: this.store.findAll('funcionario'),
+      funcionarios: this.store.findAll('perfil'),
       instituciones: this.store.findAll('institucion'),
       partidos: this.store.findAll('partido'),
       config: spreadsheet.fetch('configuracion').then((configuracion) => {

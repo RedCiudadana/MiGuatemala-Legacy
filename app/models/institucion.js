@@ -10,7 +10,7 @@ export default Model.extend({
   fb: attr(),
   tw: attr(),
 
-  funcionarios: hasMany('funcionario'),
+  perfiles: hasMany('perfil'),
 
   selector: Ember.computed('codigo', function() {
     return 'pf-' + this.get('codigo');
