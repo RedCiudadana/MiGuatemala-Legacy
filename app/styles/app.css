@@ -4,3 +4,8 @@
 .main-page-links img {
     width: 100%;
 }
+
+.accordion {
+    position: relative;
+    overflow: hidden;
+}

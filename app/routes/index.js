@@ -9,14 +9,30 @@ export default Ember.Route.extend({
   setupController(controller, model) {
     this._super(controller, model);
 
-    // TODO: Pendiente de re-habilitar: esta sección habilita por primera vez la animación
-    // de Isotope para organizar y filtrar funcionarios
     Ember.run.scheduleOnce('afterRender', this, function() {
+      // TODO: Pendiente de re-habilitar: esta sección habilita por primera vez la animación
+      // de Isotope para organizar y filtrar funcionarios
       var $container = Ember.$('#portfolio');
 
       Ember.$(window).resize(function() {
         $container.isotope('layout');
       });
+
+      if (model.config.banner1Slider) {
+        let screenwidth = Ember.$('#slider').width();
+
+        Ember.$('#slider').gridAccordion({
+          width: screenwidth,
+          height: 250,
+          columns: 12,
+          distance: 2,
+          closedPanelWidth: 10,
+          closedPanelHeight: 10,
+          alignType: 'centerCenter',
+          linkTarget: '_self',
+          slideshow: true
+        });
+      }
     });
   },
 
