@@ -1,2 +1,6 @@
 @import 'main.css';
 @import 'responsive.css';
+
+.main-page-links img {
+    width: 100%;
+}

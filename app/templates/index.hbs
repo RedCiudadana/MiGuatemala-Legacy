@@ -2,30 +2,42 @@
   {{{model.config.siteMainTitle}}}
 {{/if}}
 
-<div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix">
-  {{#each model.funcionarios as |funcionario|}}
-    <article class="portfolio-item pf-media {{funcionario.institucionSelector}}">
+<div>
+  {{#if model.config.banner1Title}}
+    {{{model.config.banner1Title}}}
+  {{/if}}
 
-      <div class="portfolio-image">
-        {{#link-to "perfil" funcionario.id}}
-          <img alt="{{funcionario.cargoNombreCompleto}}" src="{{funcionario.fotoFuncionario}}" />
-        {{/link-to}}
-      </div>
+  {{#if model.config.banner1Link}}
+    <img src="{{model.config.banner1Link}}" />
+  {{/if}}
 
-      <div class="portfolio-desc">
-        <h3>
-          {{#link-to "perfil" funcionario.id}}
-            {{funcionario.nombre}}
-          {{/link-to}}
-        </h3>
-        <span>
-          {{#link-to "perfil" funcionario.id}}
-            {{funcionario.institucion.nombreCompleto}},
-            {{funcionario.cargoNombreCorto}}
-          {{/link-to}}
-        </span>
-      </div>
-
-    </article>
-  {{/each}}
+  {{#if model.config.banner1Footer}}
+    {{{model.config.banner1Footer}}}
+  {{/if}}
 </div>
+
+{{#if model.config.mainPageLinks}}
+  <div class="row main-page-links">
+    {{#each model.config.mainPageLinks as |link|}}
+      <div class="col-md-4">
+        {{#if link.link}}
+          <a href="{{link.link}}">
+            {{#if link.imageLink}}
+              <img src="{{link.imageLink}}" title="{{link.title}}"/>
+            {{else}}
+              {{link.title}}
+            {{/if}}
+          </a>
+        {{else}}
+          {{#link-to link.route}}
+            {{#if link.imageLink}}
+              <img src="{{link.imageLink}}" title="{{link.title}}"/>
+            {{else}}
+              {{link.title}}
+            {{/if}}
+          {{/link-to}}
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+{{/if}}

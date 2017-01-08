@@ -25,7 +25,16 @@ export default Ember.Route.extend({
         return Ember.A(links).filter((link) => {
           return routeRecognizer.hasRoute(link.route);
         });
-      })
+      }),
+      mainPageLinks: spreadsheet.fetch('main-page-links').then((links) => {
+        return Ember.A(links).filter((link) => {
+          if (link.link) {
+            return true;
+          }
+
+          return routeRecognizer.hasRoute(link.route);
+        });
+      }),
     });
   },
 
@@ -33,5 +42,6 @@ export default Ember.Route.extend({
     this._super(controller, model);
 
     model.config.navbarLinks = model.navbarLinks;
+    model.config.mainPageLinks = model.mainPageLinks;
   }
 });
