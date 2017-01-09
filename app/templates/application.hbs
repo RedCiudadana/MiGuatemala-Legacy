@@ -26,29 +26,6 @@
               {{/link-to}}
             </li>
           {{/each}}
-
-          {{#if model.config.twitterShareLink}}
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                onclick={{action 'shareOnTwitter'}}
-              >
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-          {{/if}}
-
-          {{#if model.config.facebookShareLink}}
-            <li>
-              <a
-                href="{{model.config.facebookShareLink}}"
-                target="_blank"
-              >
-                <i class="fa fa-facebook-official"></i>
-              </a>
-            </li>
-          {{/if}}
         </ul>
       </div>
     </div>
@@ -78,14 +55,8 @@
 
       <div class="col-md-6 text-center">
         <h5>Desarrollado por:</h5>
-        <a href="https://www.globalshapers.org/hubs/guatemala-city">
-          <img class="logo" src="http://vi-gt2015.s3.amazonaws.com/img/logo_global_shapers.png" alt="Global Shapers Guatemala City" title="Global Shapers Guatemala City">
-        </a>
         <a href="http://www.redciudadana.org/" target="_blank">
           <img class="logo" src="http://vi-gt2015.s3.amazonaws.com/img/logo_red_ciudadana.png" alt="Red Ciudadana" title="Red ciudadana">
-        </a>
-        <a href="http://www.ciudadanointeligente.org/" target="_blank">
-          <img class="logo" src="http://vi-gt2015.s3.amazonaws.com/img/logo-ciudadanoi.png" alt="Fundación Ciudadano Inteligente" title="Fundación Ciudadano Inteligente">
         </a>
       </div>
 
@@ -104,15 +75,10 @@
 
       <div class="col-md-6 text-center">
         <h5>Con el apoyo de:</h5>
-        <a href="http://www.kas.de/guatemala/" target="_blank">
+        {{!-- Template --}}
+        {{!-- <a href="http://www.kas.de/guatemala/" target="_blank">
           <img class="logo" src="http://vi-gt2015.s3.amazonaws.com/img/Konrad.png" alt="Konrad-Adenauer-Stiftung" title="Konrad-Adenauer-Stiftung">
-        </a>
-        <a href="http://www.hivos.org/" target="_blank">
-          <img class="logo" src="http://vi-gt2015.s3.amazonaws.com/img/hivos-logo.png" alt="Hivos" title="Hivos">
-        </a>
-        <a href="http://www.asies.org.gt/" target="_blank">
-          <img class="logo" src="http://vi-gt2015.s3.amazonaws.com/img/LogosAsies35.png" alt="ASIES" title="ASIES">
-        </a>
+        </a> --}}
       </div>
 
       <div class="col-md-3">

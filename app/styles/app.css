@@ -9,3 +9,7 @@
     position: relative;
     overflow: hidden;
 }
+
+.container {
+    margin-bottom: 40px;
+}
