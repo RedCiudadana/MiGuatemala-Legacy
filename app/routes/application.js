@@ -2,11 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   spreadsheets: Ember.inject.service(),
-  routeRecognizer: Ember.inject.service('-routing'),
+  _routing: Ember.inject.service('-routing'),
 
   model() {
     const spreadsheet = this.get('spreadsheets');
-    const routeRecognizer = this.get('routeRecognizer');
+    const _routing = this.get('_routing');
 
     return Ember.RSVP.hash({
       funcionarios: this.store.findAll('perfil'),
@@ -23,7 +23,7 @@ export default Ember.Route.extend({
       }),
       navbarLinks: spreadsheet.fetch('navbar-links').then((links) => {
         return Ember.A(links).filter((link) => {
-          return routeRecognizer.hasRoute(link.route);
+          return _routing.hasRoute(link.route);
         });
       }),
       mainPageLinks: spreadsheet.fetch('main-page-links').then((links) => {
@@ -32,7 +32,7 @@ export default Ember.Route.extend({
             return true;
           }
 
-          return routeRecognizer.hasRoute(link.route);
+          return _routing.hasRoute(link.route);
         });
       }),
       mainPageSliderData: spreadsheet.fetch('main-page-slider-data')

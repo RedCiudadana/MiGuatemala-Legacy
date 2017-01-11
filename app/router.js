@@ -7,10 +7,15 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('perfil', {path: '/perfil/:id'});
+
+  this.route('institucion', function() {
+    this.route('perfiles');
+    this.route('propuestas');
+    this.route('frente-a-frente');
+  });
 
   // TODO: Rutas pendiente de completar
-  this.route('institucion');
+  this.route('perfil', {path: '/perfil/:id'});
   this.route('perfiles');
   this.route('propuestas');
   this.route('metodologia');

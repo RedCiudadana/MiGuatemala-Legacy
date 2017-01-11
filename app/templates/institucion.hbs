@@ -1,2 +1,70 @@
 {{!-- TODO: Pendiente de completar pantalla de institución --}}
+
+{{#if model.config.institucionFuncionalidades}}
+<div class="row">
+  <div class="nav-candidator">
+    <nav class="col-md-12">
+      <ul class="list-inline">
+        {{#each model.config.institucionFuncionalidades as |link|}}
+          <li>
+            {{#if link.link}}
+              <a href="{{link.link}}" title="{{link.title}}">
+                {{#if link.iconClass}}
+                  <i class="{{link.iconClass}}"></i>
+                {{/if}}
+                {{link.name}}
+              </a>
+            {{else}}
+              {{#link-to link.route title=link.title}}
+                {{#if link.iconClass}}
+                  <i class="{{link.iconClass}}"></i>
+                {{/if}}
+                {{link.name}}
+              {{/link-to}}
+            {{/if}}
+          </li>
+        {{/each}}
+
+        {{!-- <li>
+          <a
+            href="/election/candidatos-presidencial-primera-vuelta/questionary"
+            accesskey="c"
+            title="Cuestionario (Alt+c)"
+          >
+            <i class="icon-list"></i> Cuestionario
+          </a>
+        </li>
+        <li>
+          <a
+            href="/election/candidatos-presidencial-primera-vuelta/soul-mate"
+            accesskey="n"
+            title="Llena el cuestionario contestando cada respuesta para encontrar al candidato más afín a tus intereses. (Alt+n)"
+          >
+            <i class="icon-heart"></i> Test de Afinidad
+          </a>
+        </li>
+        <li>
+          <a
+            href="&#10;/election/candidatos-presidencial-primera-vuelta/face-to-face/manuel-baldizon&#10;&#10;"
+            accesskey="f"
+            title="Te enumeramos las posturas de los candidatos para que los compares. Además, pusimos citas textuales de lo que dicen en los medios de comunicación vrs lo que nos dicen a nosotros para comparar la coherencia de sus respuestas. (Alt+f)"
+          >
+            <i class="icon-bolt"></i> Frente a Frente
+          </a>
+        </li>
+        <li>
+          <a
+            href="/election/candidatos-presidencial-primera-vuelta/ask"
+            accesskey="a"
+            title="En esta sección puedes llenar el formulario para hacerle preguntas a los candidatos. (Alt+a)"
+          >
+            <i class="icon-edit"></i> Pregúntales
+          </a>
+        </li> --}}
+      </ul>
+    </nav>
+  </div>
+</div>
+{{/if}}
+
 {{outlet}}
