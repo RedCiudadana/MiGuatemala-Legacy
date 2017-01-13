@@ -1,7 +1,5 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  breadCrumb: {
-    title: 'Frente a frente'
-  }
+  breadCrumb: null
 });

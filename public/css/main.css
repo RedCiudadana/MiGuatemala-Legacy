@@ -477,6 +477,9 @@ input, button, select, textarea {
 
 .profile-candidate img {
 	margin-bottom: 10px;
+	max-height: 200px;
+}
+
 }
 
 .img-profile {
