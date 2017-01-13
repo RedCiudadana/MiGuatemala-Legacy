@@ -28,16 +28,6 @@ export default Ember.Route.extend({
 
               return _routing.hasRoute(link.route);
             })
-            // .forEach((link) => {
-              // let currentState = _routing.get('currentState');
-
-              // console.log(_routing.isActiveForRoute(
-              //   [],
-              //   [],
-              //   link.route,
-              //   currentState
-              // ));
-            // });
         })
     });
   },
