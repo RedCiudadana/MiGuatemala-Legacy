@@ -6,7 +6,7 @@
     <nav class="col-md-12">
       <ul class="list-inline">
         {{#each model.config.institucionFuncionalidades as |link|}}
-          <li>
+          {{#active-link}}
             {{#if link.link}}
               <a href="{{link.link}}" title="{{link.title}}">
                 {{#if link.iconClass}}
@@ -22,7 +22,7 @@
                 {{link.name}}
               {{/link-to}}
             {{/if}}
-          </li>
+          {{/active-link}}
         {{/each}}
 
         {{!-- <li>

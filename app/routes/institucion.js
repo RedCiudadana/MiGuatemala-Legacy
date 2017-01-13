@@ -45,8 +45,6 @@ export default Ember.Route.extend({
   setupController(controller, model) {
     this._super(controller, model);
 
-    console.log(model);
-
     model.config.institucionFuncionalidades = model.institucionFuncionalidades;
   }
 });
