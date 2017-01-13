@@ -28,21 +28,28 @@ export default Ember.Route.extend({
 
               return _routing.hasRoute(link.route);
             })
-        })
-      //   ,
-      // institucionData: spreadsheet
-      //   .fetch('institucion-data')
-      //   .then((configuracion) => {
-      //     console.log(configuracion);
-      //   }),
+        }),
+      institucionData: spreadsheet
+        .fetch('institucion-data')
+        .then((institucionData) => {
+          let institucionDataObject = Ember.Object.create();
+
+          Ember.A(institucionData).forEach((item) => {
+            institucionDataObject.set(item.key, item.value);
+          });
+
+          return institucionDataObject;
+        }),
     });
   },
 
-  // afterModel(model) {
-  //   this.set('breadCrumb', {
-  //     title: model.institucionData.nombre
-  //   });
-  // },
+  afterModel(model) {
+    if (!Ember.isNone(model.institucionData.nombre)) {
+      this.set('breadCrumb', {
+        title: model.institucionData.nombre
+      });
+    }
+  },
 
   setupController(controller, model) {
     this._super(controller, model);

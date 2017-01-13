@@ -21,7 +21,6 @@ export default Model.extend({
   desempenio: attr(),
   historialPolitico: attr(),
 
-  institucion: belongsTo('institucion'),
   partidoPostulante: belongsTo('partido'),
   partidoActual: belongsTo('partido'),
 
@@ -31,13 +30,5 @@ export default Model.extend({
     }
 
     return 'images/Magistrado.jpg';
-  }),
-
-  institucionSelector: Ember.computed('institucion', function() {
-    if (!this.get('institucion')) {
-      return;
-    }
-
-    return this.get('institucion').get('selector');
   })
 });

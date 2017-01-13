@@ -14,7 +14,6 @@ export default Ember.Route.extend({
 
     return Ember.RSVP.hash({
       funcionarios: this.store.findAll('perfil'),
-      instituciones: this.store.findAll('institucion'),
       partidos: this.store.findAll('partido'),
       config: spreadsheet.fetch('configuracion').then((configuracion) => {
         let configObject = Ember.Object.create();
