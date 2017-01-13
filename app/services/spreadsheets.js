@@ -9,6 +9,19 @@ export default Ember.Service.extend({
       Tabletop.init({
         key: spreadsheet,
         callback: function(data) {
+
+          if (Ember.isNone(data[worksheet])) {
+            console.log('Got no answer for spreadsheet ' + worksheet);
+
+            return;
+          }
+
+          if (Ember.isNone(data[worksheet].elements)) {
+            console.log('Got a problem with the elements for spreadsheet ' + worksheet);
+
+            return;
+          }
+
           resolve(data[worksheet].elements);
         }
       });

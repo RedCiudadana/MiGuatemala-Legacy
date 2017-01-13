@@ -4,6 +4,10 @@ export default Ember.Route.extend({
   spreadsheets: Ember.inject.service(),
   _routing: Ember.inject.service('-routing'),
 
+  breadCrumb: {
+    title: 'application breadcrumb'
+  },
+
   model() {
     const spreadsheet = this.get('spreadsheets');
     const _routing = this.get('_routing');

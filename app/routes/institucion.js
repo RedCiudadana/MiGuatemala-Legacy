@@ -29,8 +29,20 @@ export default Ember.Route.extend({
               return _routing.hasRoute(link.route);
             })
         })
+      //   ,
+      // institucionData: spreadsheet
+      //   .fetch('institucion-data')
+      //   .then((configuracion) => {
+      //     console.log(configuracion);
+      //   }),
     });
   },
+
+  // afterModel(model) {
+  //   this.set('breadCrumb', {
+  //     title: model.institucionData.nombre
+  //   });
+  // },
 
   setupController(controller, model) {
     this._super(controller, model);
