@@ -26,6 +26,10 @@ module.exports = function(environment) {
       // when it is created
     },
 
+    disqus: {
+      shortname: 'test-miguatemala-redciudadana-org'
+    },
+
     contentSecurityPolicy: contentSecurityPolicy
   };
 
