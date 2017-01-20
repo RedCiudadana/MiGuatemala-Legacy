@@ -6,12 +6,14 @@ import { belongsTo } from 'ember-data/relationships';
 export default Model.extend({
   nombre: attr(),
   fotoUrl: attr(),
+  cargoNombreCompleto: attr(),
+  cargoNombreCorto: attr(),
   profesion: attr(),
   educacion: attr(),
   fechaNacimiento: attr(),
   lugarNacimiento: attr(),
-  cargoNombreCompleto: attr(),
-  cargoNombreCorto: attr(),
+  partidoPostulante: belongsTo('partido'),
+  partidoActual: belongsTo('partido'),
   email: attr(),
   fb: attr(),
   tw: attr(),
@@ -20,9 +22,6 @@ export default Model.extend({
   biografia: attr(),
   desempenio: attr(),
   historialPolitico: attr(),
-
-  partidoPostulante: belongsTo('partido'),
-  partidoActual: belongsTo('partido'),
 
   fotoPerfil: Ember.computed('fotoUrl', function() {
     if (this.get('fotoUrl')) {

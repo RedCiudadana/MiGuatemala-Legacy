@@ -1,21 +1,28 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  spreadsheets: Ember.inject.service(),
+
   model(params) {
+    const spreadsheet = this.get('spreadsheets');
 
-    let id = Number.parseInt(params.id);
+    const perfil = this.store.peekRecord('perfil', params.id);
 
-    let perfil = this.store.peekRecord('perfil', id);
+    const institucion = perfil.get('institucion');
 
-    let institucion = perfil.get('institucion');
-
-    let partidoActual = perfil.get('partidoActual');
+    const partidoActual = perfil.get('partidoActual');
 
     return Ember.RSVP.hash({
       perfil: perfil,
       institucion: institucion,
-      partidoActual: partidoActual
+      partidoActual: partidoActual,
+      perfilInformacionGeneralConfiguracion: spreadsheet
+        .fetch('perfil-informacion-general-configuracion'),
     });
+  },
+
+  setupController(controller, model) {
+    this._super(controller, model);
   },
 
   actions: {
