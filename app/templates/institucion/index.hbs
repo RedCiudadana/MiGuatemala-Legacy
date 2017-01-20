@@ -24,11 +24,14 @@
         <div class="col-md-5">
           <table class="table">
             <tbody>
-              <tr>
-                <td>
-                  {{{model.institucionData.informacionGeneral}}}
-                </td>
-              </tr>
+              {{#each-in model.informacionGeneral as |key item|}}
+                <tr>
+                  <td>
+                    {{#if item.label}}<span>{{{item.label}}}</span>{{/if}}
+                    {{{item.value}}}
+                  </td>
+                </tr>
+              {{/each-in}}
             </tbody>
           </table>
         </div>
@@ -42,6 +45,7 @@
               >
             </div>
           {{/if}}
+
           <ul class="list-unstyled">
 
             {{#if model.institucionData.tw}}

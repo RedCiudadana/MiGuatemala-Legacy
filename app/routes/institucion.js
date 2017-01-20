@@ -29,6 +29,8 @@ export default Ember.Route.extend({
               return _routing.hasRoute(link.route);
             })
         }),
+      institucionInformacionGeneralConfiguracion: spreadsheet
+        .fetch('institucion-informacion-general-configuracion'),
       institucionData: spreadsheet
         .fetch('institucion-data')
         .then((institucionData) => {
@@ -54,6 +56,23 @@ export default Ember.Route.extend({
   setupController(controller, model) {
     this._super(controller, model);
 
+    // TODO: validar que no vengan configurados campos no encontrados en la información
+    // de la institución
+
     model.config.institucionFuncionalidades = model.institucionFuncionalidades;
+    model.config.institucionInformacionGeneral = model.institucionInformacionGeneralConfiguracion;
+
+    console.log(model.config.institucionInformacionGeneral);
+
+    model.informacionGeneral = {};
+    Ember.A(model.config.institucionInformacionGeneral)
+      .map((element) => {
+        model.informacionGeneral[element.field] = {
+          label: element.label,
+          value: model.institucionData[element.field]
+        };
+      });
+
+    console.log(model.informacionGeneral);
   }
 });
