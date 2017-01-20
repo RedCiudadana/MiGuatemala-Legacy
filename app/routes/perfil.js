@@ -38,9 +38,9 @@ export default Ember.Route.extend({
   },
 
   afterModel(model) {
-    if (!Ember.isNone(model.institucionData.nombre)) {
+    if (!Ember.isNone(model.perfil.get('nombre'))) {
       this.set('breadCrumb', {
-        title: model.perfil.nombre
+        title: model.perfil.get('nombre')
       });
     }
   },
