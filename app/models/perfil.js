@@ -29,5 +29,9 @@ export default Model.extend({
     }
 
     return 'images/Magistrado.jpg';
+  }),
+
+  disqusIdentifier: Ember.computed('id', function() {
+    return `perfil-${this.get('id')}`;
   })
 });
