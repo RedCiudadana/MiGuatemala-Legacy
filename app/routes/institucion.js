@@ -62,17 +62,18 @@ export default Ember.Route.extend({
     model.config.institucionFuncionalidades = model.institucionFuncionalidades;
     model.config.institucionInformacionGeneral = model.institucionInformacionGeneralConfiguracion;
 
-    console.log(model.config.institucionInformacionGeneral);
-
     model.informacionGeneral = {};
     Ember.A(model.config.institucionInformacionGeneral)
       .map((element) => {
+
+        if (Ember.isNone(model.institucionData[element.field])) {
+          throw new Error(`Property '${element.field}' of institucion unedfined`);
+        }
+
         model.informacionGeneral[element.field] = {
           label: element.label,
           value: model.institucionData[element.field]
         };
       });
-
-    console.log(model.informacionGeneral);
   }
 });
