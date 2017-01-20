@@ -1,150 +1,38 @@
-<section id="election">
-  <div>
-    <h2 class="text-center">Perfiles - Congreso de la República</h2>
+<div class="row breadscrumb-social hidden-xs">
+  <div class="col-md-9">
+    {{!-- TODO: Fix direct access functionality --}}
+    {{bread-crumbs tagName="ul" outputStyle="bootstrap" linkable=true}}
   </div>
+</div>
 
-  <div class="container-profile">
-    <div>
-      <h3>{{model.perfil.nombre}}</h3>
-    </div>
-
-    <div class="profile-candidate">
-      <div class="row">
-        <div class="col-md-3">
-          <div id="candidate-img-profile">
-            <img
-              src="{{model.perfil.fotoPerfil}}"
-              alt="{{model.perfil.nombre}}"
-              border="0"
-              class="img-responsive"
-            >
-          </div>
-        </div>
-
-        <div class="col-md-5">
-          <table class="table">
-            <tbody>
-              <tr>
-                <td>
-                  <span>Cargo:</span>
-                  {{if
-                    model.perfil.cargoNombreCompleto
-                    model.perfil.cargoNombreCompleto
-                    model.perfil.cargoNombreCorto
-                  }}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Institución:</span>
-                  {{model.perfil.institucion.nombreCompleto}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Profesión:</span>
-                  {{model.perfil.profesion}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Educación:</span>
-                  {{model.perfil.educacion}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Fecha nacimiento:</span>
-                  {{model.perfil.fechaNacimiento}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Lugar de nacimiento:</span>
-                  {{model.perfil.lugarNacimiento}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Partido postulante:</span>
-                  {{model.perfil.partidoPostulante.nombreCorto}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Partido actual:</span>
-                  {{model.perfil.partidoActual.nombreCorto}}
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-4 social-side">
-          {{!-- TODO: Completar --}}
-          <div class="logo-partido">
-            <img
-              src="{{model.perfil.partidoActual.logo}}"
-              alt="{{model.perfil.partidoActual.nombreCompleto}}"
-            >
-          </div>
-          <ul class="list-unstyled">
-
-            {{#if model.perfil.tw}}
-              <li>
-                <a
-                  href="https://twitter.com/{{model.perfil.tw}}"
-                  class="social-link-candidate"
-                  target="_blank">@{{model.perfil.tw}}
+{{#if model.config.perfilFuncionalidades}}
+  <div class="row">
+    <div class="nav-candidator">
+      <nav class="col-md-12">
+        <ul class="list-inline">
+          {{#each model.config.perfilFuncionalidades as |link|}}
+            {{#active-link}}
+              {{#if link.link}}
+                <a href="{{link.link}}" title="{{link.title}}">
+                  {{#if link.iconClass}}
+                    <i class="{{link.iconClass}}"></i>
+                  {{/if}}
+                  {{link.name}}
                 </a>
-              </li>
-            {{/if}}
-
-            {{#if model.perfil.fb}}
-              <li>
-                <a
-                  href="{{model.perfil.fb}}"
-                  class="social-link-candidate"
-                  target="_blank"
-                >
-                  {{model.perfil.nombre}}
-                </a>
-              </li>
-            {{/if}}
-          </ul>
-        </div>
-      </div>
+              {{else}}
+                {{#link-to link.route title=link.title}}
+                  {{#if link.iconClass}}
+                    <i class="{{link.iconClass}}"></i>
+                  {{/if}}
+                  {{link.name}}
+                {{/link-to}}
+              {{/if}}
+            {{/active-link}}
+          {{/each}}
+        </ul>
+      </nav>
     </div>
   </div>
+{{/if}}
 
-  <div class="questionary">
-    <div class="row">
-      <div class="col-md-6">
-        <h3></h3>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">Biografía</div>
-      <div class="panel-body">
-        {{{ model.perfil.biografia }}}
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">Desempeño</div>
-      <div class="panel-body">
-        {{{ model.perfil.desempenio }}}
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">Historial político</div>
-      <div class="panel-body">
-        {{{ model.perfil.historialPolitico }}}
-      </div>
-    </div>
-  </div>
-
-  {{!-- TODO: Pendiente de agregar Discuss --}}
-</section>
+{{outlet}}

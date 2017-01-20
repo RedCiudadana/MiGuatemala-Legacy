@@ -21,13 +21,11 @@ export default Ember.Route.extend({
               }
 
               if (!_routing.hasRoute(link.route)) {
-                console.log(
-                  'Route not recognized: ' + link.route
-                );
+                throw new Error(`Route not recognized: ${link.route}`);
               }
 
-              return _routing.hasRoute(link.route);
-            })
+              return true;
+            });
         }),
       institucionInformacionGeneralConfiguracion: spreadsheet
         .fetch('institucion-informacion-general-configuracion'),

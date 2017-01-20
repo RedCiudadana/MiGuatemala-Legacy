@@ -12,7 +12,10 @@ Router.map(function() {
   });
 
   // TODO: Rutas pendiente de completar
-  this.route('perfil', {path: '/perfil/:id'});
+  this.route('perfil', {path: '/perfil/:id'}, function() {
+    this.route('frente-a-frente');
+    this.route('propuestas');
+  });
   this.route('perfiles');
   this.route('propuestas');
   this.route('metodologia');
