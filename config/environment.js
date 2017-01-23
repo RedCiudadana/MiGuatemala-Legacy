@@ -22,7 +22,7 @@ module.exports = function(environment) {
     },
 
     APP: {
-      spreadsheetUrl: 'https://raw.githubusercontent.com/RedCiudadana/CANG/static-files/spreadsheet-url',
+      spreadsheetUrl: '/spreadsheet-url',
     },
 
     disqus: {
