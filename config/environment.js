@@ -22,8 +22,7 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      spreadsheetUrl: 'https://raw.githubusercontent.com/RedCiudadana/CANG/static-files/spreadsheet-url',
     },
 
     disqus: {
