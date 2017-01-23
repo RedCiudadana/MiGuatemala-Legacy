@@ -18,6 +18,7 @@ export default Ember.Route.extend({
       partidoActual: partidoActual,
       perfilInformacionGeneralConfiguracion: spreadsheet
         .fetch('perfil-informacion-general-configuracion'),
+      perfiles: this.modelFor('application').perfiles,
       perfilFuncionalidades: spreadsheet
         .fetch('perfil-funcionalidades')
         .then((links) => {

@@ -13,7 +13,7 @@ export default Ember.Route.extend({
     const _routing = this.get('_routing');
 
     return Ember.RSVP.hash({
-      funcionarios: this.store.findAll('perfil'),
+      perfiles: this.store.findAll('perfil'),
       partidos: this.store.findAll('partido'),
       config: spreadsheet.fetch('configuracion').then((configuracion) => {
         let configObject = Ember.Object.create();

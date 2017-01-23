@@ -24,6 +24,7 @@
     "ember-ajax": "^2.4.1",
     "ember-autoserve": "0.0.4",
     "ember-bootstrap": "0.11.2",
+    "ember-chosen": "1.0.7",
     "ember-cli": "2.9.1",
     "ember-cli-active-link-wrapper": "0.3.2",
     "ember-cli-app-version": "^2.0.0",
