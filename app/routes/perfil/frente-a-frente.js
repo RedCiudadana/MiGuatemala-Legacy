@@ -11,7 +11,6 @@ export default Ember.Route.extend({
     this._super(controller, model);
 
     controller.set('perfilUnoId', model.perfil.get('id'));
-    controller.set('perfilDosId', null);
   },
 
   actions: {

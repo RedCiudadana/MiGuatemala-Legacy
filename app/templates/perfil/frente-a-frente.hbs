@@ -1,7 +1,3 @@
-{{perfilUnoId}}
-<br />
-{{perfilDosId}}
-
 <section id="election">
   <div id="msj-alerta" class="alert alert-info">
     Compara aquí la postura de los candidatos. Enumeramos la respuesta que dieron
@@ -49,7 +45,11 @@
           </div>
           <div class="row">
             <div class="col-md-1">
-              <img src="http://vi-gt2015.s3.amazonaws.com/cache/1d/a4/1da4240ce44144c84aa26491761f832c.jpg" alt="Jimmy Morales Cabrera" border="0" class="img-responsive pull-right">
+              <img
+                alt="{{perfilUno.cargoNombreCompleto}}"
+                src="{{perfilUno.fotoPerfil}}"
+                border="0" class="img-responsive pull-right"
+              />
             </div>
             <div class="col-md-5">
               <div class="fondo-blanco contenedor">
@@ -57,13 +57,21 @@
                   Capacitar, enseñar aptitudes y entregar herramientas de superación.
                   <p class="position_description">
                   </p>
-                  <small>&quot;Combatir la corrupción en los programas sociales e indicó que buscará mejorar los mismos&quot; (<a href="http://www.prensalibre.com/guatemala/retalhuleu/presidenciable-jimmy-morales-ofrece-combatir-corrupcion" target="_blank">Fuente</a>)</small>
+                  <small>
+                    &quot;Combatir la corrupción en los programas sociales e
+                    indicó que buscará mejorar los mismos&quot;
+                    (<a href="http://www.prensalibre.com/guatemala/retalhuleu/presidenciable-jimmy-morales-ofrece-combatir-corrupcion" target="_blank">Fuente</a>)
+                  </small>
                 </p>
-                <p class="text-right">Jimmy Morales Cabrera</p>
+                <p class="text-right">{{perfilUno.nombre}}</p>
               </div>
             </div>
             <div class="col-md-1">
-              <img src="http://vi-gt2015.s3.amazonaws.com/cache/65/04/650438e78455ab34edfe0883a456fcd0.jpg" alt="Sandra Julieta Torres Casanova " border="0" class="img-responsive pull-left">
+              <img
+                alt="{{perfilDos.cargoNombreCompleto}}"
+                src="{{perfilDos.fotoPerfil}}"
+                border="0" class="img-responsive pull-left"
+              />
             </div>
             <div class="col-md-5">
               <div class="fondo-blanco contenedor">
@@ -71,12 +79,17 @@
                   Garantizar transferencias condicionadas para la superación de la pobreza.
                   <p class="position_description">
                   </p>
-                  <small>&quot;A las mujeres les vamos a dar Mi Familia Progresa,  Q300  mensuales y a los hombres les vamos a dar Mi Siembra Progresa Q. 300 mensuales&quot; Minuto 9:50  (<a href="https://www.youtube.com/watch?v=VVYtg3kE_2k" target="_blank">Fuente</a>)</small>
+                  <small>
+                    &quot;A las mujeres les vamos a dar Mi Familia Progresa,
+                    Q300  mensuales y a los hombres les vamos a dar Mi Siembra Progresa Q. 300 mensuales&quot;
+                    Minuto 9:50  (<a href="https://www.youtube.com/watch?v=VVYtg3kE_2k" target="_blank">Fuente</a>)
+                  </small>
                 </p>
-                <p class="text-right">Sandra Julieta Torres Casanova </p>
+                <p class="text-right">{{perfilDos.nombre}}</p>
               </div>
             </div>
           </div>
+
           <div class="row">
             <div class="col-md-12">
               <h5>¿Cómo se podría mejorar la situación de los hospitales en el país?</h5>
@@ -84,7 +97,11 @@
           </div>
           <div class="row">
             <div class="col-md-1">
-              <img src="http://vi-gt2015.s3.amazonaws.com/cache/1d/a4/1da4240ce44144c84aa26491761f832c.jpg" alt="Jimmy Morales Cabrera" border="0" class="img-responsive pull-right">
+              <img
+                alt="{{perfilUno.cargoNombreCompleto}}"
+                src="{{perfilUno.fotoPerfil}}"
+                border="0" class="img-responsive pull-right"
+              />
             </div>
             <div class="col-md-5">
               <div class="fondo-blanco contenedor">
@@ -92,23 +109,36 @@
                   Descentralizando la prestación de los servicios de salud.
                   <p class="position_description">
                   </p>
-                  <small>&quot;No puedo construir más hospitales, pero si se puede invertir con transparencia y solo de esa manera vamos a cambiar Guatemala.&quot; (<a href="http://www.prensalibre.com/guatemala/retalhuleu/presidenciable-jimmy-morales-ofrece-combatir-corrupcion" target="_blank">Fuente</a>)</small>
+                  <small>
+                    &quot;No puedo construir más hospitales, pero si se puede invertir
+                    con transparencia y solo de esa manera vamos a cambiar Guatemala.&quot;
+                    (<a href="http://www.prensalibre.com/guatemala/retalhuleu/presidenciable-jimmy-morales-ofrece-combatir-corrupcion" target="_blank">Fuente</a>)
+                  </small>
                 </p>
-                <p class="text-right">Jimmy Morales Cabrera</p>
+                <p class="text-right">{{perfilUno.nombre}}</p>
               </div>
             </div>
             <div class="col-md-1">
-              <img src="http://vi-gt2015.s3.amazonaws.com/cache/65/04/650438e78455ab34edfe0883a456fcd0.jpg" alt="Sandra Julieta Torres Casanova " border="0" class="img-responsive pull-left">
+              <img
+                alt="{{perfilDos.cargoNombreCompleto}}"
+                src="{{perfilDos.fotoPerfil}}"
+                border="0" class="img-responsive pull-left"
+              />
             </div>
             <div class="col-md-5">
               <div class="fondo-blanco contenedor">
                 <p>
-                  Aumentar la inversión estatal para la prestación de servicios y la prevención de enfermedades.
+                  Aumentar la inversión estatal para la prestación de servicios y
+                  la prevención de enfermedades.
                   <p class="position_description">
                   </p>
-                  <small>&quot;Hay que trabajar mucho en la prevención. Hoy por hoy sólo hay centros de salud en los cascos urbanos, habíamos logrado centros de atención permanente .&quot; (<a href="http://www.plazapublica.com.gt/content/sandra-torres-y-una-socialdemocracia-maquilera" target="_blank">Fuente</a>)</small>
+                  <small>
+                    &quot;Hay que trabajar mucho en la prevención. Hoy por hoy sólo
+                    hay centros de salud en los cascos urbanos, habíamos logrado centros
+                    de atención permanente .&quot; (<a href="http://www.plazapublica.com.gt/content/sandra-torres-y-una-socialdemocracia-maquilera" target="_blank">Fuente</a>)
+                  </small>
                 </p>
-                <p class="text-right">Sandra Julieta Torres Casanova </p>
+                <p class="text-right">{{perfilDos.nombre}}</p>
               </div>
             </div>
           </div>
