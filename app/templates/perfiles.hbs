@@ -4,7 +4,7 @@
 
       <div class="portfolio-image">
         {{#link-to "perfil" perfil.id}}
-          <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoperfil}}" />
+          <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoPerfil}}" />
         {{/link-to}}
       </div>
 
@@ -16,7 +16,7 @@
         </h3>
         <span>
           {{#link-to "perfil" perfil.id}}
-            {{perfil.institucion.nombreCompleto}},
+            {{model.institucionData.nombre}},
             {{perfil.cargoNombreCorto}}
           {{/link-to}}
         </span>

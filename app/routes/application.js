@@ -38,7 +38,18 @@ export default Ember.Route.extend({
           return _routing.hasRoute(link.route);
         });
       }),
-      mainPageSliderData: spreadsheet.fetch('main-page-slider-data')
+      mainPageSliderData: spreadsheet.fetch('main-page-slider-data'),
+      institucionData: spreadsheet
+        .fetch('institucion-data')
+        .then((institucionData) => {
+          let institucionDataObject = Ember.Object.create();
+
+          Ember.A(institucionData).forEach((item) => {
+            institucionDataObject.set(item.key, item.value);
+          });
+
+          return institucionDataObject;
+        }),
     });
   },
 
