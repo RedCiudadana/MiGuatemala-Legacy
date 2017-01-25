@@ -20,6 +20,16 @@
         <div class="col-md-5">
           <table class="table">
             <tbody>
+              {{#each-in model.perfil.informacionGeneral as |key item|}}
+                <tr>
+                  <td>
+                    {{#if item.label}}<span>{{{item.label}}}</span>{{/if}}
+                    {{{item.value}}}
+                  </td>
+                </tr>
+              {{/each-in}}
+            </tbody>
+            {{!-- <tbody>
               <tr>
                 <td>
                   <span>Cargo:</span>
@@ -72,22 +82,24 @@
                   {{model.perfil.partidoActual.nombreCorto}}
                 </td>
               </tr>
-            </tbody>
+            </tbody> --}}
           </table>
         </div>
 
         <div class="col-md-4 social-side">
-          {{!-- TODO: Completar --}}
-          <div class="logo-partido">
-            <img
-              src="{{model.perfil.partidoActual.logo}}"
-              alt="{{model.perfil.partidoActual.nombreCompleto}}"
-            >
-          </div>
+          {{#if model.perfil.partidoActual.logo}}
+            <div class="logo-partido">
+              <img
+                src="{{model.perfil.partidoActual.logo}}"
+                alt="{{model.perfil.partidoActual.nombreCompleto}}"
+              >
+            </div>
+          {{/if}}
           <ul class="list-unstyled">
 
             {{#if model.perfil.tw}}
               <li>
+                <i class="fa fa-twitter"></i>
                 <a
                   href="https://twitter.com/{{model.perfil.tw}}"
                   class="social-link-candidate"
@@ -98,6 +110,7 @@
 
             {{#if model.perfil.fb}}
               <li>
+                <i class="fa fa-facebook-official"></i>
                 <a
                   href="{{model.perfil.fb}}"
                   class="social-link-candidate"

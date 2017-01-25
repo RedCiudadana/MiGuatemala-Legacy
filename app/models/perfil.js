@@ -23,6 +23,8 @@ export default Model.extend({
   desempenio: attr(),
   historialPolitico: attr(),
 
+  informacionGeneral: attr('informacion-general'),
+
   fotoPerfil: Ember.computed('fotoUrl', function() {
     if (this.get('fotoUrl')) {
       return this.get('fotoUrl');
@@ -33,5 +35,5 @@ export default Model.extend({
 
   disqusIdentifier: Ember.computed('id', function() {
     return `perfil-${this.get('id')}`;
-  })
+  }),
 });
