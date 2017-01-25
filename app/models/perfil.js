@@ -24,6 +24,7 @@ export default Model.extend({
   historialPolitico: attr(),
 
   informacionGeneral: attr('informacion-general'),
+  frenteAFrente: attr('frente-a-frente'),
 
   fotoPerfil: Ember.computed('fotoUrl', function() {
     if (this.get('fotoUrl')) {

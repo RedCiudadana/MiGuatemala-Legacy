@@ -49,13 +49,14 @@ export default Ember.Route.extend({
               Ember.A(configuracionData).forEach((item) => {
                 perfilFrenteAFrenteDataArray.pushObject({
                   field: item.field,
-                  label: item.label
+                  label: item.label,
+                  section: item.section
                 });
               });
 
               let prefilSerializer = this.store.serializerFor('perfil');
 
-              prefilSerializer.set('fretenAFrenteFields', perfilFrenteAFrenteDataArray);
+              prefilSerializer.set('frenteAFrenteFields', perfilFrenteAFrenteDataArray);
             })
         ]);
       });

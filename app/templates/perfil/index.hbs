@@ -29,60 +29,6 @@
                 </tr>
               {{/each-in}}
             </tbody>
-            {{!-- <tbody>
-              <tr>
-                <td>
-                  <span>Cargo:</span>
-                  {{if
-                    model.perfil.cargoNombreCompleto
-                    model.perfil.cargoNombreCompleto
-                    model.perfil.cargoNombreCorto
-                  }}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Institución:</span>
-                  {{model.perfil.institucion.nombreCompleto}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Profesión:</span>
-                  {{model.perfil.profesion}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Educación:</span>
-                  {{model.perfil.educacion}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Fecha nacimiento:</span>
-                  {{model.perfil.fechaNacimiento}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Lugar de nacimiento:</span>
-                  {{model.perfil.lugarNacimiento}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Partido postulante:</span>
-                  {{model.perfil.partidoPostulante.nombreCorto}}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span>Partido actual:</span>
-                  {{model.perfil.partidoActual.nombreCorto}}
-                </td>
-              </tr>
-            </tbody> --}}
           </table>
         </div>
 
@@ -137,13 +83,6 @@
       <div class="panel-heading">Biografía</div>
       <div class="panel-body">
         {{{ model.perfil.biografia }}}
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">Desempeño</div>
-      <div class="panel-body">
-        {{{ model.perfil.desempenio }}}
       </div>
     </div>
 

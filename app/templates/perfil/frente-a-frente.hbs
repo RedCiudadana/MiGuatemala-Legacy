@@ -1,19 +1,20 @@
 <section id="election">
-  <div id="msj-alerta" class="alert alert-info">
-    Compara aquí la postura de los candidatos. Enumeramos la respuesta que dieron
-    en nuestro cuestionario y otras propuestas que han dicho en medios de comunicación
-    y foros. Haz click en "fuente" y encuentra el origen de la cita.
-  </div>
+  {{#if frenteAFrenteFuncionalidad}}
+    <div id="msj-alerta" class="alert alert-info">
+      {{{frenteAFrenteFuncionalidad.title}}}
+    </div>
+  {{/if}}
 
   <div id="compare-candidates">
     <div class="row">
-      <div class="col-md-12">
+      {{!-- TODO: Pendiente --}}
+      {{!-- <div class="col-md-12">
         <div class="candidate-percentage-txt">
           <p class="text-center">
             El porcentaje de similitud entre los candidatos es de: 20%
           </p>
         </div>
-      </div>
+      </div> --}}
       <div class="col-md-6">
         {{ember-chosen
           placeholder='Selecciona un candidato'
@@ -35,114 +36,59 @@
     </div>
 
     <div class="hidden-xs">
-      <div class="panel panel-default">
-        <div class="panel-heading"><h3 class="panel-title">Datos generales</h3></div>
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-12">
-              <h5>¿De qué manera se puede ayudar a las familias en situación de pobreza?</h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-1">
-              <img
-                alt="{{perfilUno.cargoNombreCompleto}}"
-                src="{{perfilUno.fotoPerfil}}"
-                border="0" class="img-responsive pull-right"
-              />
-            </div>
-            <div class="col-md-5">
-              <div class="fondo-blanco contenedor">
-                <p>
-                  Capacitar, enseñar aptitudes y entregar herramientas de superación.
-                  <p class="position_description">
-                  </p>
-                  <small>
-                    &quot;Combatir la corrupción en los programas sociales e
-                    indicó que buscará mejorar los mismos&quot;
-                    (<a href="http://www.prensalibre.com/guatemala/retalhuleu/presidenciable-jimmy-morales-ofrece-combatir-corrupcion" target="_blank">Fuente</a>)
-                  </small>
-                </p>
-                <p class="text-right">{{perfilUno.nombre}}</p>
-              </div>
-            </div>
-            <div class="col-md-1">
-              <img
-                alt="{{perfilDos.cargoNombreCompleto}}"
-                src="{{perfilDos.fotoPerfil}}"
-                border="0" class="img-responsive pull-left"
-              />
-            </div>
-            <div class="col-md-5">
-              <div class="fondo-blanco contenedor">
-                <p>
-                  Garantizar transferencias condicionadas para la superación de la pobreza.
-                  <p class="position_description">
-                  </p>
-                  <small>
-                    &quot;A las mujeres les vamos a dar Mi Familia Progresa,
-                    Q300  mensuales y a los hombres les vamos a dar Mi Siembra Progresa Q. 300 mensuales&quot;
-                    Minuto 9:50  (<a href="https://www.youtube.com/watch?v=VVYtg3kE_2k" target="_blank">Fuente</a>)
-                  </small>
-                </p>
-                <p class="text-right">{{perfilDos.nombre}}</p>
-              </div>
-            </div>
-          </div>
+      <div class="hidden-xs">
+        {{#each-in frenteAFrenteSectionGroupedFields as |section fields|}}
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3 class="panel-title">{{section}}</h3></div>
+            <div class="panel-body">
+              {{#each-in fields as |fieldName field|}}
+                <div class="row">
+                  <div class="col-md-12">
+                    <h5>{{field.label}}</h5>
+                  </div>
+                </div>
 
-          <div class="row">
-            <div class="col-md-12">
-              <h5>¿Cómo se podría mejorar la situación de los hospitales en el país?</h5>
+                <div class="row">
+                  <div class="col-md-1">
+                    <img
+                      src="{{perfilUno.fotoPerfil}}"
+                      alt="{{perfilUno.nombre}}"
+                      border="0"
+                      class="img-responsive"
+                    >
+                  </div>
+                  <div class="col-md-5">
+                    <div class="fondo-blanco contenedor">
+                      <p>
+                        {{get-html-safe perfilUno field.field}}
+                      </p>
+                      <p class="text-right">{{perfilUno.nombre}}</p>
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <img
+                      src="{{perfilDos.fotoPerfil}}"
+                      alt="{{perfilDos.nombre}}"
+                      border="0"
+                      class="img-responsive"
+                    >
+                  </div>
+                  <div class="col-md-5">
+                    <div class="fondo-blanco contenedor">
+                      <p>
+                        {{get-html-safe perfilDos field.field}}
+                      </p>
+                      <p class="text-right">{{perfilDos.nombre}}</p>
+                    </div>
+                  </div>
+                </div>
+              {{/each-in}}
             </div>
+            {{!-- {{frenteAFrenteField.field}}
+            {{frenteAFrenteField.label}}
+            {{frenteAFrenteField.section}} --}}
           </div>
-          <div class="row">
-            <div class="col-md-1">
-              <img
-                alt="{{perfilUno.cargoNombreCompleto}}"
-                src="{{perfilUno.fotoPerfil}}"
-                border="0" class="img-responsive pull-right"
-              />
-            </div>
-            <div class="col-md-5">
-              <div class="fondo-blanco contenedor">
-                <p>
-                  Descentralizando la prestación de los servicios de salud.
-                  <p class="position_description">
-                  </p>
-                  <small>
-                    &quot;No puedo construir más hospitales, pero si se puede invertir
-                    con transparencia y solo de esa manera vamos a cambiar Guatemala.&quot;
-                    (<a href="http://www.prensalibre.com/guatemala/retalhuleu/presidenciable-jimmy-morales-ofrece-combatir-corrupcion" target="_blank">Fuente</a>)
-                  </small>
-                </p>
-                <p class="text-right">{{perfilUno.nombre}}</p>
-              </div>
-            </div>
-            <div class="col-md-1">
-              <img
-                alt="{{perfilDos.cargoNombreCompleto}}"
-                src="{{perfilDos.fotoPerfil}}"
-                border="0" class="img-responsive pull-left"
-              />
-            </div>
-            <div class="col-md-5">
-              <div class="fondo-blanco contenedor">
-                <p>
-                  Aumentar la inversión estatal para la prestación de servicios y
-                  la prevención de enfermedades.
-                  <p class="position_description">
-                  </p>
-                  <small>
-                    &quot;Hay que trabajar mucho en la prevención. Hoy por hoy sólo
-                    hay centros de salud en los cascos urbanos, habíamos logrado centros
-                    de atención permanente .&quot; (<a href="http://www.plazapublica.com.gt/content/sandra-torres-y-una-socialdemocracia-maquilera" target="_blank">Fuente</a>)
-                  </small>
-                </p>
-                <p class="text-right">{{perfilDos.nombre}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        {{/each-in}}
       </div>
     </div>
 
