@@ -5,7 +5,13 @@ export function getHtmlSafe([object, propertyName, ...rest]) {
     return '';
   }
 
-  return Ember.String.htmlSafe(Ember.get(object, propertyName));
+  let frenteAFrente = Ember.get(object, 'frenteAFrente');
+
+  if (Ember.isNone(frenteAFrente)) {
+    return '';
+  }
+
+  return Ember.String.htmlSafe(Ember.get(frenteAFrente, propertyName));
 }
 
 export default Ember.Helper.helper(getHtmlSafe);

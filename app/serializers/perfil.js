@@ -14,13 +14,10 @@ export default DS.JSONSerializer.extend({
       };
     });
 
-    resourceHash.frenteAFrenteFields = {};
+    resourceHash.frenteAFrente = {};
 
     this.get('frenteAFrenteFields').forEach((item) => {
-      resourceHash.frenteAFrenteFields[item.field] = {
-        label: item.label,
-        value: resourceHash[item.field]
-      };
+      resourceHash.frenteAFrente[item.field] = resourceHash[item.field];
     });
 
     return this._super(modelClass, resourceHash);
