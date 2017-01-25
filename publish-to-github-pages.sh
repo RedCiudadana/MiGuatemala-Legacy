@@ -3,6 +3,7 @@ echo "Deleting local gh-pages branch" && \
 git branch -D gh-pages && \
 echo "Checking out new local gh-pages branch" && \
 git checkout -b gh-pages && \
+npm install && bower install && \
 echo "Building.." && \
 ember build --environment production && \
 echo "Building done, deleting" && \
@@ -16,7 +17,10 @@ git rm -rf app \
     .bowerrc \
     .editorconfig \
     .jshintrc \
-    .travis.yml && \
+    .travis.yml \
+    tmp \
+    node_modules \
+    bower_components && \
 echo "Moving stuff" && \
 mv dist/* . && \
 echo "Adding to commit" && \
