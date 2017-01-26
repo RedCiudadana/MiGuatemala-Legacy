@@ -59,3 +59,7 @@
 .portfolio-desc span a {
     color: #888;
 }
+
+#compare-candidates .ember-chosen select {
+    width: 100%;
+}

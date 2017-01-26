@@ -1,105 +1,103 @@
-<section id="election">
-  <div class="container-profile">
-    <div>
-      <h3 class="text-center">{{model.perfil.nombre}}</h3>
-    </div>
+<div class="container-profile">
+  <div>
+    <h3 class="text-center">{{model.perfil.nombre}}</h3>
+  </div>
 
-    <div class="profile-candidate">
-      <div class="row">
-        <div class="col-md-3">
-          <div id="candidate-img-profile">
+  <div class="profile-candidate">
+    <div class="row">
+      <div class="col-md-3">
+        <div id="candidate-img-profile">
+          <img
+            src="{{model.perfil.fotoPerfil}}"
+            alt="{{model.perfil.nombre}}"
+            border="0"
+            class="img-responsive"
+          >
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <table class="table">
+          <tbody>
+            {{#each-in model.perfil.informacionGeneral as |key item|}}
+              <tr>
+                <td>
+                  {{#if item.label}}<span>{{{item.label}}}</span>{{/if}}
+                  {{{item.value}}}
+                </td>
+              </tr>
+            {{/each-in}}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-4 social-side">
+        {{#if model.perfil.partidoActual.logo}}
+          <div class="logo-partido">
             <img
-              src="{{model.perfil.fotoPerfil}}"
-              alt="{{model.perfil.nombre}}"
-              border="0"
-              class="img-responsive"
+              src="{{model.perfil.partidoActual.logo}}"
+              alt="{{model.perfil.partidoActual.nombreCompleto}}"
             >
           </div>
-        </div>
+        {{/if}}
+        <ul class="list-unstyled">
 
-        <div class="col-md-5">
-          <table class="table">
-            <tbody>
-              {{#each-in model.perfil.informacionGeneral as |key item|}}
-                <tr>
-                  <td>
-                    {{#if item.label}}<span>{{{item.label}}}</span>{{/if}}
-                    {{{item.value}}}
-                  </td>
-                </tr>
-              {{/each-in}}
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-md-4 social-side">
-          {{#if model.perfil.partidoActual.logo}}
-            <div class="logo-partido">
-              <img
-                src="{{model.perfil.partidoActual.logo}}"
-                alt="{{model.perfil.partidoActual.nombreCompleto}}"
-              >
-            </div>
+          {{#if model.perfil.tw}}
+            <li>
+              <i class="fa fa-twitter"></i>
+              <a
+                href="https://twitter.com/{{model.perfil.tw}}"
+                class="social-link-candidate"
+                target="_blank">@{{model.perfil.tw}}
+              </a>
+            </li>
           {{/if}}
-          <ul class="list-unstyled">
 
-            {{#if model.perfil.tw}}
-              <li>
-                <i class="fa fa-twitter"></i>
-                <a
-                  href="https://twitter.com/{{model.perfil.tw}}"
-                  class="social-link-candidate"
-                  target="_blank">@{{model.perfil.tw}}
-                </a>
-              </li>
-            {{/if}}
-
-            {{#if model.perfil.fb}}
-              <li>
-                <i class="fa fa-facebook-official"></i>
-                <a
-                  href="{{model.perfil.fb}}"
-                  class="social-link-candidate"
-                  target="_blank"
-                >
-                  {{model.perfil.nombre}}
-                </a>
-              </li>
-            {{/if}}
-          </ul>
-        </div>
+          {{#if model.perfil.fb}}
+            <li>
+              <i class="fa fa-facebook-official"></i>
+              <a
+                href="{{model.perfil.fb}}"
+                class="social-link-candidate"
+                target="_blank"
+              >
+                {{model.perfil.nombre}}
+              </a>
+            </li>
+          {{/if}}
+        </ul>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="questionary">
-    <div class="row">
-      <div class="col-md-6">
-        <h3></h3>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">Biografía</div>
-      <div class="panel-body">
-        {{{ model.perfil.biografia }}}
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">Historial político</div>
-      <div class="panel-body">
-        {{{ model.perfil.historialPolitico }}}
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">Plan de trabajo</div>
-      <div class="panel-body">
-        {{{ model.perfil.planTrabajo }}}
-      </div>
+<div class="questionary">
+  <div class="row">
+    <div class="col-md-6">
+      <h3></h3>
     </div>
   </div>
 
-  {{disqus-comments identifier=model.perfil.disqusIdentifier}}
-</section>
+  <div class="panel panel-default">
+    <div class="panel-heading">Biografía</div>
+    <div class="panel-body">
+      {{{ model.perfil.biografia }}}
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Historial político</div>
+    <div class="panel-body">
+      {{{ model.perfil.historialPolitico }}}
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Plan de trabajo</div>
+    <div class="panel-body">
+      {{{ model.perfil.planTrabajo }}}
+    </div>
+  </div>
+</div>
+
+{{disqus-comments identifier=model.perfil.disqusIdentifier}}

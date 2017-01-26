@@ -1041,7 +1041,8 @@
 
 @media (max-width: 767px) {
 
-    body { padding: 0 !important; }
+    // Comentado para ser compliant con bootstrap y template de candidatos.gt
+    // body { padding: 0 !important; }
 
     #wrapper { width: 100% !important; }
 
