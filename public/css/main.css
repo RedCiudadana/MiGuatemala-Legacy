@@ -283,6 +283,11 @@ input, button, select, textarea {
 .navbar-brand {
 	padding: 5px 13px;
 }
+
+.navbar-brand img {
+	max-width: 315px;
+}
+
 /*Menu Interno*/
 
 .nav-candidator .list-inline>li {

@@ -18,7 +18,7 @@
     {{#bs-navbar-content}}
       {{#bs-navbar-nav}}
         {{#each model.config.navbarLinks as |link|}}
-          {{#bs-nav-item}}{{#link-to link.route}}{{link.title}}{{/link-to}}{{/bs-nav-item}}
+          {{#bs-nav-item active=false}}{{#link-to link.route}}{{link.title}}{{/link-to}}{{/bs-nav-item}}
         {{/each}}
       {{/bs-navbar-nav}}
     {{/bs-navbar-content}}
