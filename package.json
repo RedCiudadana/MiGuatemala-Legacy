@@ -40,7 +40,7 @@
     "ember-cli-uglify": "^1.2.0",
     "ember-crumbly": "jevanlingen/ember-crumbly#496505eccfa347ec0e5dd35507270ed50b64e167",
     "ember-data": "^2.9.0",
-    "ember-disqus": "0.2.0",
+    "ember-disqus": "RedCiudadana/ember-disqus#fix-hashtag-urls-for-threads",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",

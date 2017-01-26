@@ -26,7 +26,7 @@ module.exports = function(environment) {
     },
 
     disqus: {
-      shortname: 'test-miguatemala-redciudadana-org'
+      shortname: 'eleccion-cang'
     },
 
     contentSecurityPolicy: contentSecurityPolicy
