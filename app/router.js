@@ -20,6 +20,7 @@ Router.map(function() {
   this.route('propuestas');
   this.route('metodologia');
   this.route('contacto');
+  this.route('resultados');
 });
 
 export default Router;
