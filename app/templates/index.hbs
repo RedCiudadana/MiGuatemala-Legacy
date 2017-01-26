@@ -12,21 +12,41 @@
   {{/if}}
 
   {{#if model.config.banner1Slider}}
-    <div class="accordion" id="slider">
-      {{#each model.config.mainPageSliderData as |link|}}
-        <li>
-          {{#if link.link}}
-            <a href="{{link.link}}">
-              <img src="{{link.imageLink}}" alt="{{link.caption}}"/>
-            </a>
-          {{else}}
-            {{#link-to link.route link.id}}
-              <img src="{{link.imageLink}}" alt="{{link.caption}}"/>
-            {{/link-to}}
-          {{/if}}
-          <div class="caption">{{link.caption}}</div>
-        </li>
-      {{/each}}
+    <div class="hidden-xs">
+      <div class="accordion" id="slider">
+        {{#each model.config.mainPageSliderData as |link|}}
+          <li>
+            {{#if link.link}}
+              <a href="{{link.link}}">
+                <img src="{{link.imageLink}}" alt="{{link.caption}}"/>
+              </a>
+            {{else}}
+              {{#link-to link.route link.id}}
+                <img src="{{link.imageLink}}" alt="{{link.caption}}"/>
+              {{/link-to}}
+            {{/if}}
+            <div class="caption">{{link.caption}}</div>
+          </li>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="visible-xs">
+      <ul>
+        {{#each model.config.mainPageSliderData as |link|}}
+          <li>
+            {{#if link.link}}
+              <a href="{{link.link}}">
+                {{link.caption}}
+              </a>
+            {{else}}
+              {{#link-to link.route link.id}}
+                {{link.caption}}
+              {{/link-to}}
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
     </div>
   {{/if}}
 
