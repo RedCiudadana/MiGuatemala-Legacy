@@ -1,6 +1,7 @@
 import Ember from 'ember';
 import Tabletop from 'tabletop';
 import config from '../config/environment';
+import {isNotFoundError} from 'ember-ajax/errors';
 
 export default Ember.Service.extend({
   ajax: Ember.inject.service(),
@@ -17,8 +18,14 @@ export default Ember.Service.extend({
           });
         })
         .catch((error) => {
+          let errorMessage = 'Error durante carga de data JSON!';
+
+          if (isNotFoundError(error)) {
+            errorMessage = `Expected file ${worksheet}.json not found`;
+          }
+
           this.get('flashMessages').danger(
-            'Error durante carga de data JSON!',
+            errorMessage,
             {sticky: true}
           );
 
