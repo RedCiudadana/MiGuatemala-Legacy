@@ -5,6 +5,7 @@ import config from '../config/environment';
 export default Ember.Service.extend({
   ajax: Ember.inject.service(),
   spreadsheet: null,
+  flashMessages: Ember.inject.service(),
 
   fetch(worksheet) {
     if (!Ember.isNone(config.APP.staticFilesUrl)) {
@@ -14,6 +15,14 @@ export default Ember.Service.extend({
           return new Ember.RSVP.Promise((resolve) => {
             resolve(response);
           });
+        })
+        .catch((error) => {
+          this.get('flashMessages').danger(
+            'Error durante carga de data JSON!',
+            {sticky: true}
+          );
+
+          throw error;
         });
     }
 
@@ -22,11 +31,17 @@ export default Ember.Service.extend({
         key: this.get('spreadsheet'),
         callback: (data) => {
           if (Ember.isNone(data[worksheet])) {
-            throw new Error(`Got no answer for spreadsheet ${worksheet}`);
+            let errorMessage = `Got no answer for spreadsheet ${worksheet}`;
+            this.get('flashMessages').danger(errorMessage, {sticky: true});
+
+            throw new Error(errorMessage);
           }
 
           if (Ember.isNone(data[worksheet].elements)) {
-            throw new Error(`Got a problem with the elements for spreadsheet ${worksheet}`);
+            let errorMessage = `Got a problem with the elements for spreadsheet ${worksheet}`;
+            this.get('flashMessages').danger(errorMessage, {sticky: true});
+
+            throw new Error(errorMessage);
           }
 
           resolve(data[worksheet].elements);
