@@ -1,0 +1,30 @@
+[
+  {
+    "caption": "Ovidio Orellana",
+    "route": "perfil",
+    "id": "1",
+    "link": "",
+    "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
+  },
+  {
+    "caption": "Luis Fernando Ruiz Ramírez",
+    "route": "perfil",
+    "id": "2",
+    "link": "",
+    "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
+  },
+  {
+    "caption": "Alejandro Balsells Conde",
+    "route": "perfil",
+    "id": "3",
+    "link": "",
+    "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
+  },
+  {
+    "caption": "Joaquín Medina Bermejo",
+    "route": "perfil",
+    "id": "4",
+    "link": "",
+    "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
+  }
+]

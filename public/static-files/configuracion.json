@@ -1,0 +1,57 @@
+[
+  {
+    "key": "logoUrl",
+    "value": "https://rawgit.com/RedCiudadana/CANG/static-files/eleccion-cang-01.svg",
+    "tags": ""
+  },
+  {
+    "key": "logoTitle",
+    "value": "Elección del Colegio de Abogados y Notarios de Guatemala",
+    "tags": ""
+  },
+  {
+    "key": "twitterShareLink",
+    "value": "//twitter.com/share?via=Redxguate&amp;text=Conce a los diputados del Congreso de la República en ",
+    "tags": ""
+  },
+  {
+    "key": "facebookShareLink",
+    "value": "//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmiguatemala.redciudadana.org",
+    "tags": ""
+  },
+  {
+    "key": "siteMainTitle",
+    "value": "<h2 class=\"text-center\">Encuentra aquí toda la información sobre la eleccion del CANG.<br><small>¡Infórmate, interactúa e incide!</small></h2>",
+    "tags": ""
+  },
+  {
+    "key": "banner1Link",
+    "value": "",
+    "tags": ""
+  },
+  {
+    "key": "banner1Title",
+    "value": "<h3 class=\"portada\" style=\"text-align: center;\">Candidatos para el Colegio de Abogados y Notarios de Guatemala (CANG).</h3>",
+    "tags": ""
+  },
+  {
+    "key": "banner1Footer",
+    "value": "<p style=\"text-align: center; margin: 20px; font-size: 18px;\">La Alianza para un Congreso Abierto en Guatemala (ACAG) nace como un esfuerzo de diversas organizaciones de sociedad civil para desarrollar plataformas y herramientas que mejoren la apertura del Organismo Legislativo.</p>",
+    "tags": ""
+  },
+  {
+    "key": "banner1Slider",
+    "value": "1",
+    "tags": ""
+  },
+  {
+    "key": "metodologia",
+    "value": "<h1>Metodología</h1><p>Esta es la metodología</p>",
+    "tags": ""
+  },
+  {
+    "key": "resultados",
+    "value": "<h1>Resultados</h1><p>Estos son los resultados</p>",
+    "tags": ""
+  }
+]

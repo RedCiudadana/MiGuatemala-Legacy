@@ -14,7 +14,9 @@ export default Ember.Route.extend({
 
   /**
    * Setear la URL del spreadhseet y procesar los campos de información general
-   * del perfil
+   * del perfil.
+   *
+   * TODO: Hacer esto en un lugar más decente, por el amor del Señor
    */
   beforeModel() {
     const spreadsheet = this.get('spreadsheets');

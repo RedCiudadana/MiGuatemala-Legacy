@@ -1,0 +1,20 @@
+[
+  {
+    "route": "institucion",
+    "title": "Sedes de Votación",
+    "link": "",
+    "imageLink": "http://vi-gt2015.s3.amazonaws.com/img/donde_voto.jpg"
+  },
+  {
+    "route": "perfiles",
+    "title": "Frente a Frente",
+    "link": "",
+    "imageLink": "http://vi-gt2015.s3.amazonaws.com/img/frente_a_frente.jpg"
+  },
+  {
+    "route": "propuestas",
+    "title": "Justicia Abierta",
+    "link": "",
+    "imageLink": "http://vi-gt2015.s3.amazonaws.com/img/cuestionario.jpg"
+  }
+]
