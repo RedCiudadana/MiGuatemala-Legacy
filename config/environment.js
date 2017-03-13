@@ -23,7 +23,7 @@ module.exports = function(environment) {
 
     APP: {
       spreadsheetUrl: '/spreadsheet-url',
-      staticFilesUrl: 'http://beta.dipudatos.org/static-files/'
+      staticFilesUrl: null
     },
 
     disqus: {
