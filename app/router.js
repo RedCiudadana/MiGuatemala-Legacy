@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('perfil', {path: '/perfil/:id'}, function() {
     this.route('frente-a-frente');
     this.route('propuestas');
+    this.route('fact-checking');
   });
   this.route('perfiles');
   this.route('propuestas');
