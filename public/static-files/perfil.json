@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "ovidio-orellana",
     "nombre": "Ovidio Orellana",
     "fotoUrl": "",
     "profesion": "Licenciado en Administración de empresas",
@@ -32,7 +32,7 @@
     "planTrabajo": ""
   },
   {
-    "id": "2",
+    "id": "luis-fernando-ruiz",
     "nombre": "Luis Fernando Ruiz Ramírez",
     "fotoUrl": "",
     "profesion": "Licenciado en Ingeniería Civil",
@@ -64,7 +64,7 @@
     "planTrabajo": ""
   },
   {
-    "id": "3",
+    "id": "alejandro-balsells",
     "nombre": "Alejandro Balsells Conde",
     "fotoUrl": "",
     "profesion": "Licenciado en Ingeniería electromecánica",
@@ -96,7 +96,7 @@
     "planTrabajo": ""
   },
   {
-    "id": "4",
+    "id": "joaquin-medina",
     "nombre": "Joaquín Medina Bermejo",
     "fotoUrl": "",
     "profesion": "Doctor",

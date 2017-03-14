@@ -32,7 +32,8 @@ export default Ember.Route.extend({
             groupedData[item.section][index] = {
               title: item.title,
               quote: item.quote,
-              fact: item.fact
+              fact: item.fact,
+              source: item.source
             };
           });
 

@@ -36,16 +36,13 @@
                   </div>
                 </div>
                 <div class="col-md-1">
-                  <img
-                    src="{{perfilDos.fotoPerfil}}"
-                    alt="{{perfilDos.nombre}}"
-                    border="0"
-                    class="img-responsive"
-                  >
                 </div>
                 <div class="col-md-5">
                   <div class="fondo-blanco contenedor">
-                    {{{item.fact}}}
+                    <p>
+                      {{{item.fact}}}
+                    </p>
+                    <p class="text-right">{{item.source}}</p>
                   </div>
                 </div>
               </div>
@@ -70,7 +67,10 @@
                 <p class="text-right"><small>{{perfil.nombre}}</small></p>
               </div>
               <div class="response-candidate-dos">
-                {{{item.fact}}}
+                <p>
+                  {{{item.fact}}}
+                </p>
+                <p class="text-right"><small>{{item.source}}</small></p>
               </div>
             {{/each-in}}
           </div>
