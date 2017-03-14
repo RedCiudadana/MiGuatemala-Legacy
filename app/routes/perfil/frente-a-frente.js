@@ -14,7 +14,8 @@ export default Ember.Route.extend({
     controller.set(
       'frenteAFrenteFuncionalidad',
       model
-        .config.perfilFuncionalidades
+        .config
+        .perfilFuncionalidades
         .findBy('route', 'perfil.frente-a-frente')
     );
 
