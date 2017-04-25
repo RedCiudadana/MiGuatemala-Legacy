@@ -1,0 +1,17 @@
+[
+  {
+    "field": "tagUno",
+    "label": "¿Cuál es su historial político?",
+    "section": "Información general"
+  },
+  {
+    "field": "tagDos",
+    "label": "¿Cuál es su biografía?",
+    "section": "Información no general"
+  },
+  {
+    "field": "biografia",
+    "label": "¿Cuál es su dato curioso?",
+    "section": "Dato curioso"
+  }
+]

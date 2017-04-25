@@ -1,0 +1,18 @@
+[
+  {
+    "route": "institucion",
+    "title": "CANG"
+  },
+  {
+    "route": "perfiles",
+    "title": "CandiDatos"
+  },
+  {
+    "route": "metodologia",
+    "title": "Metodología"
+  },
+  {
+    "route": "resultados",
+    "title": "Resultados"
+  }
+]

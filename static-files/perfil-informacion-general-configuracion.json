@@ -1,0 +1,38 @@
+[
+  {
+    "field": "cargo",
+    "label": "Cargo:"
+  },
+  {
+    "field": "institucion",
+    "label": "Institución:"
+  },
+  {
+    "field": "profesion",
+    "label": "Profesión:"
+  },
+  {
+    "field": "educacion",
+    "label": "Educación:"
+  },
+  {
+    "field": "fechaNacimiento",
+    "label": "Fecha de nacimiento:"
+  },
+  {
+    "field": "lugarNacimiento",
+    "label": "Lugar de nacimiento:"
+  },
+  {
+    "field": "partidoPostulante",
+    "label": "Partido postulante:"
+  },
+  {
+    "field": "partidoActual",
+    "label": "Partido actual:"
+  },
+  {
+    "field": "datoCurioso",
+    "label": "Dato curioso:"
+  }
+]
