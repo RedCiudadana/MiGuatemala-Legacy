@@ -22,7 +22,7 @@ module.exports = function(deployTarget) {
   }
 
   ENV.git = {
-    repo: 'git@github.com:RedCiudadana/MiGuatemala.git',
+    repo: 'https://github.com/RedCiudadana/MiGuatemala.git',
     branch: 'gh-pages',
     worktreePath: '/tmp/deploy'
   };
