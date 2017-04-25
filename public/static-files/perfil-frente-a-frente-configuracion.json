@@ -1,17 +1,27 @@
 [
   {
     "field": "tagUno",
-    "label": "¿Cuál es su historial político?",
-    "section": "Información general"
+    "label": "Experiencia en Derechos Humanos",
+    "section": "Experiencia en Derechos Humanos"
+  },
+  {
+    "field": "tagUno",
+    "label": "Experiencia Profesional",
+    "section": "Experiencia en Derechos Humanos"
+  },
+  {
+    "field": "tagUno",
+    "label": "Experiencia Academica",
+    "section": "Experiencia en Derechos Humanos"
   },
   {
     "field": "tagDos",
-    "label": "¿Cuál es su biografía?",
-    "section": "Información no general"
+    "label": "Experiencia en DH",
+    "section": "Experiencia en Derechos Humanos"
   },
   {
     "field": "biografia",
-    "label": "¿Cuál es su dato curioso?",
-    "section": "Dato curioso"
+    "label": "Resultados",
+    "section": "Tabla de Gradación"
   }
 ]

@@ -1,10 +1,10 @@
 [
   {
-    "id": "ovidio-orellana",
-    "nombre": "Ovidio Orellana",
+    "id": "candidato1",
+    "nombre": "Candidato 1",
     "fotoUrl": "",
-    "profesion": "Licenciado en Administración de empresas",
-    "educacion": "Licenciatura universitaria",
+    "profesion": "Magistrado de CSJ",
+    "educacion": "Maestría universitaria",
     "fechaNacimiento": "3/10/1984",
     "institucion": "Colegio de Abogados y Notarios de Guatemala (CANG)",
     "cargoNombreCorto": "Candidato Junta Directiva",
@@ -32,11 +32,11 @@
     "planTrabajo": ""
   },
   {
-    "id": "luis-fernando-ruiz",
-    "nombre": "Luis Fernando Ruiz Ramírez",
+    "id": "candidato2",
+    "nombre": "Candidato 2",
     "fotoUrl": "",
-    "profesion": "Licenciado en Ingeniería Civil",
-    "educacion": "Licenciatura universitaria",
+    "profesion": "Magistrado de CC",
+    "educacion": "Maestría universitaria",
     "fechaNacimiento": "3/11/1984",
     "institucion": "Colegio de Abogados y Notarios de Guatemala (CANG)",
     "cargoNombreCorto": "Candidato Junta Directiva",
@@ -64,10 +64,10 @@
     "planTrabajo": ""
   },
   {
-    "id": "alejandro-balsells",
-    "nombre": "Alejandro Balsells Conde",
+    "id": "candidato3",
+    "nombre": "Candidato 3",
     "fotoUrl": "",
-    "profesion": "Licenciado en Ingeniería electromecánica",
+    "profesion": "Magistrado de CSJ",
     "educacion": "Maestría universitaria",
     "fechaNacimiento": "3/12/1984",
     "institucion": "Colegio de Abogados y Notarios de Guatemala (CANG)",
@@ -96,11 +96,11 @@
     "planTrabajo": ""
   },
   {
-    "id": "joaquin-medina",
-    "nombre": "Joaquín Medina Bermejo",
+    "id": "candidato4",
+    "nombre": "Candidato 4",
     "fotoUrl": "",
-    "profesion": "Doctor",
-    "educacion": "Licenciatura universitaria",
+    "profesion": "Magistrado de CC",
+    "educacion": "Maestría universitaria",
     "fechaNacimiento": "3/14/1984",
     "institucion": "Colegio de Abogados y Notarios de Guatemala (CANG)",
     "cargoNombreCorto": "Candidato Junta Directiva",

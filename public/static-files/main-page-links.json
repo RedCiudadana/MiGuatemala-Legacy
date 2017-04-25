@@ -1,20 +1,20 @@
 [
   {
-    "route": "institucion",
-    "title": "Sedes de Votación",
-    "link": "",
-    "imageLink": "http://vi-gt2015.s3.amazonaws.com/img/donde_voto.jpg"
-  },
-  {
-    "route": "perfiles",
-    "title": "Frente a Frente",
+    "route": "metodologia",
+    "title": "Elección Procurador Derechos Humanos",
     "link": "",
     "imageLink": "http://vi-gt2015.s3.amazonaws.com/img/frente_a_frente.jpg"
   },
   {
-    "route": "propuestas",
-    "title": "Justicia Abierta",
+    "route": "perfiles",
+    "title": "Comisión de Derechos Humanos del Congreso de Guatemala",
     "link": "",
     "imageLink": "http://vi-gt2015.s3.amazonaws.com/img/cuestionario.jpg"
+  },
+  {
+    "route": "institucion",
+    "title": "Frente a Frente",
+    "link": "",
+    "imageLink": "http://vi-gt2015.s3.amazonaws.com/img/donde_voto.jpg"
   }
 ]

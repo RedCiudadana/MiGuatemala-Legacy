@@ -1,18 +1,22 @@
 [
   {
     "route": "institucion",
-    "title": "CANG"
+    "title": "PDH"
   },
   {
     "route": "perfiles",
-    "title": "CandiDatos"
+    "title": "Aspirantes"
+  },
+  {
+    "route": "perfiles",
+    "title": "Comision DH"
+  },
+  {
+    "route": "resultados",
+    "title": "Tabla de Gradación"
   },
   {
     "route": "metodologia",
     "title": "Metodología"
-  },
-  {
-    "route": "resultados",
-    "title": "Resultados"
   }
 ]

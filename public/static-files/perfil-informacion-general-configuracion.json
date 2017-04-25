@@ -22,17 +22,5 @@
   {
     "field": "lugarNacimiento",
     "label": "Lugar de nacimiento:"
-  },
-  {
-    "field": "partidoPostulante",
-    "label": "Partido postulante:"
-  },
-  {
-    "field": "partidoActual",
-    "label": "Partido actual:"
-  },
-  {
-    "field": "datoCurioso",
-    "label": "Dato curioso:"
   }
 ]

@@ -1,29 +1,29 @@
 [
   {
-    "caption": "Ovidio Orellana",
+    "caption": "Candidato 1",
     "route": "perfil",
-    "id": "ovidio-orellana",
+    "id": "candidato1",
     "link": "",
     "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
   },
   {
-    "caption": "Luis Fernando Ruiz Ramírez",
+    "caption": "Candidato 2",
     "route": "perfil",
-    "id": "luis-fernando-ruiz",
+    "id": "candidato2",
     "link": "",
     "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
   },
   {
-    "caption": "Alejandro Balsells Conde",
+    "caption": "Candidato 3",
     "route": "perfil",
-    "id": "alejandro-balsells",
+    "id": "candidato3",
     "link": "",
     "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
   },
   {
-    "caption": "Joaquín Medina Bermejo",
+    "caption": "Candidato 4",
     "route": "perfil",
-    "id": "joaquin-medina",
+    "id": "candidato4",
     "link": "",
     "imageLink": "https://rawgit.com/RedCiudadana/MiGuatemala/dev-ember/public/images/placeholder-profile-image.png"
   }
