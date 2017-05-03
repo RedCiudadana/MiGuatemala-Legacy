@@ -5,5 +5,11 @@ export default Ember.Route.extend({
 
   model() {
     return this.modelFor('perfil');
+  },
+
+  setupController(controller, model) {
+    this._super(controller, model);
+
+    controller.setProperties(model);
   }
 });

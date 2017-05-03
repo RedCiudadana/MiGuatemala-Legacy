@@ -19,6 +19,12 @@ export default Ember.Route.extend({
       perfilInformacionGeneralConfiguracion: spreadsheet
         .fetch('perfil-informacion-general-configuracion'),
       perfiles: this.modelFor('application').perfiles,
+      documentosDisponibles: spreadsheet
+        .fetch('documentos-disponibles')
+        .then((documentos) => {
+          return Ember.A(documentos)
+            .filterBy('perfil', perfil.get('id'));
+        }),
       perfilFuncionalidades: spreadsheet
         .fetch('perfil-funcionalidades')
         .then((links) => {

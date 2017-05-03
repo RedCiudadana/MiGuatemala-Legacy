@@ -14,34 +14,8 @@
             class="img-responsive"
           >
         </div>
-      </div>
 
-      <div class="col-md-5">
-        <table class="table">
-          <tbody>
-            {{#each-in model.perfil.informacionGeneral as |key item|}}
-              <tr>
-                <td>
-                  {{#if item.label}}<span>{{{item.label}}}</span>{{/if}}
-                  {{{item.value}}}
-                </td>
-              </tr>
-            {{/each-in}}
-          </tbody>
-        </table>
-      </div>
-
-      <div class="col-md-4 social-side">
-        {{#if model.perfil.partidoActual.logo}}
-          <div class="logo-partido">
-            <img
-              src="{{model.perfil.partidoActual.logo}}"
-              alt="{{model.perfil.partidoActual.nombreCompleto}}"
-            >
-          </div>
-        {{/if}}
         <ul class="list-unstyled">
-
           {{#if model.perfil.tw}}
             <li>
               <i class="fa fa-twitter"></i>
@@ -66,6 +40,35 @@
             </li>
           {{/if}}
         </ul>
+      </div>
+
+      <div class="col-md-5">
+        <table class="table">
+          <tbody>
+            {{#each-in model.perfil.informacionGeneral as |key item|}}
+              <tr>
+                <td>
+                  {{#if item.label}}<span>{{{item.label}}}</span>{{/if}}
+                  {{{item.value}}}
+                </td>
+              </tr>
+            {{/each-in}}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-4 social-side">
+        {{#if documentosDisponibles}}
+          <h3 class="text-center" style="padding-top: 0px;">Datos abiertos</h3>
+        {{/if}}
+
+        {{#each documentosDisponibles as |documento|}}
+          <p>
+            <a href="{{documento.urlDocumento}}" class="btn btn-{{documento.cssClasses}}" target="_blank">
+              {{documento.nombreDocumento}}
+            </a>
+          </p>
+        {{/each}}
       </div>
     </div>
   </div>
