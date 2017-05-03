@@ -48,13 +48,25 @@ utilizando como llave el campo `perfil`.
 
 ##### [`tabla-gradacion.json`](static-files/tabla-gradacion.json)
 
-Se utiliza para almacenar la ponderación de cada perfil en base a cuatro criterios
+Se utiliza para almacenar la ponderación de cada candidato (perfil) en base a cuatro criterios
 previamente establecidos:
 
 * Aspectos Profesionales
 * Aspectos Académicos
 * Cualidades Éticas y de Probidad
 * Proyección Humana E Idoneidad
+
+La asociación entre los registros de este archivo y los de [`perfil.json`](static-files/perfil.json)
+se hace por medio del campo `perfil`.
+
+Adicional a estos cuatro registros, se cuenta con un registro `Total` que suma las
+ponderaciones de cada candidato.
+
+##### [`diputados-comision.json`](static-files/diputados-comision.json)
+
+El contenido de este archivo es similar al de `perfil.json`, con la variante de
+que aquí se almacena la información de los diputados que pertencen a la comisión
+de Derechos Humanos del Congreso.
 
 ##### [`fact-checking-data.json`](static-files/partido.json)
 
