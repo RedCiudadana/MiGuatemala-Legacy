@@ -17,10 +17,19 @@ Router.map(function() {
     this.route('propuestas');
     this.route('fact-checking');
   });
+
   this.route('perfiles');
+
+  this.route('comision', function() {
+    this.route('diputado', { path: '/diputado/:id' });
+  });
+
   this.route('propuestas');
+
   this.route('metodologia');
+
   this.route('contacto');
+
   this.route('resultados');
 });
 

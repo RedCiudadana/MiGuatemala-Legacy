@@ -1,7 +1,6 @@
 import Ember from 'ember';
 import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
-import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
   nombre: attr(),
@@ -12,8 +11,6 @@ export default Model.extend({
   educacion: attr(),
   fechaNacimiento: attr(),
   lugarNacimiento: attr(),
-  partidoPostulante: belongsTo('partido'),
-  partidoActual: belongsTo('partido'),
   email: attr(),
   fb: attr(),
   tw: attr(),
@@ -36,5 +33,5 @@ export default Model.extend({
 
   disqusIdentifier: Ember.computed('id', function() {
     return `perfil-${this.get('id')}`;
-  }),
+  })
 });
