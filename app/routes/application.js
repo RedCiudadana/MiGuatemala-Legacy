@@ -27,6 +27,7 @@ export default Ember.Route.extend({
         spreadsheet.set('spreadsheet', response);
 
         return Ember.RSVP.all([
+          // Información general de perfil
           spreadsheet
             .fetch('perfil-informacion-general-configuracion')
             .then((configuracionData) => {
@@ -43,6 +44,26 @@ export default Ember.Route.extend({
 
               prefilSerializer.set('informacionGeneralFields', perfilDataArray);
             }),
+
+          // Información general de diputado
+          spreadsheet
+            .fetch('diputado-informacion-general-configuracion')
+            .then((configuracionData) => {
+              let diputadoDataArray = Ember.A([]);
+
+              Ember.A(configuracionData).forEach((item) => {
+                diputadoDataArray.pushObject({
+                  field: item.field,
+                  label: item.label
+                });
+              });
+
+              let diputadoSerializer = this.store.serializerFor('diputado-comision');
+
+              diputadoSerializer.set('informacionGeneralFields', diputadoDataArray);
+              diputadoSerializer.set('frenteAFrenteFields', Ember.A());
+            }),
+
           spreadsheet
             .fetch('perfil-frente-a-frente-configuracion')
             .then((configuracionData) => {

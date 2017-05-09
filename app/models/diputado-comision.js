@@ -6,6 +6,7 @@ import { belongsTo } from 'ember-data/relationships';
 export default Model.extend({
   nombre: attr(),
   fotoUrl: attr(),
+  fotoUrlPartido: attr(),
   cargoNombreCompleto: attr(),
   cargoNombreCorto: attr(),
   profesion: attr(),
@@ -32,5 +33,9 @@ export default Model.extend({
     }
 
     return 'images/Magistrado.jpg';
+  }),
+
+  fotoPartido: Ember.computed('fotoUrlPartido', function() {
+    return this.get('fotoUrlPartido');
   })
 });
