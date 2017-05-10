@@ -11,11 +11,11 @@
             src="{{model.perfil.fotoPerfil}}"
             alt="{{model.perfil.nombre}}"
             border="0"
-            class="img-responsive"
+            class="img-responsive center-block"
           >
         </div>
 
-        <ul class="list-unstyled">
+        <ul class="list-unstyled text-center">
           {{#if model.perfil.tw}}
             <li>
               <i class="fa fa-twitter"></i>
@@ -64,7 +64,7 @@
 
         {{#each documentosDisponibles as |documento|}}
           <p>
-            <a href="{{documento.urlDocumento}}" class="btn btn-{{documento.cssClasses}}" target="_blank">
+            <a href="{{documento.urlDocumento}}" class="btn btn-{{documento.cssClasses}} width-full" target="_blank">
               {{documento.nombreDocumento}}
             </a>
           </p>

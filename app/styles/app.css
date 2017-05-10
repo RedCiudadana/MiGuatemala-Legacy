@@ -13,3 +13,16 @@
 .container {
     margin-bottom: 40px;
 }
+
+.btn.width-full {
+    width: 100%;
+}
+
+/**
+ * Taken from http://getbootstrap.com/css/#helper-classes-center
+ */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
