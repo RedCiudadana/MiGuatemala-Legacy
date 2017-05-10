@@ -89,16 +89,30 @@
   </div>
 
   <div class="panel panel-default">
-    <div class="panel-heading">Historial político</div>
+    <div class="panel-heading">Experiencia Profesional</div>
     <div class="panel-body">
-      {{{ model.perfil.historialPolitico }}}
+      {{{ model.perfil.experienciaProfesional }}}
     </div>
   </div>
 
   <div class="panel panel-default">
-    <div class="panel-heading">Plan de trabajo</div>
+    <div class="panel-heading">Experiencia en Derechos Humanos</div>
     <div class="panel-body">
-      {{{ model.perfil.planTrabajo }}}
+      {{{ model.perfil.experienciaEnDH }}}
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Tabla gradacion</div>
+    <div class="panel-body">
+      {{#each datosTablaGradacion as |dato|}}
+        <p>
+          <strong>{{dato.aspecto}}</strong> - Puntaje obtenido: {{dato.puntaje}}
+        </p>
+      {{/each}}
+      <p>
+        <strong>Total puntaje</strong> {{totalPuntajeGradacion}}
+      </p>
     </div>
   </div>
 </div>

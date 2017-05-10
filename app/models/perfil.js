@@ -19,6 +19,8 @@ export default Model.extend({
   biografia: attr(),
   desempenio: attr(),
   historialPolitico: attr(),
+  experienciaProfesional: attr(),
+  experienciaEnDH: attr(),
 
   informacionGeneral: attr('informacion-general'),
   frenteAFrente: attr('frente-a-frente'),

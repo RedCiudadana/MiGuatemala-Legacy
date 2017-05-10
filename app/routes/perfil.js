@@ -25,6 +25,21 @@ export default Ember.Route.extend({
           return Ember.A(documentos)
             .filterBy('perfil', perfil.get('id'));
         }),
+      datosTablaGradacion: spreadsheet
+        .fetch('tabla-gradacion')
+        .then((registros) => {
+          return Ember.A(registros)
+            .filterBy('perfil', perfil.get('id'))
+            .filter((e) => e.aspecto !== 'Total');
+        }),
+      totalPuntajeGradacion: spreadsheet
+        .fetch('tabla-gradacion')
+        .then((registros) => {
+          return Ember.A(registros)
+            .filterBy('perfil', perfil.get('id'))
+            .filter((e) => e.aspecto !== 'Total')
+            .reduce((previousValue, item) => previousValue + parseInt(item.puntaje), 0);
+        }),
       perfilFuncionalidades: spreadsheet
         .fetch('perfil-funcionalidades')
         .then((links) => {
