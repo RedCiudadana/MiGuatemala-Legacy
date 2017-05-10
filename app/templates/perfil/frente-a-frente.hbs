@@ -33,11 +33,13 @@
           <div class="panel-heading"><h3 class="panel-title">{{section}}</h3></div>
           <div class="panel-body">
             {{#each-in fields as |fieldName field|}}
-              <div class="row">
-                <div class="col-md-12">
-                  <h5>{{field.label}}</h5>
+              {{#if field.label}}
+                <div class="row">
+                  <div class="col-md-12">
+                    <h5>{{field.label}}</h5>
+                  </div>
                 </div>
-              </div>
+              {{/if}}
 
               <div class="row">
                 <div class="col-md-1">
@@ -85,7 +87,9 @@
           <div class="panel-heading"><h3 class="panel-title">{{section}}</h3></div>
           <div class="panel-body">
             {{#each-in fields as |fieldName field|}}
-              <h3 class="panel-title">{{field.label}}</h3>
+              {{#if field.label}}
+                <h3 class="panel-title">{{field.label}}</h3>
+              {{/if}}
 
               <div class="response-candidate-one">
                 <p>
