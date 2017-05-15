@@ -30,7 +30,7 @@
 
 .search-container-row {
     margin-bottom: 10px;
-    background-color: #909193;
+    background-color: #d8dade;
 }
 
 .search-container-row .ember-power-select-trigger {
@@ -42,7 +42,7 @@
 }
 
 .search-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #909193;
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+    // background-color: #909193;
 }

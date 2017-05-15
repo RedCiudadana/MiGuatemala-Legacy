@@ -55,9 +55,8 @@
   {{/if}}
 </div>
 
-<div class="row search-container-row">
-  <div class="col-xs-2 col-md-3"></div>
-  <div class="col-xs-8 col-md-6 search-container">
+<div class="jumbotron search-container-row">
+  <div class="search-container" style="text-align: center;">
     {{#power-select
       selected=currentCandidato
       options=model.perfiles
@@ -70,7 +69,13 @@
       <strong>{{candidato.nombre}}</strong>
     {{/power-select}}
   </div>
-  <div class="col-xs-2 col-md-3"></div>
+  <small>
+    <strong>Filtrar por: </strong>
+      <input type="radio" /> Mujer
+      <input type="radio" /> Hombre
+      <input type="radio" /> En proceso
+      <input type="radio" /> Descalificado
+  </small>
 </div>
 
 <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
