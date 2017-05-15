@@ -10,13 +10,13 @@
 
       <div class="portfolio-desc">
         <h3>
-          {{#link-to "perfil" perfil.id}}
+          {{#link-to 'perfil' perfil.id}}
             {{perfil.nombre}}
           {{/link-to}}
         </h3>
         <span>
-          {{#link-to "perfil" perfil.id}}
-            {{model.institucionData.nombre}},
+          {{#link-to 'perfil' perfil.id}}
+            {{!-- {{model.institucionData.nombre}}, --}}
             {{perfil.cargoNombreCorto}}
           {{/link-to}}
         </span>
