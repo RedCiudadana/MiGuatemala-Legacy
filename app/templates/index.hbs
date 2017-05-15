@@ -55,15 +55,16 @@
   {{/if}}
 </div>
 
-<div class="row search-container">
+<div class="row search-container-row">
   <div class="col-xs-2 col-md-3"></div>
-  <div class="col-xs-8 col-md-6">
+  <div class="col-xs-8 col-md-6 search-container">
     {{#power-select
       selected=currentCandidato
       options=model.perfiles
       onchange=(route-action 'selectCandidato')
       searchField='nombre'
-      placeholder='Buscar'
+      placeholder='Busca a tu candidato'
+      noMatchesMessage='Sin resultados'
         as |candidato|
     }}
       <strong>{{candidato.nombre}}</strong>
@@ -72,8 +73,35 @@
   <div class="col-xs-2 col-md-3"></div>
 </div>
 
+<div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
+  {{#each model.perfiles as |perfil|}}
+    <article class="portfolio-item pf-media {{perfil.institucionSelector}}">
+
+      <div class="portfolio-image">
+        {{#link-to "perfil" perfil.id}}
+          <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoPerfil}}" />
+        {{/link-to}}
+      </div>
+
+      <div class="portfolio-desc">
+        <h3>
+          {{#link-to 'perfil' perfil.id}}
+            {{perfil.nombre}}
+          {{/link-to}}
+        </h3>
+        <span>
+          {{#link-to 'perfil' perfil.id}}
+            {{perfil.cargoNombreCorto}}
+          {{/link-to}}
+        </span>
+      </div>
+
+    </article>
+  {{/each}}
+</div>
+
 {{#if model.config.mainPageLinks}}
-  <div class="row main-page-links">
+  <div class="row main-page-links" style="margin-top: 20px;">
     {{#each model.config.mainPageLinks as |link|}}
       <div class="col-md-4">
         {{#if link.link}}
@@ -97,31 +125,3 @@
     {{/each}}
   </div>
 {{/if}}
-
-<div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
-  {{#each model.perfiles as |perfil|}}
-    <article class="portfolio-item pf-media {{perfil.institucionSelector}}">
-
-      <div class="portfolio-image">
-        {{#link-to "perfil" perfil.id}}
-          <img alt="{{perfil.cargoNombreCompleto}}" src="{{perfil.fotoPerfil}}" />
-        {{/link-to}}
-      </div>
-
-      <div class="portfolio-desc">
-        <h3>
-          {{#link-to 'perfil' perfil.id}}
-            {{perfil.nombre}}
-          {{/link-to}}
-        </h3>
-        <span>
-          {{#link-to 'perfil' perfil.id}}
-            {{!-- {{model.institucionData.nombre}}, --}}
-            {{perfil.cargoNombreCorto}}
-          {{/link-to}}
-        </span>
-      </div>
-
-    </article>
-  {{/each}}
-</div>

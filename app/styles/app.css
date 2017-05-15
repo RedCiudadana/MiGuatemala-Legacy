@@ -28,6 +28,21 @@
   margin-right: auto;
 }
 
-.search-container {
+.search-container-row {
     margin-bottom: 10px;
+    background-color: #909193;
+}
+
+.search-container-row .ember-power-select-trigger {
+    text-align: center;
+}
+
+.search-container-row .ember-power-select-status-icon {
+    display: none;
+}
+
+.search-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #909193;
 }
