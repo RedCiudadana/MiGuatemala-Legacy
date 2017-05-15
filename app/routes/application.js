@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import config from '../config/environment';
+import injectScript from 'ember-inject-script';
 
 export default Ember.Route.extend({
   spreadsheets: Ember.inject.service(),
@@ -10,6 +11,15 @@ export default Ember.Route.extend({
 
   breadCrumb: {
     title: 'application breadcrumb'
+  },
+
+  init() {
+    this._super(...arguments);
+
+    console.log('pre');
+    injectScript('//my.hellobar.com/8700f679a0f3df81d69a2201bbf5f6740b22a2f9.js').then(() => {
+      console.log('done');
+    });
   },
 
   /**
