@@ -137,5 +137,11 @@ export default Ember.Route.extend({
     model.config.navbarLinks = model.navbarLinks;
     model.config.mainPageLinks = model.mainPageLinks;
     model.config.mainPageSliderData = model.mainPageSliderData;
+  },
+
+  actions: {
+    selectCandidato(candidato) {
+      this.transitionTo('perfil', candidato.get('id'));
+    }
   }
 });

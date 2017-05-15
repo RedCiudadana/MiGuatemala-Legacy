@@ -55,6 +55,16 @@
   {{/if}}
 </div>
 
+{{#power-select
+  selected=currentCandidato
+  options=model.perfiles
+  onchange=(route-action 'selectCandidato')
+  placeholder='Buscar'
+    as |candidato|
+}}
+  <strong>{{candidato.nombre}}</strong>
+{{/power-select}}
+
 {{#if model.config.mainPageLinks}}
   <div class="row main-page-links">
     {{#each model.config.mainPageLinks as |link|}}
