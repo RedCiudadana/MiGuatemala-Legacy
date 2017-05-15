@@ -1,5 +1,6 @@
 @import 'main.css';
 @import 'responsive.css';
+@import 'ember-power-select-bootstrap.css';
 
 .main-page-links img {
     width: 100%;
@@ -25,4 +26,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.search-container {
+    margin-bottom: 10px;
 }
