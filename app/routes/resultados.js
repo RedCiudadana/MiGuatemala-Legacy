@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
+  // model() {
     // return Ember.RSVP.all([
     //   // Información general de perfil
     //   spreadsheet
@@ -9,5 +9,5 @@ export default Ember.Route.extend({
     //     .then((configuracionData) => {
           
     //     });
-  }
+  // }
 });

@@ -41,8 +41,21 @@
     display: none;
 }
 
-.search-container {
-    // padding-top: 15px;
-    // padding-bottom: 15px;
-    // background-color: #909193;
+td.number {
+    text-align: right;
+}
+
+table.text-center td,
+table.text-center th {
+    text-align: center;
+}
+
+th.header {
+    color: #545759;
+    background-color: #d8dade;
+}
+
+.padded-table td,
+.padded-table th {
+    padding: 15px;
 }
