@@ -13,51 +13,22 @@
         <th class="header">Proyección Humana E Idoneidad</th>
         <th class="header">Total</th>
       </tr>
-      <tr>
-        <td>1</td>
-        <td><a href="#">Marta Lares Guitz</a></td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td><a href="#">Marta Lares Guitz</a></td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td><a href="#">Marta Lares Guitz</a></td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td><a href="#">Marta Lares Guitz</a></td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td><a href="#">Marta Lares Guitz</a></td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
+
+      {{#each-in model.registrosTablaGradacion as |id registroTablaGradacion|}}
+        <tr>
+          <td>{{registroTablaGradacion.numero}}</td>
+          <td>
+            {{#link-to 'perfil' registroTablaGradacion.id}}
+              {{registroTablaGradacion.nombre}}
+            {{/link-to}}
+          </td>
+          <td>{{registroTablaGradacion.aspectosProfesionales}}</td>
+          <td>{{registroTablaGradacion.aspectosAcademicos}}</td>
+          <td>{{registroTablaGradacion.cualidadesEticas}}</td>
+          <td>{{registroTablaGradacion.proyeccionHumana}}</td>
+          <td>{{registroTablaGradacion.total}}</td>
+        </tr>
+      {{/each-in}}
     </table>
   </div>
   <div class="col-lg-2"></div>

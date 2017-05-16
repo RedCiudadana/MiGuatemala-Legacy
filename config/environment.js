@@ -23,9 +23,9 @@ module.exports = function(environment) {
 
     APP: {
       spreadsheetUrl: '/spreadsheet-url',
-      // staticFilesUrl: null
+      staticFilesUrl: null
       // staticFilesUrl: 'http://192.168.250.206:6360/static-files/'
-      staticFilesUrl: 'http://eleccionpdh.org/static-files/'
+      // staticFilesUrl: 'http://eleccionpdh.org/static-files/'
     },
 
     disqus: {
