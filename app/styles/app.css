@@ -59,3 +59,8 @@ th.header {
 .padded-table th {
     padding: 15px;
 }
+
+.search-and-filter label {
+    margin-left: 15px;
+    font-weight: normal;
+}

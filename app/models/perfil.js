@@ -21,6 +21,8 @@ export default Model.extend({
   historialPolitico: attr(),
   experienciaProfesional: attr(),
   experienciaEnDH: attr(),
+  sexo: attr(),
+  estado: attr(),
 
   informacionGeneral: attr('informacion-general'),
   frenteAFrente: attr('frente-a-frente'),
@@ -31,6 +33,28 @@ export default Model.extend({
     }
 
     return 'images/Magistrado.jpg';
+  }),
+
+  selector: Ember.computed('sexo', 'estado', function() {
+    let returnValue;
+
+    if (this.get('sexo') === 'Masculino') {
+      returnValue += ' hombre';
+    }
+
+    if (this.get('sexo') === 'Femenino') {
+      returnValue += ' mujer';
+    }
+
+    if (this.get('estado') === 'Descalificado') {
+      returnValue += ' descalificado';
+    }
+
+    if (this.get('estado') === 'En proceso') {
+      returnValue += ' enProceso';
+    }
+
+    return returnValue;
   }),
 
   disqusIdentifier: Ember.computed('id', function() {

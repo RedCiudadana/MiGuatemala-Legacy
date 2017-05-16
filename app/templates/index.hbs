@@ -55,7 +55,7 @@
   {{/if}}
 </div>
 
-<div class="jumbotron search-container-row">
+<div class="jumbotron search-container-row search-and-filter">
   <div class="search-container" style="text-align: center;">
     {{#power-select
       selected=currentCandidato
@@ -69,18 +69,57 @@
       <strong>{{candidato.nombre}}</strong>
     {{/power-select}}
   </div>
-  {{!-- <small>
+  <small>
     <strong>Filtrar por: </strong>
-      <input type="radio" /> Mujer
-      <input type="radio" /> Hombre
-      <input type="radio" /> En proceso
-      <input type="radio" /> Descalificado
-  </small> --}}
+      <label>
+        {{one-way-checkbox
+          esMujer
+          update=(queue
+            (action (mut esMujer))
+            (action 'applyFilter')
+          )
+        }}
+        Mujer
+      </label>
+
+      <label>
+        {{one-way-checkbox
+          esHombre
+          update=(queue
+            (action (mut esHombre))
+            (action 'applyFilter')
+          )
+        }}
+        Hombre
+     </label>
+
+      <label>
+        {{one-way-checkbox
+          estaEnProceso
+          update=(queue
+            (action (mut estaEnProceso))
+            (action 'applyFilter')
+          )
+        }}
+        En proceso
+     </label>
+
+      <label>
+        {{one-way-checkbox
+          estaDescalificado
+          update=(queue
+            (action (mut estaDescalificado))
+            (action 'applyFilter')
+          )
+        }}
+        Descalificado
+     </label>
+  </small>
 </div>
 
 <div id="portfolio" class="portfolio grid-container portfolio-5 portfolio-masonry clearfix" style="margin-top: 20px;">
   {{#each model.perfiles as |perfil|}}
-    <article class="portfolio-item pf-media {{perfil.institucionSelector}}">
+    <article class="portfolio-item pf-media {{perfil.selector}}">
 
       <div class="portfolio-image">
         {{#link-to "perfil" perfil.id}}
