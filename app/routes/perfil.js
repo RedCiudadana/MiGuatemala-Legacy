@@ -37,7 +37,7 @@ export default Ember.Route.extend({
         .then((registros) => {
           return Ember.A(registros)
             .filterBy('perfil', perfil.get('id'))
-            .filter((e) => e.aspecto !== 'Total')
+            .filter((e) => e.aspecto !== 'Total' && e.aspecto !== 'Cualidades Éticas y de Probidad')
             .reduce((previousValue, item) => previousValue + parseInt(item.puntaje), 0);
         }),
       perfilFuncionalidades: spreadsheet

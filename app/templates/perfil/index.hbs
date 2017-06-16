@@ -107,7 +107,12 @@
     <div class="panel-body">
       {{#each datosTablaGradacion as |dato|}}
         <p>
-          <strong>{{dato.aspecto}}</strong> - Puntaje obtenido: {{dato.puntaje}}
+          <strong>{{dato.aspecto}}</strong>
+          {{#if (is-numeric dato.puntaje)}}
+            - Puntaje obtenido: {{dato.puntaje}}
+          {{else}}
+            {{dato.puntaje}}
+          {{/if}}
         </p>
       {{/each}}
       <p>
