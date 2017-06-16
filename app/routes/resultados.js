@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+const { isNone } = Ember;
+
 export default Ember.Route.extend({
 
   spreadsheets: Ember.inject.service(),
@@ -19,6 +21,11 @@ export default Ember.Route.extend({
           let count = 1;
           registros.forEach((element) => {
             if (Ember.isNone(registrosTablaGradacion[element.perfil])) {
+
+              if (isNone(perfiles.findBy('id', element.perfil))) {
+                throw new Error(`Perfil con id '${element.perfil}' no encontrado`);
+              }
+
               registrosTablaGradacion[element.perfil] = {
                 id: element.perfil,
                 numero: count,
