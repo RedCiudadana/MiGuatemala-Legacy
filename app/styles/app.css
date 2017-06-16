@@ -1,6 +1,7 @@
 @import 'main.css';
 @import 'responsive.css';
 @import 'ember-power-select-bootstrap.css';
+@import 'ember-cli-spinner.css';
 
 .main-page-links img {
     width: 100%;
