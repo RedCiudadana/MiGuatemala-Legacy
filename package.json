@@ -34,6 +34,7 @@
     "ember-cli-deploy-build": "1.0.0",
     "ember-cli-deploy-git": "1.1.1",
     "ember-cli-flash": "1.4.1",
+    "ember-cli-google-analytics": "1.5.0",
     "ember-cli-htmlbars": "^1.0.10",
     "ember-cli-htmlbars-inline-precompile": "^0.3.3",
     "ember-cli-inject-live-reload": "^1.4.1",
