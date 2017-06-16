@@ -36,7 +36,7 @@ export default Model.extend({
   }),
 
   selector: Ember.computed('sexo', 'estado', function() {
-    let returnValue;
+    let returnValue = '';
 
     if (this.get('sexo') === 'Masculino') {
       returnValue += ' hombre';

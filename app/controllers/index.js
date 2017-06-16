@@ -32,8 +32,8 @@ export default Ember.Controller.extend({
         selectors.push('.enProceso');
       }
 
-      if (this.get('.estaDescalificado')) {
-        selectors.push('descalificado');
+      if (this.get('estaDescalificado')) {
+        selectors.push('.descalificado');
       }
 
       return selectors.join(', ');
