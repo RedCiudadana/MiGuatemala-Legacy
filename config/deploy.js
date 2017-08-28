@@ -22,7 +22,7 @@ module.exports = function(deployTarget) {
   }
 
   ENV.git = {
-    repo: 'https://github.com/RedCiudadana/JusticiaAbiertaBeta.git',
+    repo: 'https://github.com/RedCiudadana/DipudatosBeta.git',
     branch: 'gh-pages',
     worktreePath: '/tmp/deploy'
   };
